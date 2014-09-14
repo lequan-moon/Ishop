@@ -1,0 +1,887 @@
+<cwhitepanel id="reportConditionPanel" Layout="GridBagLayout">
+	<clabel id="lblFromDate" text="$langPack.getString('report.from.date')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<datechooser id="txtFromDate" PreferredSize="130,25" MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+	</datechooser>
+	<!-- To Date -->
+	<clabel id="lblToDate" text="$langPack.getString('report.to.date')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="1"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<datechooser id="txtToDate" PreferredSize="130,25" MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="1"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+	</datechooser>
+	
+	<!-- Bill Number -->
+	<clabel id="lblBillNumber" text="$langPack.getString('report.bill.number')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="2"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtBillNumber" text="" PreferredSize="130,25" MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="2"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+	</ctextfield>
+	
+	<!-- Customer -->
+	<clabel id="lblCustomer" text="$langPack.getString('report.customer')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="3"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtCustomer" text="" PreferredSize="130,25" MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="3"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+	</ctextfield>
+	
+	<!-- Warehouse -->
+	<clabel id="lblCompanyName" text="$langPack.getString('report.warehouse.company')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="3"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ccombobox id="cbbCompany" PreferredSize="130,25" MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="3"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+	</ccombobox>
+	<clabel id="lblWarehouse" text="$langPack.getString('report.warehouse')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="4"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ccombobox id="cbbWarehouse" PreferredSize="130,25" MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="4"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+	</ccombobox>
+	<clabel id="lblLocation" text="$langPack.getString('report.warehouse.location')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="5"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtLocation" PreferredSize="130,25" MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="5"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+	</ctextfield>
+	
+	<!-- Category -->
+	<clabel id="lblCategory" text="$langPack.getString('report.category')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="5"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ccombobox id="comboCategory" PreferredSize="130,25" MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="5"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+	</ccombobox>
+	
+	<!-- ItemList report -->
+	<clabel id="lblProduct" text="$langPack.getString('report.product')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="6"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtProduct" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="6"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+	</ctextfield>
+	
+	<clabel id="lblPriceListType" text="$langPack.getString('report.product.pl.type')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="7"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ccombobox id="cbbPLType" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="7"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+	</ccombobox>
+	
+	<clabel id="lblCurrency" text="$langPack.getString('report.product.currency')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="8"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ccombobox id="cbbCurrency" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="8"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+	</ccombobox>
+	<!-- //ItemList report -->
+	
+	<!-- Định dạng báo cáo -->
+	<clabel id="lblReportType" text="$langPack.getString('report.report.type')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="7"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ccombobox id="txtReportType" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="7"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+	</ccombobox>
+	
+	<!-- EmployeeList Report -->
+	<!-- Tên nhân viên -->
+	<clabel id="lblEmployeeName" text="$langPack.getString('report.employee.name')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="8"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtEmployeeName" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="8"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	
+	<!-- Địa chỉ nhân viên -->
+	<clabel id="lblEmployeeAddress" text="$langPack.getString('report.employee.address')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtEmployeeAddress" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	
+	<!-- Địa chỉ Email nhân viên -->
+	<clabel id="lblEmployeeEmail" text="$langPack.getString('report.employee.email')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="10"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtEmployeeEmail" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="10"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	
+	<!-- Login id -->
+	<clabel id="lblEmployeeLoginId" text="$langPack.getString('report.employee.loginId')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="11"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtEmployeeLoginId" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="11"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	
+	<!-- Vai trò nhân viên -->
+	<clabel id="lblEmployeePosition" text="$langPack.getString('report.employee.position')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="12"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtEmployeePosition" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="12"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="1.0f" />
+	</ctextfield>
+	<!-- //EmployeeList Report -->
+	
+	<!-- GoodsReceiveReport -->
+	<clabel id="lblItemId" text="$langPack.getString('report.grn.itemId')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="13"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtItemId" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="13"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblItemName" text="$langPack.getString('report.grn.itemName')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="14"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtItemName" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="14"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<!-- //GoodsReceiveReport -->
+	
+	<!-- ListItemDetail -->
+	<clabel id="lblsectionName" text="$langPack.getString('report.itemDetail.sectionName')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="3"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtsectionName" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="3"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblcategoryGroup" text="$langPack.getString('report.itemDetail.categoryGroup')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="4"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtcategoryGroup" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="4"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblcategory" text="$langPack.getString('report.itemDetail.category')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="5"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtcategory" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="5"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lbllistItemDetailItemId" text="$langPack.getString('report.itemDetail.listItemDetailItemId')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="6"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtlistItemDetailItemId" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="6"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lbllistItemDetailItemName" text="$langPack.getString('report.itemDetail.listItemDetailItemName')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="7"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtlistItemDetailItemName" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="7"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblmadeIn" text="$langPack.getString('report.itemDetail.madeIn')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="8"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtmadeIn" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="8"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblpackingStyle" text="$langPack.getString('report.itemDetail.packingStyle')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtpackingStyle" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<!-- //ListItemDetail -->
+	
+	<!-- ListCustomerReport -->
+	<clabel id="lblCustomerName" text="$langPack.getString('report.listCustomer.name')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtCustomerName" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<!-- //ListCustomerReport -->
+	<!-- ProviderListReport -->
+	<clabel id="lblProviderName" text="$langPack.getString('report.ProviderList.name')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtProviderName" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<!-- //ProviderListReport -->
+	<!-- ContractDetailReport -->
+	<clabel id="lblContract_id" text="$langPack.getString('report.ContractDetail.id')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ccombobox id="cbbContract_id" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ccombobox>
+	<!-- //ContractDetailReport -->
+	
+	<!-- ContractListReport -->
+	<clabel id="lblContractList_contract_id" text="$langPack.getString('report.ContractListReport.id')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtContractList_contract_id" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblContractList_customer_name" text="$langPack.getString('report.ContractListReport.customer_name')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="10"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtContractList_customer_name" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="10"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblContractList_current_step" text="$langPack.getString('report.ContractListReport.current_step')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="11"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtContractList_current_step" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="11"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<!-- //ContractListReport -->
+	
+	<!-- PurchasingDetailReport -->
+	<clabel id="lblPurchasingDetailReport_currency_id" text="$langPack.getString('report.PurchasingDetailReport.currency')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ccombobox id="cbbPurchasingDetailReport_currency_id" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ccombobox>
+	<clabel id="lblPurchasingDetailReport_pp_id" text="$langPack.getString('report.PurchasingDetailReport.ppID')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="10"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ccombobox id="cbbPurchasingDetailReport_pp_id" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="10"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ccombobox>
+	<clabel id="lblPurchasingDetailReport_provider_name" text="$langPack.getString('report.PurchasingDetailReport.provider_name')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="11"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtPurchasingDetailReport_provider_name" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="11"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblPurchasingDetailReport_item_id" text="$langPack.getString('report.PurchasingDetailReport.item_id')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="12"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtPurchasingDetailReport_item_id" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="12"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblPurchasingDetailReport_item_name" text="$langPack.getString('report.PurchasingDetailReport.item_name')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="13"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtPurchasingDetailReport_item_name" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="13"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<!-- //PurchasingDetailReport -->
+	
+	<!-- TransactionValueReport -->
+	<clabel id="lblTransactionValueReport_purchase_currency_id" text="$langPack.getString('report.PurchasingDetailReport.currency')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ccombobox id="cbbTransactionValueReport_purchase_currency_id" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ccombobox>
+	<clabel id="lblTransactionValueReport_purchase_note" text="$langPack.getString('report.TransactionValueReport.purchase_note')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="10"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtTransactionValueReport_purchase_note" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="10"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblTransactionValueReport_provider_name" text="$langPack.getString('report.TransactionValueReport.provider_name')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="11"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtTransactionValueReport_provider_name" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="11"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblTransactionValueReport_tranx_id" text="$langPack.getString('report.TransactionValueReport.tranx_id')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="12"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtTransactionValueReport_tranx_id" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="12"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblTransactionValueReport_pp_id" text="$langPack.getString('report.TransactionValueReport.pp_id')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="13"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtTransactionValueReport_pp_id" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="13"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblTransactionValueReport_employee_name" text="$langPack.getString('report.TransactionValueReport.employee_name')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="14"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtTransactionValueReport_employee_name" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="14"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblTransactionValueReport_current_step" text="$langPack.getString('report.TransactionValueReport.current_step')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="15"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtTransactionValueReport_current_step" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="15"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblTransactionValueReport_status" text="$langPack.getString('report.TransactionValueReport.status')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="16"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtTransactionValueReport_status" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="16"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<!-- //TransactionValueReport -->
+	
+	<!-- SaleTransactionValueReport -->
+	<clabel id="lblTransactionValueReport_sale_currency_id" text="$langPack.getString('currency')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ccombobox id="cbbTransactionValueReport_sale_currency_id" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ccombobox>
+	<clabel id="lblTransactionValueReport_sale_description" text="$langPack.getString('description')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="10"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtTransactionValueReport_sale_description" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="10"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblTransactionValueReport_customer_name" text="$langPack.getString('customer_name')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="11"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtTransactionValueReport_customer_name" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="11"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblTransactionValueReport_sale_tranx_id" text="$langPack.getString('sale.tranx_id')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="12"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtTransactionValueReport_sale_tranx_id" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="12"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblTransactionValueReport_sale_order_id" text="$langPack.getString('sale.order.id')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="13"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtTransactionValueReport_sale_order_id" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="13"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblTransactionValueReport_sale_login_id" text="$langPack.getString('sale.login_id')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="14"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtTransactionValueReport_sale_login_id" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="14"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblTransactionValueReport_sale_current_step" text="$langPack.getString('sale.current_step')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="15"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtTransactionValueReport_sale_current_step" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="15"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblTransactionValueReport_sale_status" text="$langPack.getString('sale.status')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="16"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtTransactionValueReport_sale_status" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="16"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<!-- //SaleTransactionValueReport -->
+	
+	<!-- WarehouseStockCardReport-->
+	<clabel id="lblWHSCReport_item_id" text="$langPack.getString('report.WHSCReport.item_id')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtWHSCReport_item_id" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblWHSCReport_item_name" text="$langPack.getString('report.WHSCReport.item_name')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="10"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtWHSCReport_item_name" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="10"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblWHSCReport_wh_name" text="$langPack.getString('report.WHSCReport.wh_name')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="11"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtWHSCReport_wh_name" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="11"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<!-- //WarehouseStockCardReport-->
+	
+	<!-- PurchasingTransactionReport and OutSaleTransactionReport-->
+	<clabel id="lblTranxListEmployeeName" text="$langPack.getString('report.tranxList.employee.name')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtTranxListEmployeeName" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblCurrentStep" text="$langPack.getString('report.tranxList.current.step')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="10"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ccombobox id="cbbCurrentStep" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="10"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ccombobox>
+	<clabel id="lblStatus" text="$langPack.getString('report.tranxList.status')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="11"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ccombobox id="cbbStatus" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="11"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ccombobox>
+	<clabel id="lblInsTime" text="$langPack.getString('report.tranxList.ins.time')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="12"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<datechooser id="dcInsTime" PreferredSize="130,25" MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="12"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+	</datechooser>
+	<!-- //PurchasingTransactionReport and OutSaleTransactionReport-->
+	
+	<!-- SaleDetailReport-->
+	<clabel id="lblsale_order_id" text="$langPack.getString('report.tranxList.sale.orderid')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ccombobox id="cbbsale_order_id" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="9"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ccombobox>
+	<clabel id="lblsale_item_id" text="$langPack.getString('report.tranxList.sale.itemid')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="10"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtsale_item_id" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="10"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<clabel id="lblsale_item_name" text="$langPack.getString('report.tranxList.sale.itemname')" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="11"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtsale_item_name" text="" PreferredSize="130,25" 
+		MinimumSize="130,25" MaximumSize="130,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_condition_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="11"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+	<!-- /SaleDetailReport-->
+	
+	<label id="Space1" text="" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+								refid="report_condition_gbc" ipadx="0" ipady="0"
+								 gridx="1" gridy="13"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+								Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="1.0f" />
+	</label>
+	<label id="Space2" text="" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+								refid="report_condition_gbc" ipadx="0" ipady="0"
+								 gridx="1" gridy="20"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+								Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="1.0f" />
+	</label>
+</cwhitepanel>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cwhitepanel  id="serverPanel" layout="BorderLayout" constraints="BorderLayout.CENTER"  PreferredSize="600,400">	
+	<cwhitepanel  id="serverPanelContainer" layout="GridBagLayout" constraints="BorderLayout.NORTH">	
+		<cwhitepanel id="serverInforPanel"  border="TitledBorder($langPack.getString('pref.server.infor'))" 
+			layout="GridBagLayout">	
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+			 refid="pref_server_gbc" ipadx="0" ipady="0"
+			 gridwidth="1" gridheight="1"
+			 gridx="0" gridy="0"  insets="5,5,5,5"
+			 Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />		
+			
+			 <!-- Label server address -->
+			 <clabel id="labelServerAddress" text="$langPack.getString('pref.server.address')">
+			 	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_server_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="0" gridy="0"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+			 </clabel>
+			 <!-- text server address -->
+			 <ctextfield id="txtServerAddress" text="localhost">
+				 <gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_server_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="1" gridy="0"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+			 </ctextfield>	
+			 <!-- Label server port -->
+			 <clabel id="labelServerPort" text="$langPack.getString('pref.server.port')">
+			 	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_server_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="2" gridy="0"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+			 </clabel>
+			 <!-- text server address -->
+			 <ctextfield id="txtServerPort" text="8080">
+				 <gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_server_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="3" gridy="0"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />
+			 </ctextfield>		
+			 <!-- Line 2 -->
+			 <!-- Label protocol -->
+			 <clabel id="labelProtocol" text="$langPack.getString('pref.server.protocol')">
+			 	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_server_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="0" gridy="1"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+			 </clabel>
+			 <!-- text server address -->
+			 <ccombobox id="comboProtocol">
+				 <gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_server_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="1" gridy="1"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+			 </ccombobox>	
+			  <!-- Label server context -->
+			 <clabel id="labelServerContext" text="$langPack.getString('pref.server.context')">
+			 	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_server_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="2" gridy="1"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+			 </clabel>
+			 <!-- text server context -->
+			 <ctextfield id="txtServerContext" text="ishop_server_v1.1">
+				 <gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_server_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="3" gridy="1"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />
+			 </ctextfield>			 
+			 <!-- Line 3 -->
+			  <!-- Label protocol -->
+			 <clabel id="labelServerSubContext" text="$langPack.getString('pref.server.sub.context')">
+			 	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_server_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="0" gridy="2"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+			 </clabel>
+			 <!-- text server address -->
+			 <ctextfield id="txtServerSubContext" text="services">
+				 <gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_server_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="1" gridy="2"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />
+			 </ctextfield>	
+			 
+		</cwhitepanel>	
+	</cwhitepanel>
+	</cwhitepanel>			

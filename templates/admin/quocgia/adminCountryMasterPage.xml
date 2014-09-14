@@ -1,0 +1,51 @@
+<cwhitepanel id="countryMasterPanelContainer" constraints="BorderLayout.NORTH"
+Layout="GridBagLayout">
+
+<cwhitepanel id="countryMasterPanel" 
+	Border="TitledBorder($langPack.getString('country.page.title'))" Layout="GridBagLayout">
+	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="country_global_gbc1" ipadx="0" ipady="0"
+						 gridx="0" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="1.0f" />
+	<clabel id="lblCountryId" text="$langPack.getString('country.label.country.code')">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="country_global_gbc" ipadx="0" ipady="0"
+						 gridx="0" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtCountryCode" text=" " PreferredSize="150,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="country_global_gbc" ipadx="0" ipady="0"
+						 gridx="1" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</ctextfield>
+
+	<clabel id="lblCountryName" text="$langPack.getString('country.label.country.name')">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="country_global_gbc" ipadx="0" ipady="0"
+						 gridx="2" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<ctextfield id="txtCountryName" text="  " PreferredSize="150,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="country_global_gbc" ipadx="0" ipady="0"
+						 gridx="3" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+						
+	</ctextfield>
+	
+	<cwhitepanel id="countryActionPanel" Layout="FlowLayout(FlowLayout.CENTER,5,5)" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="country_global_gbc" ipadx="0" ipady="0"
+						 gridx="0" gridy="1"  insets="5,5,5,5"  gridwidth="4" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="1.0f" />
+						
+		<cdlgbutton id="countrySaveButton" text="$langPack.getString('buttonSave')"  
+					PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22"/>
+		<cdlgbutton id="countryNewButton" text="$langPack.getString('buttonNew')"   
+				PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22"/>
+	</cwhitepanel>
+	
+	
+</cwhitepanel>
+</cwhitepanel>

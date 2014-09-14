@@ -1,0 +1,111 @@
+<cwhitepanel id="poHeaderPanel_1" Layout="BorderLayout">
+	<cwhitepanel id="poHeaderPanel" Layout="GridBagLayout" Constraints="BorderLayout.WEST">
+		<!-- Line so phieu-->
+		<clabel id="lblTranxId" text="$langPack.getString('TransactionId')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_header_gbc" ipadx="0" ipady="0"
+			 	gridx="0" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+		</clabel>
+		<ctextfield id="txtTranxId" PreferredSize="200,23" MaximumSize="200,23" MinimumSize="200,23" Editable="false">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="1" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+		</ctextfield>
+		
+		<clabel id="lblPPId" text="$langPack.getString('PPId')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_header_gbc" ipadx="0" ipady="0"
+			 	gridx="2" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+		</clabel>
+		<ctextfield id="txtPPId" PreferredSize="200,23" MaximumSize="200,23" MinimumSize="200,23" Editable="false">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="3" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+		</ctextfield>
+		
+		<!-- Line so hop dong -->
+		<clabel id="lblContractId" text="$langPack.getString('ContractId')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="4" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<ctextfield id="txtContractId" PreferredSize="200,23" MaximumSize="200,23" MinimumSize="200,23" Editable="false">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="5" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />	
+		</ctextfield>
+		
+		<!-- Line PPType -->
+		<clabel id="lblPPType" text="$langPack.getString('PPType')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="6" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<ccombobox id="cbbPPType" PreferredSize="150,23"  MaximumSize="150,23" MinimumSize="150,23" Enabled="$loginUser.canPerformFunction('POOR_EDITTSA_CMDFunc')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="7" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />	
+		</ccombobox>
+		
+		<!-- Ngay dat hang (Signed Date) -->	
+		<clabel id="lblSignedDate" text="$langPack.getString('SignedDate')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="8" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<datechooser id="txtSignedDate" PreferredSize="130,23" MaximumSize="130,23" MinimumSize="130,23" Enabled="$loginUser.canPerformFunction('POOR_EDITTSA_CMDFunc')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="9" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />	
+		</datechooser>
+		
+		<!-- Line provider - deadline -->
+		<clabel id="lblProvider" text="$langPack.getString('Provider')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="0" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<ccombobox id="cbbProvider" PreferredSize="200,23" MaximumSize="200,23" MinimumSize="200,23" Enabled="$loginUser.canPerformFunction('POOR_EDITTSA_CMDFunc')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="1" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />	
+		</ccombobox>	
+		<clabel id="lblDeadline" text="$langPack.getString('Deadline')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="2" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<datechooser id="txtDeadline" PreferredSize="130,23" MaximumSize="130,23" MinimumSize="130,23" Enabled="$loginUser.canPerformFunction('POOR_EDITTSA_CMDFunc')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="3" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />	
+		</datechooser>
+		<clabel id="lblNote" text="$langPack.getString('Note')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="0" gridy="2"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<!-- line 3 -->
+		<ctextfield id="txtNote" MinimumSize="200,23" Enabled="$loginUser.canPerformFunction('POOR_EDITTSA_CMDFunc')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="1" gridy="2"  insets="3,3,3,3"  gridwidth="10" gridheight="1"
+					Fill="GridBagConstraints.BOTH" weightx="20.0f" weighty="0.0f" />	
+		</ctextfield>
+	</cwhitepanel>
+</cwhitepanel>

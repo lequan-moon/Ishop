@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genericdialog id="prefdialog" layout="BorderLayout">
+	<dialogheader background="Color.WHITE" id="prefDialogHeader" 
+		layout="BorderLayout" constraints="BorderLayout.NORTH">
+		<cwhitepanel id="leftHeaderPnl"  constraints="BorderLayout.WEST" layout="GridBagLayout">"
+			<label background="Color.WHITE" id="headerTitle" 
+				constraints="BorderLayout.WEST" text="$langPack.getString('pref.header1')">
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				 refid="leftHeaderPnl_gbc" ipadx="0" ipady="0"
+				 gridwidth="1" gridheight="1"
+				 gridx="0" gridy="0"  insets="5,5,5,5"
+				 Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />
+			</label>
+			<label background="Color.WHITE" id="headerTitle2" 
+				constraints="BorderLayout.WEST" text="$langPack.getString('pref.header2')">
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				 refid="leftHeaderPnl_gbc" ipadx="0" ipady="0"
+				 gridwidth="1" gridheight="1"
+				 gridx="0" gridy="1"  insets="5,5,5,5"
+				 Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="1.0f" />
+			</label>
+		</cwhitepanel>
+		<cwhitepanel layout="BorderLayout" constraints="BorderLayout.CENTER"/>
+		<cwhitepanel id="rightHeaderPnl" constraints="BorderLayout.EAST"  
+			layout ="FlowLayout(FlowLayout.RIGHT, 0, 0)">
+			<label background="Color.WHITE" id="headerLogo" text="" constraints="BorderLayout.EAST"/>
+		</cwhitepanel>
+	</dialogheader>
+	<cwhitepanel id="prefMasterContainer" layout="BorderLayout"  PreferredSize="600,500"
+			constraints="BorderLayout.CENTER" Border="EmptyBorder(0,0,0,0)" >
+		<ctabbedpane id="prefMasterTabbedPane" constraints="BorderLayout.NORTH">			
+			<!-- cau hinh chung -->
+			<cwhitepanel id="prefGeneralContainer" constraints="BorderLayout.NORTH" layout="BorderLayout"/>
+			<cwhitepanel id="prefSystemContainer" constraints="BorderLayout.NORTH" layout="BorderLayout"/>
+			<cwhitepanel id="prefServerConnectionContainer" constraints="BorderLayout.NORTH" layout="BorderLayout"/>			
+			<cwhitepanel id="prefPrintContainer" constraints="BorderLayout.NORTH" layout="BorderLayout"/>
+			<cwhitepanel id="prefImportExportContainer" constraints="BorderLayout.NORTH" layout="BorderLayout"/>
+			<cwhitepanel id="prefViewContainer" constraints="BorderLayout.NORTH" layout="BorderLayout"/>
+		</ctabbedpane>
+			
+	</cwhitepanel>
+	<cwhitepanel id="prefCommandContainer" 
+						layout="BorderLayout" constraints="BorderLayout.SOUTH" >										
+		<cwhitepanel  id="prefCommandPanel" layout="FlowLayout(FlowLayout.CENTER,5,5)" 
+			constraints="BorderLayout.NORTH"  >		 		 
+			<cdlgbutton id="prefNavBarSaveButton"  text="$langPack.getString('buttonSave')" 
+				action ="CMD_SAVE" PreferredSize="73,22"/>
+			<cdlgbutton id="prefNavBarPrintButton" text="$langPack.getString('buttonPrint')" 
+				action ="CMD_PRINT" PreferredSize="73,22"/>
+			<cdlgbutton id="prefCancelButton" text="$langPack.getString('dialog.close')" 
+				action ="CMD_EXIT" PreferredSize="73,22"/>
+		</cwhitepanel>
+	</cwhitepanel>
+</genericdialog>

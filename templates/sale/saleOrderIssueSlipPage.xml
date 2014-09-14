@@ -1,0 +1,70 @@
+<splitpane DividerSize="5"  ContinuousLayout="true"
+	id="splitSaleTranx" Orientation="0">	
+	<!-- Transaction list-->
+	<scrollpane id="txListScrollPane" constraints="BorderLayout.CENTER">			
+		<ctwomodepanel id="xpnlTranxTwoModePanel" Layout="BorderLayout">	
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="sale_tranx_table_gbc1" ipadx="0" ipady="0"
+						 gridx="0" gridy="0"  insets="2,2,2,2"  gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+			<cwhitepanel id="pnlTranxList" Border="TitledBorder($langPack.getString('sale.transactions.list'))"
+				Layout="BorderLayout"   constraints="BorderLayout.CENTER">
+				<cpaging id="saleIslTranxListPage" constraints="BorderLayout.CENTER"/>																	
+			</cwhitepanel>
+		</ctwomodepanel>
+	</scrollpane>
+	<!-- Transaction detail -->
+	<scrollpane id="tranxDetailParentScrollPane" constraints="BorderLayout.CENTER">
+	<ctwomodepanel id="xpnlDetailTwoModePanel" Layout="BorderLayout">
+	<cwhitepanel id="pnlTranxDetailParent"  Layout="BorderLayout"  constraints="BorderLayout.CENTER" Border="TitledBorder($langPack.getString('sale.order.detail.infor'))">			
+		<ctabbedpane id="tabTranxDetailTabbedPane" constraints="BorderLayout.CENTER">
+			<cwhitepanel id="itemDetailContainer" Layout="GridBagLayout" Constraints="BorderLayout.CENTER">	
+				<cwhitepanel id="issueSlipInfoPage" constraints="BorderLayout.CENTER" Layout="FlowLayout(FlowLayout.LEFT,5,1)">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="itemDiscountContainer_gbc" ipadx="0" ipady="0"
+						 gridx="0" gridy="0"  insets="2,2,2,2"  gridwidth="7" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />
+					<clabel text="$langPack.getString('so.number')"/>
+					<ctextfield id="txtSONumber" Editable="false" PreferredSize="150,20"></ctextfield>
+					<clabel text="$langPack.getString('from.warehouse')"/>
+					<ctextfield id="txtFromWarehouse" Editable="false" PreferredSize="150,20"></ctextfield>
+					<clabel text="$langPack.getString('issue.date')"/>
+					<datechooser id="dcIssueDate"  Background="251,229,229"/>
+					<clabel text="$langPack.getString('isl.number')"/>
+					<ctextfield id="txtIslNumber" Editable="false" PreferredSize="150,20"></ctextfield>
+					<clabel text="$langPack.getString('item.ghi.chu')"/>
+					<ctextfield id="txtIssueNote" PreferredSize="150,20"></ctextfield>
+					<cdlgbutton Enabled="$loginUser.canPerformFunction('SALEIS_STOCK_CMDFunc')" id="btnCheckStock" text="$langPack.getString('buttonStock')"   
+						PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22" Action="ACT_ONLINE_STOCK"/>
+				</cwhitepanel>			
+				<cpaging id="issueItemListPage">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="itemDiscountContainer_gbc" ipadx="0" ipady="0"
+						 gridx="0" gridy="1"  insets="2,2,2,2"  gridwidth="7" gridheight="1" Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />
+				</cpaging>
+			</cwhitepanel>
+			<!-- Issue history -->
+			<cwhitepanel id="itemIssuingHistoryContainer" Layout="GridBagLayout" Constraints="BorderLayout.CENTER">					
+				<cwhitepanel id="issuingHeaderPanel" constraints="BorderLayout.CENTER" Layout="FlowLayout(FlowLayout.LEFT,5,1)">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="issuingHistory_gbc" ipadx="0" ipady="0"
+						 gridx="0" gridy="0"  insets="2,2,2,2"  gridwidth="7" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />
+					<clabel text="$langPack.getString('so.number')"/>
+					<ctextfield id="txtIssuedSONumber" Enabled="false" Editable="false" PreferredSize="150,20"/>					
+				</cwhitepanel>
+				<cpaging id="issueItemHistoryListPage">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="issuingHistory_gbc" ipadx="0" ipady="0"
+						 gridx="0" gridy="1"  insets="2,2,2,2"  gridwidth="7" gridheight="1" Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />
+				</cpaging>
+			</cwhitepanel>
+		</ctabbedpane>
+		<!-- Action panel -->
+		<cwhitepanel id="actionPanel" Layout="FlowLayout(FlowLayout.LEFT,5,5)" constraints="BorderLayout.SOUTH">
+			<cdlgbutton Enabled="$loginUser.canPerformFunction('SALEIS_WRITE_CMDFunc')" id="btnSaveIsl" text="$langPack.getString('buttonSave')"  
+								PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22" Action="ACT_SAVE_ISL"/>
+			<cdlgbutton Enabled="$loginUser.canPerformFunction('SALEIS_CLOSE_CMDFunc')" id="nextButton" text="$langPack.getString('finish')"  
+						PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22" Action="ACT_NEXT_STEP"/>
+			<cdlgbutton Enabled="$loginUser.canPerformFunction('SALEIS_PRINT_CMDFunc')" id="printInvoiceButton" text="$langPack.getString('print.note')"   
+					PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22" Action="ACT_ONLINE_STOCK"/>			
+		</cwhitepanel>
+	</cwhitepanel>	
+	
+	</ctwomodepanel>
+	</scrollpane>
+</splitpane>

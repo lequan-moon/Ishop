@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cwhitepanel  id="generalPanel" layout="BorderLayout" constraints="BorderLayout.CENTER"  PreferredSize="600,400">	
+	<cwhitepanel  id="generalPanelContainer" layout="GridBagLayout" constraints="BorderLayout.NORTH">	
+		<cwhitepanel id="loginInforPanel"  border="TitledBorder($langPack.getString('import.export.option'))" 
+			layout="GridBagLayout">	
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+			 refid="pref_general_gbc" ipadx="0" ipady="0"
+			 gridwidth="1" gridheight="1"
+			 gridx="0" gridy="0"  insets="5,5,5,5"
+			 Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />		 
+			
+			 <!-- Label chon ngon ngu -->
+			 <clabel id="waitingImportExport" text="$langPack.getString('waiting.to.complete')">
+			 	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_login_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="0" gridy="1"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+			 </clabel>
+			
+		</cwhitepanel>		
+		
+	</cwhitepanel>
+</cwhitepanel>		

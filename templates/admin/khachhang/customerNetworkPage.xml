@@ -1,0 +1,5 @@
+<cwhitepanel id="customerNetworkContainer" layout="BorderLayout" constraints="BorderLayout.NORTH">	
+	<cwhitepanel id="customerNetworkGraph"  
+		layout="BorderLayout"
+					constraints="BorderLayout.CENTER" border="EtchedBorder(EtchedBorder.RAISED)"/>	
+</cwhitepanel>

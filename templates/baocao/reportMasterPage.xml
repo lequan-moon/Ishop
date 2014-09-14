@@ -1,0 +1,32 @@
+
+<cwhitepanel id="reportPerspectivePanel" layout="BorderLayout" constraints="BorderLayout.NORTH"> 
+	<!--tabbedPane-->
+	<cwhitepanel id="cTabbedPanePanel" 
+			layout="GridBagLayout"
+			constraints="BorderLayout.CENTER">
+		<ctabbedpane id="reportTabbedPane">
+			#if($loginUser.canMaintainRPT())	
+			<gridbagconstraints refid="report_tabbed_gbc" gridy="1"  insets="2,0,0,0"
+				Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />	
+				<cwhitepanel id="reportMainPage" Layout="GridBagLayout">				 
+					<ctwomodepanel id="reportConditionContainer" 
+						Border="TitledBorder($langPack.getString('report.condition.container.title'))">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_master_gbc" ipadx="0" ipady="0"
+							gridx="0" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+					</ctwomodepanel>
+					<ctwomodepanel id="reportListContainer" 
+						Border="TitledBorder($langPack.getString('report.list.title'))">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="report_master_gbc" ipadx="0" ipady="0"
+							gridx="1" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />
+					</ctwomodepanel> 
+				</cwhitepanel>
+				<cwhitepanel id="statisticsPage" Layout="GridBagLayout">
+				</cwhitepanel>
+			#end
+		</ctabbedpane>
+	</cwhitepanel>
+</cwhitepanel>

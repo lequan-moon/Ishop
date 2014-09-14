@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cwhitepanel  id="generalPanel" layout="BorderLayout" constraints="BorderLayout.CENTER"  PreferredSize="600,400">	
+	<cwhitepanel  id="generalPanelContainer" layout="GridBagLayout" constraints="BorderLayout.NORTH">	
+		<cwhitepanel id="loginInforPanel"  border="TitledBorder($langPack.getString('login.infor.header'))" 
+			layout="GridBagLayout">	
+		<!-- cwhitepanel id="loginInforPanel"-->		
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+			 refid="pref_general_gbc" ipadx="0" ipady="0"
+			 gridwidth="1" gridheight="1"
+			 gridx="0" gridy="0"  insets="5,5,5,5"
+			 Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />		 
+			 <ccheckbox background="Color.WHITE" id="requiredLogin" text="$langPack.getString('login.infor.need.login')">
+			 	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_login_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="0" gridy="0"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />				 
+			 </ccheckbox>
+			 <!-- Label chon ngon ngu -->
+			 <clabel id="labelSelectDefaultLanguage" text="$langPack.getString('login.infor.default.language')">
+			 	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_login_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="0" gridy="1"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+			 </clabel>
+			 <!-- Combobox chon ngon ngu -->
+			 <ccombobox id="comboboxSelectDefaultLanguage">
+				 <gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+						 refid="pref_login_gbc" ipadx="0" ipady="0"
+						 gridwidth="1" gridheight="1"
+						 gridx="1" gridy="1"  insets="5,5,5,5"
+						 Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />
+			 </ccombobox>
+			 <!-- LINE 2 Tien to ngon ngu -->
+			 <clabel id="labelLanguagePrefix" text="$langPack.getString('login.infor.language.prefix')">
+				 <gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+						 refid="pref_login_gbc" ipadx="0" ipady="0"
+						 gridwidth="1" gridheight="1"
+						 gridx="0" gridy="2"  insets="5,5,5,5"
+						 Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />		 
+			 </clabel>
+			 <ctextfield id="txtLanguagePrefix" text="lang_" >
+				 <gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+							 refid="pref_login_gbc" ipadx="0" ipady="0"
+							 gridwidth="1" gridheight="1"
+							 gridx="1" gridy="2"  insets="5,5,5,5"
+							 Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />	
+			 </ctextfield>
+		</cwhitepanel>		
+		<!--  Log infor panel-->
+		<cwhitepanel id="logInforPanel"  border="TitledBorder($langPack.getString('log.infor.header'))" layout="GridBagLayout">		
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+			 refid="pref_general_gbc" ipadx="0" ipady="0"
+			 gridwidth="1" gridheight="1"
+			 gridx="0" gridy="1"  insets="5,5,5,5"
+			 Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="1.0f" />
+			  <!-- LINE 2 Tien to ngon ngu -->
+			 <clabel id="labelLogFilePath" text="$langPack.getString('log.infor.log.file.path')">
+				 <gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_log_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="0" gridy="0"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />			 
+			 </clabel>
+			 <ctextfield id="txtLogFilePath" text="logs/ishop.log">
+				 <gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_log_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="1" gridy="0"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />		
+			 </ctextfield>
+			 
+		</cwhitepanel>	
+		<!--  License infor panel-->
+		<cwhitepanel id="licenseInforPanel"  border="TitledBorder($langPack.getString('license.infor.header'))" layout="GridBagLayout">		
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+			 refid="pref_general_gbc" ipadx="0" ipady="0"
+			 gridwidth="1" gridheight="1"
+			 gridx="0" gridy="2"  insets="5,5,5,5"
+			 Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="1.0f" />		 
+			 
+			  <!-- LINE 2 Tien to ngon ngu -->
+			 <clabel id="labelLicenseFilePath" text="$langPack.getString('license.infor.file.path')">
+				 <gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_license_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="0" gridy="0"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />			 
+			 </clabel>
+			 <ctextfield id="txtLicenseFilePath" text="license/ishop_license.lic">
+				 <gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_license_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="1" gridy="0"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />		
+			 </ctextfield>
+			 
+		</cwhitepanel>	
+		<!--  Backup infor panel-->
+		<cwhitepanel id="backupInforPanel"  border="TitledBorder($langPack.getString('backup.infor.header'))" layout="GridBagLayout">		
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+			 refid="pref_general_gbc" ipadx="0" ipady="0"
+			 gridwidth="1" gridheight="1"
+			 gridx="0" gridy="3"  insets="5,5,5,5"
+			 Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="1.0f" />		 
+			
+			 <!-- LINE 2 Tien to ngon ngu -->
+			 <clabel id="labelBackupFilePath" text="$langPack.getString('backup.infor.file.path')">
+				 <gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_backup_infor_panel_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="0" gridy="0"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />			 
+			 </clabel>
+			 <ctextfield id="txtBackupFilePath" text="backup/backup_%d_%m_%y.bak">
+				 <gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_backup_infor_panel_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="1" gridy="0"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />		
+			 </ctextfield>	 
+		</cwhitepanel>	
+	</cwhitepanel>	
+</cwhitepanel>	
+

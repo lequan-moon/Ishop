@@ -1,0 +1,28 @@
+<genericdialog id="chooseProductDialog" layout="BorderLayout" Title="$langPack.getString('choose.product.dialog.title')"
+	MinimumSize="650,200">		
+	<cwhitepanel  background="254,255,255" id="chooseProductMasterContainer" layout="BorderLayout" 
+			constraints="BorderLayout.CENTER" Border="EmptyBorder(0,0,0,0)" >			
+		<cwhitepanel  background="254,255,255" id="chooseProductContainer" constraints="BorderLayout.NORTH" layout="GridBagLayout">
+			<ctextfield id="txtChoosenProduct" text="  " PreferredSize="150,25"  Background="251,229,229">
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+								refid="pd_global_gbc" ipadx="0" ipady="0"
+								 gridx="0" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+								Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+								
+			</ctextfield>
+			<cbutton2 
+				Icon="com/nn/ishop/client/img/button/treeicon.png"
+				SelectedIcon="com/nn/ishop/client/img/button/treeicon.png"
+				RolloverIcon="com/nn/ishop/client/img/button/treeicon.png"
+				RolloverSelectedIcon="com/nn/ishop/client/img/button/treeicon.png" 
+				preferredSize="22,22" 
+				id="btnChooseProduct" text="" action="ACT_OPEN_CATEGORY_DIALOG">
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+								refid="pd_global_gbc" ipadx="0" ipady="0"
+								 gridx="1" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+								Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+			</cbutton2>			
+		</cwhitepanel>	
+		<cpaging id="pdListPage" constraints="BorderLayout.CENTER"/>
+	</cwhitepanel>	
+</genericdialog>

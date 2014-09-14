@@ -1,0 +1,27 @@
+<cwhitepanel Background="Color.WHITE" id="catTreeContainer1" layout="BorderLayout"
+	 constraints="BorderLayout.CENTER">	
+		<toolbar name="treeToolbar" id="treeToolbar" Background="Library.DEFAULT_FORM_BACKGROUND" 
+			constraints="BorderLayout.NORTH" Floatable="false">
+			<cbutton2 Background="Library.DEFAULT_FORM_BACKGROUND"   
+				id="addBtn" name="addBtn" text="" Icon="com/nn/ishop/client/img/button/add.png"
+				Action="AC_PCATTREE_ADD_NODE"/>
+			<cbutton2 Background="Library.DEFAULT_FORM_BACKGROUND"  name="modifyBtn" id="modifyBtn" text="" 
+				Icon="com/nn/ishop/client/img/button/edit.png"
+				Action="AC_PCATTREE_UPDATE_NODE"/>
+			<cbutton2 Background="Library.DEFAULT_FORM_BACKGROUND"  id="deleteBtn" name="deleteBtn" text="" 
+				Icon="com/nn/ishop/client/img/button/del.png"
+				Action="AC_PCATTREE_DEL_NODE"/>
+			<cbutton2 Background="Library.DEFAULT_FORM_BACKGROUND"  id="refreshBtn" name="refreshBtn" text="" 
+				Icon="com/nn/ishop/client/img/button/refresh.png"
+				Action="AC_PCATTREE_REFRESH_TREE"/>
+			<ctextfield name="txtTreeSearch" id="txtTreeSearch" text="Search" PreferredSize="130,22"
+				 MinimumSize="130,22"  MaximumSize="130,22" />
+			<cbutton2 Background="Library.DEFAULT_FORM_BACKGROUND" id="treeSearchBtn" name="treeSearchBtn" text=""
+				MinimumSize="26,26" 
+				MaximumSize="26,26"
+				PreferredSize="26,26"
+				Icon="com/nn/ishop/client/img/button/search.png"
+				Action="AC_PCATTREE_SEARCH_NODE"/>
+		</toolbar>
+		<tree id="productCategoryTree"  constraints="BorderLayout.CENTER"/>
+</cwhitepanel>

@@ -1,0 +1,299 @@
+<cwhitepanel id="pnlMainContent"
+		Layout="GridBagLayout" constraints="BorderLayout.CENTER" Border="TitledBorder($langPack.getString('rc.detail'))">
+	<!--splitpane DividerSize="5"  ContinuousLayout="true"  DividerLocation="300" OneTouchExpandable="true" id="receiptMainSplit" Orientation="0"-->
+								<!--Detail action -->
+	
+		<cwhitepanel constraints="BorderLayout.CENTER" id="pnlRCDetail" Layout="GridBagLayout">						
+			<gridbagconstraints refid="mainGbc" Anchor="GridBagConstraints.FIRST_LINE_START" ipadx="0" ipady="0"
+						 gridx="0" gridy="0"  insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+						 Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />	
+			<clabel text="$langPack.getString('voucher.type')" background="121,121,121">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.NORTHWEST" ipadx="0" ipady="0"
+					 gridx="0" gridy="0"  insets="2,2,2,2"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.NONE" 
+					 weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<buttongroup id="groupRCType">                                
+				<radiobutton id="radioReceivable" text="$langPack.getString('radio.receipt.receivable.type')" Background="255,255,255" Selected="true">
+					<gridbagconstraints  refid="receipt_header_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" ipadx="0" ipady="0"
+					 gridx="1" gridy="0"  insets="2,2,2,2"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.NONE" 
+					 weightx="0.0f" weighty="0.0f" />
+				</radiobutton>
+				<radiobutton id="radioPayable" text="$langPack.getString('radio.receipt.payable.type')" Background="255,255,255">
+					<gridbagconstraints  refid="receipt_header_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" ipadx="0" ipady="0"
+					 gridx="2" gridy="0"  insets="2,2,2,2"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.NONE" 
+					 weightx="1.0f" weighty="0.0f" />
+				</radiobutton>
+			</buttongroup>
+			<separator Orientation="SwingConstants.HORIZONTAL">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.NORTHWEST" ipadx="0" ipady="0"
+					 gridx="0" gridy="1"  insets="2,2,2,2"  gridwidth="8" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" 
+					 weightx="0.0f" weighty="0.0f" />
+			</separator>			
+			<!-- [2-3,0],Text RC number -->
+			<clabel text="$langPack.getString('receipt.number')">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="0" gridy="2"  ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<ctextfield id="txtReceiptNumber" PreferredSize="200,22" editable="false" MinimumSize="200,22" >
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="1" gridy="2" ipadx="0" ipady="0"  insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</ctextfield>
+			<!-- [0-1,1],Text Customer-->
+			<clabel text="$langPack.getString('customer')">
+				<gridbagconstraints  refid="receipt_header_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="0" gridy="3"  ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<!-- [2,1],button choose customer -->
+			<cwhitepanel id="pnlChooseCustomer" Layout="GridBagLayout">						
+				<gridbagconstraints  refid="receipt_header_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="1" gridy="3"  ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+				<ctextfield id="txtCustomer" PreferredSize="200,22" MinimumSize="200,22"/>						
+				<cbutton2 
+					Icon="com/nn/ishop/client/img/button/treeicon.png"
+					SelectedIcon="com/nn/ishop/client/img/button/treeicon.png"
+					RolloverIcon="com/nn/ishop/client/img/button/treeicon.png"
+					RolloverSelectedIcon="com/nn/ishop/client/img/button/treeicon.png" 
+					preferredSize="22,22" 
+					id="btnChooseCustomer" text="" action="ACT_OPEN_CUSTOMER_DIALOG"/>						
+			</cwhitepanel>
+			<!-- [0-1,2],Text email-->
+			<clabel text="$langPack.getString('customer.email')">
+				<gridbagconstraints  refid="receipt_header_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					  gridx="2" gridy="3" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<ctextfield id="txtCustomerEmail" PreferredSize="200,22" MinimumSize="200,22" Editable="false">
+				<gridbagconstraints  refid="receipt_header_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="3" gridy="3" ipadx="0" ipady="0"  insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</ctextfield>
+			<!-- [0-1,0],From date -->
+			<clabel text="$langPack.getString('from.date')">
+				<gridbagconstraints  refid="receipt_header_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+				 gridx="4" gridy="3" ipadx="0" ipady="0"  insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+				 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<datechooser id="dcSearchFromDate"  Background="251,229,229" PreferredSize="200,22" MinimumSize="200,22">
+				<gridbagconstraints  refid="receipt_header_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+				 gridx="5" gridy="3" ipadx="0" ipady="0"  insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+				 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</datechooser>
+			<!-- [2-3,0],To date -->
+			<clabel text="$langPack.getString('to.date')">
+				<gridbagconstraints  refid="receipt_header_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+				 gridx="6" gridy="3" ipadx="0" ipady="0"  insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+				 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<datechooser id="dcSearchToDate"  Background="251,229,229"  PreferredSize="200,22" MinimumSize="200,22">
+				<gridbagconstraints  refid="receipt_header_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+				 gridx="7" gridy="3" ipadx="0" ipady="0"  insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+				 Fill="GridBagConstraints.NONE" weightx="10.0f" weighty="0.0f" />
+			</datechooser>
+			<!-- [4-5,0],Transaction type -->
+			<clabel text="$langPack.getString('tranx.type')">
+				<gridbagconstraints  refid="receipt_header_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+				 gridx="0" gridy="4" ipadx="0" ipady="0"  insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+				 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<ccombobox id="comboSearchTranxType" PreferredSize="200,22" MinimumSize="200,22" >
+				<gridbagconstraints  refid="receipt_header_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+				 gridx="1" gridy="4" ipadx="0" ipady="0"  insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+				 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</ccombobox>
+			<!-- [0-3,3],Text area Address -->
+			<clabel text="$langPack.getString('customer.address')">
+				<gridbagconstraints  refid="receipt_header_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="2" gridy="4"  ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<ctextarea id="txtAreaCustomerAddr" PreferredSize="200,22" MinimumSize="200,22"  Editable="false">
+				<gridbagconstraints  refid="receipt_header_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="3" gridy="4" ipadx="0" ipady="0"  insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</ctextarea>
+			<!-- [0-1,0],Balance forward-->
+			<clabel text="$langPack.getString('tx.id')">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="4" gridy="4" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<ctextfield id="txtTranxNum" PreferredSize="200,22" editable="false" MinimumSize="200,22">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="5" gridy="4" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</ctextfield>  
+			<!-- Currency-->
+			 <clabel text="$langPack.getString('currency.id')">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="6" gridy="4" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<ccombobox id="comboCurrency"  PreferredSize="200,22"  MinimumSize="200,22">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+				 gridx="7" gridy="4" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+				 Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+			</ccombobox> 
+			<!-- Payment method -->
+			<clabel text="$langPack.getString('payment.method')">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="0" gridy="5" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<ccombobox id="comboPaymentMethod"  PreferredSize="200,22"  MinimumSize="200,22">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+				 gridx="1" gridy="5" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+				 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</ccombobox>						
+			<!-- [2-3,0],Bank account-->
+			<clabel text="$langPack.getString('bank.account')">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="2" gridy="5" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<ctextfield id="txtCustomerBankAcc" MinimumSize="200,22" PreferredSize="200,22">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="3" gridy="5" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</ctextfield>
+			<!-- Debt limit-->
+			<clabel text="$langPack.getString('debt_limit')">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="4" gridy="5" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<ctextfield id="txtCustomerDebtLimit" MinimumSize="200,22" PreferredSize="200,22"  Editable="false"	>
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="5" gridy="5" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</ctextfield>	
+			<!-- Due day -->
+			<clabel text="$langPack.getString('due_date')">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="6" gridy="5" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<ctextfield id="txtCustomerDueDate" MinimumSize="200,22" PreferredSize="200,22" Editable="false">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="7" gridy="5" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</ctextfield>
+			<!-- Payer -->
+			<clabel text="$langPack.getString('payer.name')">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="0" gridy="6" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<ctextfield id="txtPayer" PreferredSize="200,22" MinimumSize="200,22">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="1" gridy="6" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</ctextfield>
+			<!-- Voucher -->
+			<clabel text="$langPack.getString('voucher.number')">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="2" gridy="6" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<ctextfield id="txtVCNum" PreferredSize="200,22" MinimumSize="200,22">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="3" gridy="6" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+			</ctextfield>			
+			<!-- [0-1,0],Balance forward-->
+			<clabel text="$langPack.getString('balance.forward')">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="0" gridy="7" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<ctextfield id="txtCustomerBF" PreferredSize="200,22" MinimumSize="200,22">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="1" gridy="7" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</ctextfield>                            
+			
+			<!-- Line 02 -->
+			<!-- Due amount-->
+			<clabel text="$langPack.getString('due.amount')">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="2" gridy="7" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<ctextfield id="txtDueAmount" PreferredSize="200,22" MinimumSize="200,22" Editable="false">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="3" gridy="7" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+			</ctextfield>
+			<!-- Paid in period-->
+			<clabel text="$langPack.getString('paid.in.period.amount')">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="4" gridy="7" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<ctextfield id="txtPaidAmount" PreferredSize="200,22" MinimumSize="200,22" Editable="false">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="5" gridy="7" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+			</ctextfield>	
+			<!-- Payer -->
+			<clabel text="$langPack.getString('customer.cf')">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="0" gridy="8" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<ctextfield id="txtCustomerCfAmount" PreferredSize="200,22" MinimumSize="200,22">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="1" gridy="8" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+			</ctextfield>	
+			<!-- Payer -->
+			<clabel text="$langPack.getString('item.ghi.chu')">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="0" gridy="9" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</clabel>
+			<ctextarea id="txtReceiptNote" PreferredSize="200,50" MinimumSize="200,50">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="1" gridy="9" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="8" gridheight="1" 
+					 Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />
+			</ctextarea>	
+			<!-- Line 04 -->
+			<clabel text="$langPack.getString('receipt.notice.to.receiver')">
+				<gridbagconstraints  refid="receipt_detail_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+					 gridx="0" gridy="10" ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="6" gridheight="1" 
+					 Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="1.0f" />
+			</clabel>
+		</cwhitepanel>
+		<!--****************************************************************************-->
+		<!--Header infor-->
+		<cwhitepanel id="pnlRCMajor" constraints="BorderLayout.CENTER" Border="TitledBorder($langPack.getString('receipt.for'))" 
+			Layout="BorderLayout">
+			<gridbagconstraints refid="mainGbc" Anchor="GridBagConstraints.FIRST_LINE_START" ipadx="0" ipady="0"
+						 gridx="0" gridy="1"  insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+						 Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />
+			<cwhitepanel id="pnlRCType" constraints="BorderLayout.NORTH" Layout="GridBagLayout">
+				<cwhitepanel id="pnlRCType1" Layout="GridBagLayout">
+					<gridbagconstraints  refid="receipt_header_gbc1" Anchor="GridBagConstraints.NORTHWEST" ipadx="0" ipady="0"
+							 gridx="0" gridy="0"  insets="2,2,2,2"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.NONE" 
+							 weightx="1.0f" weighty="0.0f" />
+					
+					<!-- [6,0],Search button -->
+					<cdlgbutton Enabled="$loginUser.canPerformFunction('ARAPST_SEARCHVOU_CMDFunc')" id="btnSearch" text="$langPack.getString('buttonSearch')"  
+						PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22" Action="ACT_SEARCH_PAYMENT">
+						<gridbagconstraints  refid="receipt_header_gbc" Anchor="GridBagConstraints.FIRST_LINE_START" 
+						 gridx="0" gridy="0"  ipadx="0" ipady="0" insets="2,2,2,2"  gridwidth="1" gridheight="1" 
+						 Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="1.0f" />
+					</cdlgbutton>
+				</cwhitepanel>
+			</cwhitepanel>
+			<cwhitepanel id="pnlSearchCond" Layout="BorderLayout" constraints="BorderLayout.CENTER">
+				<cpaging id="pagingSearchTranx" constraints="BorderLayout.CENTER"/>
+			</cwhitepanel>
+		</cwhitepanel>
+	
+	<!--/splitpane-->
+</cwhitepanel>
+				

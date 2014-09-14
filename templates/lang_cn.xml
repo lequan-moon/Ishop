@@ -1,0 +1,762 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+/*****************************************************************************/
+/* File Description  : Sic Installer Ant automation script                   */
+/* File Version      : 1.0                                                   */
+/* Legal Copyright   : Copyright (c) 2004-2007 by Dong A Technology JSC      */
+/* Company Name      : DongA Tech. JSC - Mr. Nguyen Van Nghia                */
+/* Original Filename : Util.java                                             */
+/* Product Version   : 1.0                                                   */
+/* Product Name      : SIC Project                                           */
+/*****************************************************************************/
+
+  --> 
+<langpack>
+<str id="button.new" txt="删除成功"/>
+<str id="adminTabCountry" txt="删除成功  "/>
+	<str id="adminTabCompany" txt="删除成功 "/>
+	<str id="adminTabWarehouse" txt="删除成功 "/>
+	<str id="adminTabLot" txt="删除成功 "/>
+	<str id="adminTabUser" txt="删除成功 "/>
+	<str id="adminTabCustomer" txt="删除成功 "/>
+	<str id="adminTabProduct" txt="删除成功 "/>
+  <str id="tinh.nang.tra.lai.hang.chi.dung.cho.kvl" txt="此功能使用于来往客人!" /> 
+  
+<str id="cancel" txt="删除" />  
+
+  <str id="delete.success" txt="删除成功" /> 
+ <str id="delete.failed" txt="删除不成功" />  
+  <str id="detail.is.null" txt="未有货物信息" /> 
+ <str id="chua.nhap.tien.thanh.toan" txt="未输入付款金额" /> 
+ <str id="loai.tien" txt="钱类别" /> 
+   
+  <str id="gia.khong.hop.le" txt="价格不合格,需为至少一种钱类有卖出和买进的价格 " /> 
+ <str id="chua.chon.san.pham" txt="未选产品" /> 
+  <str id="required.field.values" txt="未输入全部信息或未选产品" /> 
+<str id="header.nhap.gia" txt="输入货物价格" /> 
+ <str id="gia.nhap.vnd" txt="买越盾价格 " /> 
+<str id="gia.ban.vnd" txt="卖出越盾价格" /> 
+ <str id="gia.nhap.usd" txt="买入价格。USD" />
+<str id="gia.ban.usd" txt="卖出USD价格" /> 
+ <str id="nut.nhap.gia" txt="输入价格" /> 
+<str id="menu.quan.ly.gia" txt="管理产品价格" /> 
+  <str id="luu.lien.ket.muc.hang" txt="保存连结" /> 
+  <str id="no.ton.dau.ky.vnd" txt="欠越盾 VND" /> 
+<str id="tong.tien.hoa.don.vnd" txt="总共 VND" /> 
+<str id="no.con.lai.vnd" txt="欠款 VND" /> 
+<str id="no.ton.dau.ky.usd" txt="欠款USD" /> 
+<str id="tong.tien.hoa.don.usd" txt="总共 USD" /> 
+ <str id="no.con.lai.usd" txt="欠款 USD" />
+<str id="no.ton.dau.ky" txt="上次欠款" /> 
+<str id="return.item.save.error.detail.is.null" txt="错误：保存退货信息，未有单的详细信息 "/> 
+  <str id="so.phieu.xuat" txt="出发票数量" /> 
+<str id="tra.lai.hang.header" txt="输入退回的货物" /> 
+<str id="tra.lai.hang" txt="退回" /> 
+<str id="customer.address" txt="地址" /> 
+ <str id="customer.contract.number" txt="合同号码"/> 
+<str id="customer.bank.account" txt="账户号码" /> 
+ <str id="ma.muc.hang" txt="货物目录号码" /> 
+ <str id="ten.muc.hang" txt="货物编号" /> 
+<str id="muc.hang.con" txt="货物种类" /> 
+<str id="status.label" txt="通知:" /> 
+<str id="right.error.delete.item" txt="你不可能删除产品，请与系统管理人员联络!!!" /> 
+<str id="login.as" txt="用户名" /> 
+<str id="update.function.to.role" txt="为作用更新功能" /> 
+ <str id="error.load.asigned.function.to.role" txt="给作用加上功能的错误" /> 
+ <str id="role.choosen.required" txt="需选择至少一个作用" /> 
+<str id="update.function.to.role.succeed" txt="更新作用成功" /> 
+<str id="update.function.error" txt="更新作用错误" /> 
+<str id="available.function" txt="已有的作用" /> 
+<str id="error.associate.function.to.role" txt="使用者名单" /> 
+<str id="danh.sach.nguoi.dung" txt="使用者名单" /> 
+ <str id="role.defined.list" txt="作用名单已定义" /> 
+<str id="xuat.hang.menu" txt="输入出货单" /> 
+<str id="theo.doi.xuat.hang.menu" txt="追踪出货" /> 
+  <str id="nhap.hang.menu" txt="输入收货单" /> 
+ <str id="theo.doi.nhap.hang.menu" txt="追踪收货" /> 
+  <str id="bao.cao.menu" txt="看报告" /> 
+<str id="warehouse.code" txt="库号码" /> 
+  <str id="normal.po.type" txt="普通入库单" /> 
+<str id="online.inquiry" txt="线上检查库 "/> 
+ <str id="issue.item.command.submit.inquiry" txt="执行" /> 
+<str id="function.is.implementing" txt="此功能正在建设" /> 
+ <str id="error.sale.order.customer.logic" txt="错误：是卖货单，不得选入的库" /> 
+<str id="error.sale.order.type.2" txt="错误：此单是内部退货的转让需选如的库" />
+<str id="error.sale.order.type.3" txt="L?i: 出货库入货库不可重叠" /> 
+<str id="warehouse.from" txt="从库" />
+  <str id="warehouse.to" txt="到库" /> 
+<str id="order.type.sale.order" txt="买货" /> 
+ <str id="order.type.move.order" txt="转批货" /> 
+<str id="order.type.internal.transfer" txt="调转内部" /> 
+<str id="order.type.goods.return" txt="退回的货" /> 
+  <str id="order.type" txt="单别" /> 
+<str id="role.assign" txt="贴角色" /> 
+ <str id="role.assign.button" txt="设立" /> 
+<str id="role.name" txt="角色" />  
+  <str id="message.error.load.company" txt="输入公司信息错误" /> 
+<str id="license.infor" txt="使用许可证信息" /> 
+ <str id="license.owner" txt="拥有者" /> 
+<str id="license.feature" txt="各功能" /> 
+ <str id="license.serial" txt="次序号" />
+<str id="license.type" txt="许可证类别" /> 
+<str id="license.import.error" txt="í提升许可证" /> 
+
+
+
+<str id="pref.dialog.left.item.general" txt="综合" />  
+ <str id="pref.dialog.left.item.impexp" txt="入出资料"/> 
+<str id="pref.dialog.left.item.servers" txt="主机信息" />  
+<str id="pref.dialog.left.item.print" txt="打印 "/> 
+  <str id="window.exit.border.title" txt="登出方法" /> 
+<str id="window.exit.confirm.before" txt="通知登出之前t" /> 
+<str id="server.border.title" txt="主机机型" /> 
+ <str id="admin.account.name" txt="管理的帐号:" /> 
+ <str id="admin.account.password" txt="密码:" /> 
+<str id="server.ip" txt="记住DB:" /> 
+<str id="auth.required" txt="要求确认使用者" /> 
+<str id="menu.item.preference" txt="一般的机型" />  
+ <str id="loi.tinh.tien.tra.lai" txt="退钱计算错误" /> 
+<str id="bill.tong.tien" txt="总金额（越盾）:" /> 
+  <str id="backup.error.message" txt="资料预存错误，请与作者联络 (0904961275 - Nghia)" /> 
+ <str id="tab.admin.company.tool.tip" txt="公司信息" />  
+  <str id="tab.admin.warehouse.tool.tip" txt="库别信息" /> 
+ <str id="tab.admin.lot.tool.tip" txt="批货信息" />  
+<str id="tab.admin.user.tool.tip" txt="使用者信息" /> 
+<str id="tab.admin.item.tool.tip" txt="货物信息" /> 
+ <str id="tab.admin.customer.tool.tip" txt="客户，供应商信息" /> 
+<str id="tab.inventory.tool.tip" txt="入货" />  
+  <str id="tab.inventory.statistic.tool.tip" txt="入货统计快速检查" /> 
+  <str id="tab.sale.tool.tip" txt="出货" /> 
+<str id="tab.sale.statistic.tool.tip" txt="快速检查出货信息 "/> 
+<str id="tab.report.tool.tip" txt="报告" />  
+<str id="admin.perspective.tooltip" txt="管制信息" /> 
+  <str id="inventory.perspective.tooltip" txt="入货，调整入货信息" /> 
+<str id="sale.perspective.tooltip" txt="入，调整出货信息" /> 
+ <str id="report.perspective.tooltip" txt="报告系统" /> 
+<str id="search.not.found" txt="找不到" /> 
+<str id="input.issueid.dialog.title" txt="输入发票/出货单号码" /> 
+  <str id="input.issueid.dialog.label" txt="发票/出货单号码" /> 
+ <str id="must.choose.product" txt="需选产品来报告" /> 
+<str id="return.item.update.confirm" txt="确认退货" /> 
+<str id="apply.button" txt="执行" />
+<str id="return.to.main.prog" txt="退回" /> 
+<str id="item.return" txt="退货的或" /> 
+ <str id="qty.item.return" txt="输入退货数量" /> 
+  <str id="day" txt="日" /> 
+<str id="checkout.warning" txt="离开之前请检查货物" /> 
+<str id="thank.you" txt="ĩ谢谢" /> 
+  <str id="month" txt="月" /> 
+ <str id="year" txt="年" /> 
+<str id="language.selection.vn" txt="越南文" />  
+ <str id="language.selection.en" txt="英文" /> 
+<str id="edit.detail" txt="详细调整t" />  
+ <str id="error.save.before.print" txt="错误：打印之前需保存" /> 
+  <str id="error.get.other.customer" txt="取来往客人信息错误 "/> 
+<str id="other.customer.type" txt="来往客人" />  
+ <str id="other.customer.type2" txt="联系者" />  
+<str id="menu.print" txt="打印" /> 
+<str id="menu.save" txt="保存" /> 
+<str id="save.error.detail.is.null" txt="保存信息错误，未输入详细信息" /> 
+<str id="utility" txt="便利" /> 
+  <str id="zero" txt="零" />  
+ <str id="one" txt="億" /> 
+<str id="two" txt="貳" /> 
+<str id="three" txt="叁" /> 
+<str id="four" txt="斯" /> 
+<str id="five" txt="吾" /> 
+<str id="six" txt="六" /> 
+  <str id="seven" txt="七" /> 
+<str id="eight" txt="八" /> 
+ <str id="nine" txt="九" /> 
+ <str id="chuc" txt="十" /> 
+  <str id="tram" txt="佰" /> 
+ <str id="ngan" txt="千," /> 
+<str id="trieu" txt="佰萬" /> 
+<str id="ty" txt="亿," /> 
+ <str id="lam" txt="五" /> 
+<str id="le" txt="零" /> 
+<str id="muoi" txt="十" /> 
+  <str id="muoif" txt="十" /> 
+ <str id="vietnam.dong" txt="越盾./" /> 
+ <str id="main.company" txt="总公司 "/> 
+ <str id="ten.xuong" txt="北部Nhabe经营股份公司" /> 
+  <str id="storebill.company.address" txt="河内，还剑，丁仙黄，1，3，5号" /> 
+<str id="factory.and.fax" txt="电话: (04)38242379 - 传真: (04)39346683" />  
+<str id="form.grand.amount" txt="总共" /> 
+ <str id="vat.concern" txt="含增值税" />
+  <str id="amount.in.word" txt="书写:" /> 
+<str id="file" txt="主要名单" /> 
+<str id="country" txt="国家" /> 
+  <str id="company" txt="公司" /> 
+  <str id="customer" txt="客户" /> 
+<str id="user" txt="使用者" /> 
+  <str id="warehouse" txt="库" /> 
+ <str id="lot" txt="批" /> 
+<str id="item" txt="货物 "/>  
+  <str id="exit" txt="退出" /> 
+ <str id="help" txt="协助" /> 
+<str id="about" txt="产品信息" /> 
+  <str id="license" txt="使用许可证" /> 
+<str id="import" txt="入库" /> 
+<str id="export" txt="出库" /> 
+  <str id="report" txt="报告" /> 
+  <str id="close.confirm" txt="你要推出此帐号?" /> 
+<str id="country.vn" txt="越南" /> 
+  <str id="country.name" txt="国家名称" /> 
+ <str id="country.add" txt="加国家" /> 
+<str id="country.detail" txt="国家信息" /> 
+<str id="company.title" txt="公司信息" /> 
+ <str id="company.name" txt="公司名" /> 
+ <str id="company.address" txt="地址" /> 
+<str id="company.contact.person" txt="联系人" /> 
+<str id="company.telephone" txt="电话 "/> 
+  <str id="company.fax" txt="传真" />
+<str id="company.parent" txt="母公司" /> 
+  <str id="company.creation.date" txt="成立日期·" /> 
+  <str id="company.list" txt="公司名单" />  
+ <str id="customer.title" txt="客户信息" /> 
+ <str id="customer.name" txt="客户名" />  
+<str id="customer.main.address" txt="固定地址" /> 
+  <str id="customer.second.address" txt="副地址" /> 
+ <str id="customer.telephone" txt="电话" /> 
+  <str id="customer.fax" txt="Fax" /> 
+  <str id="customer.fax" txt="传真" /> 
+  <str id="customer.bank.account" txt="账户号码 "/> 
+ <str id="customer.website" txt="网址" /> 
+ <str id="customer.email" txt="邮箱" /> 
+ <str id="customer.contact.person" txt="联系者" />
+<str id="customer.ym" txt="雅虎地址" />
+ <str id="customer.skype" txt="Skype 地址" /> 
+  <str id="customer.gm" txt="Google 抵制" /> 
+<str id="customer.establish.date" txt="设立日期" /> 
+  <str id="customer.list" txt="客户名单" /> 
+  <str id="user.title" txt="使用者信息" /> 
+<str id="user.name" txt="全名" />
+  <str id="user.id" txt="登入名" /> 
+<str id="user.password" txt="密码" /> 
+ <str id="user.company" txt="公司" /> 
+<str id="user.address" txt="地址 "/> 
+<str id="user.telephone" txt="电话" /> 
+  <str id="user.mobile" txt="移动电话" /> 
+  <str id="user.position1" txt="位置1" /> 
+  <str id="user.position2" txt="位置2" /> 
+<str id="user.start.date" txt="开始日期 "/> 
+<str id="user.end.date" txt="离职日期" /> 
+  <str id="user.special.skill" txt="职业 "/> 
+  <str id="user.qualification" txt="学问" />  
+  <str id="user.list" txt="使用者名单" /> 
+ <str id="wh.title" txt="库信息" /> 
+<str id="wh.name" txt="库名" /> 
+ <str id="wh.company" txt="公司" /> 
+  <str id="wh.location" txt="地址 "/>
+  <str id="wh.warehouser1" txt="管库 1" /> 
+  <str id="wh.warehouser2" txt="管库  2" /> 
+  <str id="wh.list" txt="库别名单" /> 
+  <str id="lot.title" txt="批货信息" /> 
+  <str id="lot.name" txt="批货名" /> 
+  <str id="lot.warehouse" txt="库" /> 
+  <str id="lot.list" txt="批货名单" /> 
+  <str id="item.list" txt="货物名单" /> 
+  <str id="item.title" txt="货物信息" /> 
+ <str id="item.cat.border.title" txt="产品名单信息" /> 
+ <str id="item.border.title" txt="产品信息" /> 
+  <str id="item.cat.name" txt="货物名单" /> 
+  <str id="item.cat.parent" txt="母名单" /> 
+  <str id="item.code" txt="货类" /> 
+<str id="item.name" txt="货名" /> 
+  <str id="item.style" txt="规格" /> 
+  <str id="item.made.in" txt="来源" /> 
+  <str id="item.made.by" txt="生产公司" /> 
+  <str id="item.buying.price" txt="进货价格" />  
+  <str id="item.selling.price1" txt="买货价格" /> 
+  <str id="item.selling.price" txt="单价" /> 
+  <str id="item.unit" txt="计算单价" />  
+  <str id="item.produced.date" txt="生产日期" /> 
+  <str id="item.expired.date" txt="满期日期 "/> 
+  <str id="item.description" txt="备注" />  
+  <str id="country.border.title" txt="国家详细信息" /> 
+<str id="company.border.title" txt="公司详细信息" /> 
+ <str id="customer.border.title" txt="客户详细信息" /> 
+  <str id="user.border.title" txt="加新使用者" /> 
+  <str id="lot.border.title" txt="批货详细信息" /> 
+ <str id="button.save" txt="保存" /> 
+  <str id="button.cancel" txt="创新" /> 
+  <str id="button.add.item" txt="加货" /> 
+ <str id="button.print.form" txt="打印" /> 
+ <str id="button.print.barcode" txt="印" /> 
+<str id="button.view.list" txt="名单" /> 
+<str id="input.item.right.panel.pnl3.title" txt="入库票的详细内容" /> 
+  <str id="item.input.title" txt="入库票" />  
+  <str id="item.issue.title" txt="零售发票" /> 
+  <str id="import.item.right.border.title" txt="加货物" /> 
+  <str id="card.id" txt="票号" /> 
+  <str id="card.input.date" txt="入库日期" />
+  <str id="card.provider" txt="客户" /> 
+  <str id="card.provider.address" txt="地址" /> 
+ <str id="card.provider.telephone" txt="电话 "/> 
+  <str id="card.provider.tel" txt="电话" /> 
+<str id="card.provider.tax.code" txt="税务号码" /> 
+  <str id="card.provider.tax.code.short" txt="税务号码" /> 
+  <str id="card.description" txt="描述" />  
+  <str id="card.item.code" txt="货码" /> 
+ <str id="card.item.name" txt="货名" /> 
+  <str id="card.item.quantity" txt="数量" /> 
+  <str id="card.item.unit" txt="计算单位" />  
+  <str id="card.item.total.money" txt="总共" /> 
+ <str id="card.item.auto.adding" txt="加自动" /> 
+  <str id="storebill.header" txt="入货票" /> 
+  <str id="storebill.issuer" txt="填票者" /> 
+  <str id="storebill.deliverer" txt="管库" /> 
+  <str id="storebill.receiver" txt="客户" /> 
+  <str id="storebill.accountant" txt="公司代表人" /> 
+ <str id="storebill.company.name" txt="Nhabe成衣总公司 - 股份公司" /> 
+  <str id="storebill.detail" txt="理由:" /> 
+  <str id="storebill.creation.date" txt="日:" /> 
+  <str id="storebill.provider.name.samle" txt="阮文意" /> 
+  <str id="issue.item.title" txt="出库单" /> 
+  <str id="issue.item.left.panel.title" txt="协助信息" /> 
+  <str id="issue.item.right.panel.title" txt="内容" /> 
+  <str id="issue.item.right.panel.pnl1.title" txt="单信息" /> 
+  <str id="issue.item.right.panel.pnl2.title" txt="货物信息 "/> 
+  <str id="issue.item.command.delete.detail" txt="删除" /> 
+  <str id="issue.item.command.add.customer" txt="加客户" /> 
+  <str id="issue.item.command.refresh" txt="再加" /> 
+  <str id="issue.item.description" txt="备注" /> 
+  <str id="isue.item.item.list" txt="货物名单" />
+  <str id="common.table.header.label.chon" txt="选" /> 
+  <str id="common.selling.price" txt="价格" /> 
+  <str id="common.buying.price" txt="单价" /> 
+  <str id="common.confirm.delete" txt="您·确认需删除资料（带上的资料也被删除?" /> 
+  <str id="common.invalid.data" txt="不合格的资料" /> 
+  <str id="common.write.data" txt="储存资料错误" /> 
+  <str id="common.error.delete.data" txt="删除资料错误" />  
+  <str id="common.confirm.delete.data.tree" txt="警报:带上的资料也被删除?" /> 
+  <str id="common.duplicate.user" txt="管库/使用者重叠" /> 
+  <str id="receipt.item.already.added" txt="货物已经有在名单" /> 
+  <str id="manage.receipt.statistic" txt="统计入货" /> 
+  <str id="manage.issue.statistic" txt="统计出货" /> 
+  <str id="login.error.three.time" txt="登入不成功" /> 
+  <str id="login.title" txt="登入" /> 
+  <str id="login.input.login.id" txt="入名单" /> 
+  <str id="login.input.login.password" txt="密码不得空格" /> 
+  <str id="login.input.login.error" txt="登入不合格" /> 
+  <str id="login.input.login.id.title" txt="定名" /> 
+  <str id="login.input.login.password.title" txt="密码" /> 
+  <str id="warning.entities.created" txt="实体已造，请按新造按钮来造新" /> 
+  <str id="search.border.left" txt="寻找信息" /> 
+  <str id="search.border.left.bill" txt="根据单据" /> 
+  <str id="search.border.left.cust" txt="根据客户" /> 
+  <str id="search.border.left.date" txt="按日" /> 
+  <str id="search.border.left.warehouse" txt="根据库/批" /> 
+  <str id="search.border.left.cat" txt="根据货目录" /> 
+  <str id="search.bill.id" txt="票号" /> 
+  <str id="search.cust.id" txt="客户" /> 
+  <str id="search.from.date" txt="从日" />  
+  <str id="search.to.date" txt="到日" /> 
+  <str id="search.warehouse" txt="库" /> 
+  <str id="search.lot" txt="批" />
+  <str id="search.category" txt="货目录" /> 
+  <str id="search.item" txt="货名" /> 
+  <str id="search.item" txt="货名" /> 
+  <str id="search.border.right.result" txt="结果名单" /> 
+  <str id="search.border.right" txt="结果" /> 
+  <str id="search.button" txt="寻找" /> 
+  <str id="error.item.not.found" txt="货在系统不存在 "/> 
+  <str id="save.success" txt="储存成功" /> 
+  <str id="about.title" txt="About - 库管理系统" /> 
+  <str id="error.invalid.number" txt="不合格号码" /> 
+  <str id="item.out.of.stock" txt="刚选的货库存的数量不够出货量!" /> 
+  <str id="error.loading.item.for.calculate.stock" txt="取货物信息来算论村错误" /> 
+  <str id="item.stock" txt="库存" /> 
+  <str id="button.print.all.barcode" txt="打印全部 "/> 
+  <str id="common.invalid.code.gt.6" txt="产品号码比小于或等于8个马" /> 
+  <str id="report.receipt.issue.title" txt="共同条件" /> 
+  <str id="error.open.report" txt="看报告错误" />
+  <str id="report.daily.title" txt="每日报告" /> 
+  <str id="general.report.title" txt="综合报告" /> 
+  <str id="statistic.report.title" txt="统计报告" /> 
+  <str id="item.return.report.title" txt="退货报告" /> 
+  <str id="report.lbl.from.date" txt="从日" /> 
+  <str id="report.lbl.to.date" txt="到日" />  
+  <str id="button.view.daily.report" txt="买货" /> 
+  <str id="button.view.stock.report" txt="存" />  
+  <str id="button.view.item.list.report" txt="名单 "/>
+  <str id="button.view.receipt.report" txt="入" /> 
+  <str id="button.view.issue.report" txt="出" /> 
+  <str id="button.view.issue.service.report" txt="服务" /> 
+  <str id="button.view.general.report" txt="综合" />
+  <str id="validate.error.invalid.warehouse" txt="未选库" /> 
+  <str id="validate.error.invalid.lot" txt="未选库" /> 
+  <str id="validate.error.invalid.input.date" txt="未选日 "/> 
+  <str id="validate.error.invalid.customer" txt="未选客户" /> 
+  <str id="validate.error.invalid.category" txt="未有货目录或未有此或" /> 
+  <str id="validate.error.invalid.item" txt="未有此货" />
+  <str id="item.search.border.title" txt="寻找" /> 
+  <str id="item.search.by.name" txt="按照名" /> 
+  <str id="status.mess.success" txt="成功" /> 
+  <str id="item.invalid.selling.price" txt="不合格的卖出价格，跟系统管制者联络" /> 
+  <str id="item.invalid.quantity" txt="数量不合格" />
+  <str id="item.invalid.unit" txt="计算单位不合格" /> 
+  <str id="item.invalid.stock.minus" txt="未入此库货" /> 
+  <str id="item.invalid.warehouse" txt="库不合格" /> 
+  <str id="item.invalid.lot" txt="批货不合格?" /> 
+  <str id="item.invalid.date" txt="不合格输入日期" /> 
+  <str id="item.invalid.calculate.amount" txt="计算总共错误" /> 
+  <str id="item.cat.not.found" txt="货在名单里不存在" /> 
+  <str id="application.owner" txt="东亚JSC." /> 
+  <str id="application.status" txt="状态" />  
+  
+  <!-- New -->
+  <str id="appTitle" txt="SIC 未有货目录或未有此或 1.1 - 未有货目录或未有此或"/>
+	<str id="progressStatus" txt="未有货目录或未有此或"/>
+	<str id="userName" txt="未有货目录或未有此或"/>
+	<str id="appExitMenuItem" txt="未有货目录或未有此或"/>
+	<str id="appLanguagesMenuItem" txt="未有货目录或未有此或"/>
+	<str id="appHelpMenuItem" txt="未有货目录或未有此或"/>
+	<str id="appAboutMenuItem" txt="未有货目录或未有此或"/>
+	<str id="appFileMenu" txt="未有货目录或未有此或"/>
+	<!-- button -->
+	<str id="pagingLabelShowEntries" txt="未有货目录或未有此或"/>
+	<str id="buttonSave" txt="未有货目录或未有此或"/>	
+	<str id="buttonCancel" txt="未有货目录或未有此或"/>
+	<str id="buttonAdd" txt="货目录"/>
+	<str id="selectAll" txt="未有货目录或未有此或"/>
+	<str id="addPerson" txt="未有货目录或未有此或"/>	
+	<str id="defaultSearchText" txt="未有货目录或未有此或"/>
+	
+	<!-- Buttons -->
+	<str id="button.save" txt="未有货目录或未有此或"/>
+	<str id="checkbox.check.all" txt="未有货目录或未有此或"/>
+	<str id="paging.panel.show.entries" txt="未有货目录或未有此或"/>
+	<!-- About dialog -->
+	<str id="application.name" txt="2N iShop"/>
+	<str id="about.infor.version" txt="未有货目录或未有此或: 1.1"/>
+	<str id="about.infor.copyright" txt="Copyright(c) 2007-2011 2N Technologies Jsc. "/>
+	<str id="about.infor.contact.email" txt="未有货目录或未有此或: contact@2n.com.vn"/>
+	<str id="about.infor.contact.tel" txt="未有货目录或未有此或: pending "/>
+	<str id="about.infor.contact.mobile" txt="未有货目录或未有此或: 0904961275"/>
+	
+	<str id="submit.search.button" txt="移动电话"/>
+	
+	<!--  Product definition sheet -->
+	<str id="admin.product.category" txt="移动电话"/>
+	<str id="admin.product.group" txt="移动电话"/>
+	<str id="admin.product.bp.group" txt="移动电话"/>
+	<str id="admin.product.section" txt="移动电话"/>
+	<str id="admin.product.infor" txt="移动电话"/>
+  	<str id="item.search.conditions" txt=" 移动电话"/>	
+	<str id="search.item.by.name" txt="移动电话"/>
+	<str id="search.item.by.id" txt="移动电话"/>
+	<str id="submit.search.button" txt="移动电话"/>
+	<!-- Packing Style -->
+	<str id="item.packing.style.name" txt="移动电话"/>
+	<str id="item.packing.style.id" txt="移动电话"/>
+	<!-- BP Group -->
+	<str id="BPG.id" txt="移动电话"/>
+	<str id="BPG.name" txt="移动电话"/>
+	
+	<!-- UOM -->
+	<str id="UOM.title" txt="移动电话"/>
+	<str id="UOM.id" txt="移动电话"/>
+	<str id="UOM.name" txt="移动电话"/>
+	
+	<!-- Packing style -->
+	<str id="packing.style.title" txt="移动电话"/>
+	<str id="packing.style.id" txt="移动电话"/>
+	<str id="packing.style.name" txt="移动电话"/>
+	<str id="packing.style.desc" txt="移动电话"/>
+	
+	<!--  product category  -->
+	<str id="category.id" txt="移动电话"/>
+	<str id="category.name" txt="移动电话"/>
+	<str id="category.desc" txt="移动电话"/>
+	
+	<!--  product group  -->
+	<str id="group.id" txt="移动电话"/>
+	<str id="group.name" txt="移动电话"/>
+	<str id="group.desc" txt="移动电话"/>
+	
+	<!-- Item information -->
+	
+	<str id="item.bom" txt="移动电话"/>
+	<str id="item.id" txt="移动电话"/>
+	<str id="item.org" txt="移动电话"/>
+	<str id="item.vendor.code" txt="移动电话"/>
+	<str id="item.supplier_code" txt="移动电话"/>
+	<str id="item.uom" txt="移动电话"/>
+	<str id="item.packing.style" txt="移动电话"/>
+	<str id="item.country.of.original" txt="移动电话"/>
+	<str id="item.commission.payable" txt="移动电话"/>
+	<str id="item.category" txt="移动电话"/>
+	<str id="item.produced.date" txt="移动电话"/>
+	<str id="item.expired.date" txt="移动电话"/>
+	<str id="item.type" txt="移动电话"/>
+	<str id="item.status" txt="移动电话"/>
+	<str id="item.stockable" txt="移动电话"/>
+	<str id="item.transactable" txt="移动电话"/>
+	<str id="item.reserveable" txt="移动电话"/>
+	<str id="item.desc" txt="移动电话"/>
+	
+	<!-- BP Group -->
+	<str id="item.section.id" txt="移动电话"/>
+	<str id="item.section.name" txt="移动电话"/>
+ 	<str id="about.infor.about.header.title" txt="价格不合格,需为至少一种钱类有卖出和买进的价格 "/>
+  
+  <!-- Bổ sung thông tin hàng hóa -->
+	
+	<str id="loc.theo.ten.hoac.id" txt="移动电话"/>
+	<str id="button.loc.hang.hoa" txt="移动电话"/>
+	<!-- Chi tiet hang hoa -->
+	<str id="ma.mat.hang" txt="移动电话"/>
+	<str id="ten.mat.hang" txt="移动电话"/>
+	<str id="quy.cach.san.pham" txt="移动电话"/>
+	<str id="nuoc.san.xuat" txt="移动电话"/>
+	<str id="cong.ty.san.xuat" txt="移动电话"/>
+	<str id="ngay.san.xuat" txt="移动电话"/>
+	<str id="ngay.het.han" txt="移动电话"/>
+	<str id="don.vi.tinh" txt="移动电话"/>
+	<str id="danh.muc.hang" txt="移动电话"/>
+	<str id="item.ghi.chu" txt="移动电话"/>	
+	<str id="danh.sach.hang.hoa" txt="移动电话"/>
+	
+  <str id="buttonPrint" txt="许可证类别"/>
+	<str id="buttonDelete" txt="许可证类别"/>
+	<str id="buttonPrice" txt="许可证类别"/>
+	<str id="buttonEditPrice" txt="许可证类别"/>	
+  
+<!-- Nguoi dung -->
+	
+	<str id="user.full.name" txt="许可证类别"/>	
+	<str id="user.company.name" txt="许可证类别"/>
+	<str id="login.id" txt="许可证类别"/>
+	<str id="password" txt="许可证类别"/>
+	<str id="user.address" txt="许可证类别"/>
+	<str id="user.telephone" txt="许可证类别 "/>
+	<str id="user.mobile" txt="许可证类别"/>
+	<str id="user.position1" txt="许可证类别"/>
+	<str id="user.position2" txt="许可证类别"/>
+	<str id="user.start.date" txt="许可证类别"/>
+	<str id="user.end.date" txt="许可证类别"/>
+	<str id="user.diplomas" txt="许可证类别"/>
+	<str id="user.occupation" txt="许可证类别"/>  
+	<str id="user.danh.sach.nguoi.dung" txt="许可证类别"/>
+	<str id="user.role.asignment" txt="许可证类别"/>
+	
+	<str id="user.available.role.list" txt="证类别"/>
+	<str id="user.assigned.role.list" txt="证类别"/>
+	<str id="buttonRemove" txt="证类别"/>
+	<str id="buttonEdit" txt="证类别"/>
+	<str id="buttonNew" txt="证类别"/>
+	
+	<!-- Customer information -->
+	<str id="customer.information.title" txt="类别"/>
+	<str id="customer.list.title" txt="类别"/>
+	
+	<str id="customer.name" txt="类别 (*)"/>
+	<str id="customer.established.date" txt="类别(*)"/>
+	<str id="customer.contact.person" txt="类别(*)"/>
+	<str id="customer.email" txt="类别(*)"/>
+	<str id="customer.main.address" txt="类别(*)"/>
+	<str id="customer.sub.address" txt="类别"/>
+	<str id="customer.telephone" txt="类别(*)"/>
+	<str id="customer.fax" txt="类别(*)"/>
+	
+	<str id="customer.bank.account" txt="类别(*)"/>
+	<str id="customer.website" txt="类别"/>
+	<str id="customer.YM" txt="类别"/>
+	<str id="customer.skype" txt="类别"/>
+	<str id="customer.gtalk" txt="类别"/>
+	<str id="customer.tax.code" txt="类别(*)"/>
+	
+	<!-- Kho vận -->
+	
+	<str id="warehouse.information.title" txt="类别"/>
+	<str id="warehouse.list.title" txt="类别"/>
+	
+	<str id="warehouse.name" txt="类别 (*)"/>
+	<str id="warehouse.company.name" txt="类别(*)"/>
+	<str id="warehouse.warehouser1" txt="类别 1"/>
+	<str id="warehouse.warehouser2" txt="类别 2"/>
+	<str id="warehouse.address" txt="类别"/>
+	
+	<str id="country.page.title" txt="类别"/>	
+	<str id="country.label.country.code" txt="类别"/>	
+	<str id="country.label.country.name" txt="类别"/>	
+	
+	<!-- company.information.title-->
+	<str id="company.information.title" txt="类别"/>
+	<str id="company.name" txt="类别"/>
+	<str id="company.address" txt="类别"/>
+	<str id="company.telephone" txt="类别"/>
+	<str id="company.fax" txt="类别"/>
+	<str id="company.contact.person" txt="类别"/>
+	<str id="company.list.title" txt="类别"/>	
+	<str id="company.established.date" txt="类别"/>	
+	
+	<!-- Lot  -->
+	<str id="lot.information.title" txt="类别"/>	
+	<str id="lot.name" txt="类别"/>	
+	<str id="lot.warehouse" txt="类别"/>	
+	<str id="lot.list.title" txt="类别"/>	
+	
+	<!-- report.condition.container.title  -->	
+	<str id="report.condition.container.title" txt="类别"/>
+	<str id="report.from.date" txt="类别"/>
+	<str id="report.to.date" txt="类别"/>
+	<str id="report.bill.number" txt="类别"/>
+	<str id="report.customer" txt="类别"/>
+	<str id="report.warehouse" txt="类别"/>	
+	<str id="report.category" txt="类别"/>
+	<str id="report.product" txt="类别"/>
+	<str id="report.report.type" txt="类别"/>
+	<str id="report.list.title" txt="类别"/>
+	
+	<str id="report.tabbed.title" txt="类别"/>	
+	<str id="statistics.tabbed.title" txt="类别"/>
+	
+		<str id="report.list.item.1" txt="1. 类别"/>
+	<str id="report.list.item.2" txt="2. 类别"/>
+	<str id="report.list.item.3" txt="3. 类别"/>
+	<str id="report.list.item.4" txt="4. 类别"/>
+	<str id="report.list.item.5" txt="5. 类别"/>
+	<str id="report.list.item.6" txt="6. 类别"/>
+	<str id="report.list.item.7" txt="7. 类别"/>
+	<str id="report.list.item.8" txt="8. 类别"/>
+	<str id="report.list.item.9" txt="9. 类别"/>
+	<str id="report.list.item.10" txt="10. 类别"/>
+	<!-- SALE -->
+	<str id="bill.header.container.title" txt="Bill Header Information"/>
+	<str id="online.stock.container.title" txt="Online Stock Checking"/>
+	<str id="bill.detail.container.title" txt="Bill Details"/>
+	<str id="bill.payment.container.title" txt="Payment Details"/>	
+	<str id="bill.header.so.phieu" txt="Bill Number"/>	
+	<str id="bill.header.loai.phieu" txt="Bill Type"/>	
+	<str id="bill.header.tu.kho" txt="From warehouse"/>	
+	<str id="bill.header.den.kho" txt="To Warehouse"/>	
+	<str id="bill.header.ngay.nhap" txt="Input Date"/>	
+	<str id="bill.header.khach.hang" txt="Customer"/>	
+	<str id="bill.header.ma.so.thue" txt="Tax code"/>	
+	<str id="bill.header.dien.thoai" txt="Tel."/>	
+	<str id="bill.header.dia.chi" txt="Address"/>	
+	<str id="bill.header.so.hop.dong" txt="Contract No."/>	
+	<str id="bill.header.so.tai.khoan" txt="Bank Account"/>	
+	<str id="bill.header.nguoi.lien.he" txt="Contact Person"/>	
+	<str id="bill.header.mo.ta" txt="Description"/>	
+	<str id="bill.header.khach.vang.lai" txt="Normal cust."/>
+	<str id="bill.detail.ma.hang" txt="Item type"/>	
+	<str id="bill.detail.loai.tien" txt="Money kind"/>	
+	<str id="bill.detail.gia.ban" txt="Selling Price"/>	
+	<str id="bill.detail.ten.hang" txt="Item Name"/>	
+	<str id="bill.detail.so.luong" txt="Qty."/>	
+	<str id="bill.detail.don.vi.tinh" txt="UP"/>	
+	<str id="bill.detail.ton.kho" txt="Stock"/>
+	
+	<str id="bill.detail.no.cu.vnd" txt="BF Debt(VND)"/>
+	<str id="bill.detail.no.cu.usd" txt="BF Debt(USD)"/>
+	<str id="bill.detail.thanh.tien.vnd" txt="Amount(VND)"/>
+	<str id="bill.detail.thanh.tien.usd" txt="Amount(USD)"/>
+	<str id="bill.detail.thanh.toan.vnd" txt="Payment(VND)"/>
+	<str id="bill.detail.thanh.toan.usd" txt="Payment(USD)"/>
+	<str id="bill.detail.no.vnd" txt="Debt(VND)"/>
+	<str id="bill.detail.no.usd" txt="Debt(USD)"/>	
+	
+	<str id="button.goods.return" txt="Return"/>	
+	<str id="buttonList" txt="List"/>
+	
+	<str id="online.stock.warehouse" txt="Warehouse"/>
+	<str id="online.stock.item" txt="Item"/>
+	<str id="sale.tab.title1" txt="Sale Desk"/>	
+	<str id="sale.tab.title2" txt="Sale Stats"/>	
+	
+	<str id="button.create" txt="类别"/>	
+	
+	
+	
+	
+<str id="mainToolbarButtonQuanTri" txt="Quản trị"/>
+<str id="mainToolbarButtonMuaHang" txt="Mua hàng"/>
+<str id="mainToolbarButtonXuatHang" txt="Xuất hàng"/>
+<str id="mainToolbarButtonBaoCao" txt="Báo cáo"/>
+<str id="mainToolbarButtonHome" txt="Danh mục chính"/>
+<str id="mainToolbarButtonCongNoKhachHang" txt="Phải thu"/>
+<str id="mainToolbarButtonCongNoNhaCungCap" txt="Phải trả"/>
+
+
+
+<str id="pricing" txt="Định giá"/>
+<str id="priceTableDef" txt="Tạo/sửa bảng giá"/>
+<str id="customerPriceAssociated" txt="Gán kết bảng giá"/>
+<str id="openWorkingDay" txt="Mở ngày"/>
+<str id="closeWorkingDay" txt="Đóng ngày"/>
+<str id="exchangeRate" txt="Thiết lập tỷ giá"/>
+<str id="moKhoaNgay" txt="Mở/Đóng ngày"/>
+<!-- default language error -->
+<str id="default.language.error" txt="Lỗi thiết lập ngôn ngữ mặc định"/>	
+<!-- Login -->
+<str id="login.title" txt="类别"/>	
+<str id="login.id" txt="类别"/>	
+<str id="login.password" txt="类别"/>		
+<str id="login.button" txt="类别"/>	
+<str id="cancel.button" txt="类别"/>
+
+<str id="login.invalid.password" txt="Mật khẩu không đúng"/>
+<str id="login.invalid" txt="Tên đăng nhập không hợp lệ"/>
+<str id="connect.to.server.error" txt="Không thể kết nối tới máy chủ"/>
+<str id="connect.over.three.times" txt="Bạn đã đăng nhập quá 03 lần"/>	
+<str id="loging.process" txt="Bắt đầu kiểm tra người dùng..."/>
+<str id="function.denied" txt="CHỨC NĂNG BỊ KHÓA"/>
+<str id="appToolsMenu" txt="Công cụ"/>
+	<str id="appToolsPrefMenuItem" txt="Cấu hình"/>
+<!-- Preference -->
+<str id="pref.general" txt="Tổng quan"/>
+<str id="pref.system" txt="Hệ thống"/>
+<str id="pref.connection" txt="Máy chủ"/>
+<str id="pref.print" txt="In ấn"/>
+<str id="pref.import.export" txt="Vào/ra"/>
+<str id="pref.view" txt="Khung nhìn"/>	
+
+<str id="pref.header1" txt="Cấu hình iShop"/>
+<str id="pref.header2" txt="Tùy chỉnh cấu hình iShop"/>
+<!-- 10.3.2012 -->
+<str id="login.infor.header" txt="Xác thực người dùng"/>
+<str id="login.infor.need.login" txt="Cần xác thực người dùng"/>
+
+<str id="login.infor.default.language" txt="Ngôn ngữ mặc định"/>
+<str id="login.infor.language.prefix" txt="Tiền tố tệp ngôn ngữ"/>
+
+<str id="log.infor.header" txt="Thông tin nhật ký"/>
+<str id="log.infor.log.file.path" txt="Đường dẫn tệp tin tin nhật ký ứng dụng"/>
+
+<str id="license.infor.header" txt="Thông tin bản quyền"/>
+<str id="license.infor.file.path" txt="Đường dẫn tệp tin bản quyền"/>
+
+<str id="backup.infor.header" txt="Thông tin sao lưu dự phòng"/>
+<str id="backup.infor.file.path" txt="Đường dẫn tệp tin sao lưu"/>
+
+<str id="cache.option" txt="Tùy chỉnh cache"/>
+<str id="always.cache" txt="Luôn luôn cache"/>
+<str id="cache.folder" txt="Thư mục cache"/>
+<str id="pref.system.audit.option" txt="Lựa chọn lưu vết hệ thống"/>
+<str id="pref.system.audit.db.action" txt="Các hành động liên quan DB"/>
+<str id="pref.system.audit.backend.action" txt="Các hành động backend"/>
+<str id="pref.system.audit.frontend.action" txt="Các hành động frontend"/>
+<str id="pref.system.audit.all.action" txt="Luôn luôn lưu vết"/>
+<str id="pref.system.auto.backup" txt="Các lựa chọn tự động sao lưu"/>
+<str id="pref.system.autobackup.shutdown.system" txt="Khi tắt hệ thống"/>
+<str id="pref.system.autobackup.manual" txt="Sao lưu thủ công"/>
+<str id="pref.system.autobackup.never" txt="Không sao lưu"/>
+<str id="pref.server.infor" txt="Thông tin máy chủ"/>
+<str id="pref.server.address" txt="Địa chỉ máy chủ"/>
+<str id="pref.server.port" txt="Cổng"/>
+<str id="pref.server.protocol" txt="Giao thức"/>
+<str id="pref.server.context" txt="Ngữ cảnh"/>
+<str id="pref.server.sub.context" txt="Ngữ cảnh phụ"/>
+
+<str id="waiting.to.complete" txt="Giao diện đang chờ hoàn thiện"/>
+<str id="save.success" txt="Lưu thành công!"/>
+<str id="date.time.option" txt="Định dạng thời gian"/>
+<str id="date.pattern" txt="Định dạng ngày"/>
+<str id="dialog.close" txt="Đóng"/>
+</langpack>
+  
+  

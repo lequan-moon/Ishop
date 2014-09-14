@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cwhitepanel id="poSearchPanel6" Layout="GridBagLayout">
+<!-- Line loai phieu -->
+	<clabel id="lblSearchByWarehouse" text="$langPack.getString('po.search.by.warehouse')">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="sale_search_gbc6" ipadx="0" ipady="0"
+			 	gridx="0" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />	
+	</clabel>
+	<ccombobox id="comboSearchByWarehouse" PreferredSize="130,23" MaximumSize="130,23" MinimumSize="130,23">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="sale_search_gbc6" ipadx="0" ipady="0"
+			 	gridx="1" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />	
+	</ccombobox>
+	<cdlgbutton id="purchaseSearchByWarehouseButton6"  text="$langPack.getString('submit.search.button')" 
+			action ="saveButtonAction" PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22">
+		<gridbagconstraints Anchor="GridBagConstraints.CENTER" 
+				refid="sale_search_gbc6" ipadx="0" ipady="0"
+			 	gridx="0" gridy="1"  insets="5,5,5,5"  gridwidth="4" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+	</cdlgbutton>
+	
+	<clabel id="space1datewh" text="">
+		<gridbagconstraints Anchor="GridBagConstraints.CENTER" 
+				refid="sale_search_gbc6" ipadx="0" ipady="0"
+			 	gridx="0" gridy="3"  insets="5,5,5,5"  gridwidth="2" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+	</clabel>	
+</cwhitepanel>

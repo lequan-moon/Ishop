@@ -1,0 +1,52 @@
+<cwhitepanel id="whMainPage" Layout="BorderLayout" constraints="BorderLayout.CENTER">
+    <!-- Main split -->
+    <splitpane DividerSize="5" ContinuousLayout="true" id="whHSplit" Orientation="1">
+		<ctwomodepanel id="whListTwoModePnl" layout="BorderLayout" constraints="BorderLayout.WEST"/>
+		<cwhitepanel id="whDetailCont"  layout="BorderLayout" constraints="BorderLayout.CENTER">	    
+			<cwhitepanel id="whDetailContainerPnl" layout="BorderLayout" constraints="BorderLayout.CENTER">
+			    <!-- WAREHOUSE Vertical split -->
+			    <splitpane DividerSize="5" ContinuousLayout="true" id="whVSplit" Orientation="0">
+					    <ctwomodepanel id="whDetailTwoModePnl" layout="BorderLayout" constraints="BorderLayout.NORTH"/>
+					    <roundbordercomponent id="whLotDetailContainerPnl" layout="BorderLayout" constraints="BorderLayout.CENTER">
+					        <!-- LOT Information panel-->
+				        	<cwhitepanel id="whLotInforContainerPnl" layout="BorderLayout" constraints="BorderLayout.CENTER">	
+									<cwhitepanel Layout="BorderLayout" id="lotInformationContainer">
+										<cwhitepanel Layout="BorderLayout" id="lotInformationPanel" constraints="BorderLayout.CENTER"  Border="EmptyBorder(0,0,1,0)">					
+											<ctabbedpane id="whLotTabbedPane">	
+												<cwhitepanel id="lotListPageContainer" constraints="BorderLayout.CENTER" layout="BorderLayout">			
+													<cwhitepanel id="lotForm" layout="FlowLayout(FlowLayout.LEFT)"  constraints="BorderLayout.NORTH">	
+														<clabel id="lblLotDesc" text="$langPack.getString('category.desc')" />
+														<ctextfield id="txtLotDesc" text="" PreferredSize="530,22" MinimumSize="530,22" Enabled="$loginUser.canPerformFunction('WAHS_CREATELOT_CMDFunc')"/>
+														<cdlgbutton id="lotSaveButton" text="$langPack.getString('buttonSave')"  
+															PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22"
+															Action="ACT_ADD_LOT" Enabled="$loginUser.canPerformFunction('WAHS_CREATELOT_CMDFunc')"/>
+														<cdlgbutton id="lotNewButton" text="$langPack.getString('buttonNew')"   
+															Action="ACT_NEW_LOT"
+															PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22" Enabled="$loginUser.canPerformFunction('WAHS_CREATELOT_CMDFunc')"/>
+													</cwhitepanel>
+													<cwhitepanel id="lotListPageContainer2" layout="BorderLayout"  constraints="BorderLayout.CENTER" Border="EmptyBorder(0,0,0,0)">	
+														<cpaging id="lotListPage" constraints="BorderLayout.CENTER"/>
+													</cwhitepanel>
+												</cwhitepanel>
+											</ctabbedpane>
+										</cwhitepanel>
+										<cwhitepanel id="warehouseInformationActionPanel" layout="FlowLayout(FlowLayout.LEFT,3,3)" constraints="BorderLayout.SOUTH">
+											<cdlgbutton id="warehouseInforSaveButton" text="$langPack.getString('buttonSave')"  
+												Action="ACT_SAVE_WAREHOUSE"
+												PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22"
+												Enabled="$loginUser.canPerformFunction('WAHS_EDITWH_CMDFunc')"/>
+											<cdlgbutton id="warehouseInforNewButton" text="$langPack.getString('buttonNew')"   
+												Action="ACT_NEW_WAREHOUSE"
+												PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22"
+												Enabled="$loginUser.canPerformFunction('WAHS_CREATEWH_CMDFunc')"/>
+										</cwhitepanel>	
+									</cwhitepanel>
+								<!-- </scrollpane> -->
+								</cwhitepanel>
+								<!-- END -->
+					    </roundbordercomponent>
+			    </splitpane>
+			</cwhitepanel>
+		</cwhitepanel>
+	</splitpane>
+ </cwhitepanel>

@@ -1,0 +1,46 @@
+<cwhitepanel name="catTreeContainer" id="catTreeContainer"
+	layout="BorderLayout" constraints="BorderLayout.CENTER">
+	<toolbar id="userListTreeToolbar" Background="Library.DEFAULT_FORM_BACKGROUND"
+		constraints="BorderLayout.NORTH" Floatable="false"
+		border="EtchedBorder(EtchedBorder.RAISED)">
+		<cbutton2 Background="Library.DEFAULT_FORM_BACKGROUND" id="deleteBtn"
+			text="" Icon="com/nn/ishop/client/img/button/del.png" Action="ACT_DELETE" />
+		<cbutton2 Background="Library.DEFAULT_FORM_BACKGROUND" id="refreshBtn"
+			name="refreshBtn" text="" Icon="com/nn/ishop/client/img/button/refresh.png"
+			Action="ACT_REFRESH" />
+		<cbutton2 Background="Library.DEFAULT_FORM_BACKGROUND" id="sortAzBtn"
+			name="refreshBtn" text="" Icon="com/nn/ishop/client/img/button/az.png"
+			Action="ACT_SORT_AZ" />
+		<cbutton2 Background="Library.DEFAULT_FORM_BACKGROUND" id="sortZaBtn"
+			name="refreshBtn" text="" Icon="com/nn/ishop/client/img/button/za.png"
+			Action="ACT_SORT_ZA" />
+		<ctextfield id="txtSearch" text="$langPack.getString('defaultSearchText')"
+			PreferredSize="130,22" MinimumSize="130,22" MaximumSize="130,22"
+			Action="ACT_SEARCH" />
+		<cbutton2 Background="Library.DEFAULT_FORM_BACKGROUND" id="btnCustomerSearch"
+			text="" MinimumSize="26,26" MaximumSize="26,26" PreferredSize="26,26"
+			Icon="com/nn/ishop/client/img/button/search.png" Action="ACT_SEARCH" />
+		<cbutton2 Icon="com/nn/ishop/client/img/button/treeicon.png"
+			SelectedIcon="com/nn/ishop/client/img/button/treeicon.png"
+			RolloverIcon="com/nn/ishop/client/img/button/treeicon.png"
+			RolloverSelectedIcon="com/nn/ishop/client/img/button/treeicon.png"
+			preferredSize="22,22" id="btnChooseCompany" text=""
+			action="cmdChooseCompanyDialog">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				refid="item_detail_gbc1" ipadx="0" ipady="0" gridx="5" gridy="5"
+				insets="3,3,3,3" gridwidth="1" gridheight="1" Fill="GridBagConstraints.NONE"
+				weightx="1.0f" weighty="0.0f" />
+		</cbutton2>
+	</toolbar>
+
+	<cwhitepanel layout="BorderLayout" constraints="BorderLayout.CENTER" Background="Library.DEFAULT_FORM_BACKGROUND">
+			<clabel id="lblTenCongty" constraints="BorderLayout.NORTH" HorizontalAlignment="CENTER"
+				text="$langPack.getString('all.company')" HorizontalTextPosition="CENTER" ></clabel>
+			<scrollpane id="listScrollPane"
+				HorizontalScrollBarPolicy="ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED"
+				VerticalScrollBarPolicy="ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED" constraints="BorderLayout.CENTER">
+				<clist id="userListPaging" constraints="BorderLayout.CENTER"/>
+			</scrollpane>
+	</cwhitepanel>
+
+</cwhitepanel>

@@ -1,0 +1,37 @@
+<cwhitepanel id="customerListContainer" layout="BorderLayout" constraints="BorderLayout.NORTH">	
+	<toolbar id="customerListTreeToolbar" Background="Library.DEFAULT_FORM_BACKGROUND"  
+		constraints="BorderLayout.NORTH" Floatable="false" border="EtchedBorder(EtchedBorder.RAISED)">		
+		<cbutton2 Background="Library.DEFAULT_FORM_BACKGROUND"  
+			id="deleteBtn" text="" 
+			Icon="com/nn/ishop/client/img/button/del.png"
+			Action="ACT_DELETE"/>
+		<cbutton2 Background="Library.DEFAULT_FORM_BACKGROUND"
+			id="refreshBtn" name="refreshBtn" text=""
+			Icon="com/nn/ishop/client/img/button/refresh.png"
+			Action="ACT_REFRESH"/>
+		<cbutton2 Background="Library.DEFAULT_FORM_BACKGROUND"  
+			id="sortAzBtn" name="refreshBtn" text="" 
+			Icon="com/nn/ishop/client/img/button/az.png"
+			Action="ACT_SORT_AZ"/>
+		<cbutton2 Background="Library.DEFAULT_FORM_BACKGROUND"  
+			id="sortZaBtn" name="refreshBtn" text="" 
+			Icon="com/nn/ishop/client/img/button/za.png"
+			Action="ACT_SORT_ZA"/>
+		<ctextfield id="txtSearch" 
+			text="$langPack.getString('defaultSearchText')" PreferredSize="130,22"
+			 MinimumSize="130,22"  MaximumSize="130,22" Action="ACT_SEARCH" />
+		<cbutton2 Background="Library.DEFAULT_FORM_BACKGROUND" id="btnCustomerSearch" text=""
+			MinimumSize="26,26" 
+			MaximumSize="26,26"
+			PreferredSize="26,26"
+			Icon="com/nn/ishop/client/img/button/search.png"
+			Action="ACT_SEARCH"/>
+	</toolbar>	
+	<scrollpane id="customerListScrollPane"  
+				HorizontalScrollBarPolicy="ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED"
+				VerticalScrollBarPolicy="ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED">	
+		<clist id="customerListPane"  
+			layout="BorderLayout"
+						constraints="BorderLayout.CENTER" border="EtchedBorder(EtchedBorder.RAISED)"/>	
+	</scrollpane>
+</cwhitepanel>

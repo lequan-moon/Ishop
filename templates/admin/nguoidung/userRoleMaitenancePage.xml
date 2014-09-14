@@ -1,0 +1,118 @@
+<genericdialog id="chooseCustomerDialog" layout="BorderLayout" Title="$langPack.getString('role.maintenance.dialog')"
+	MinimumSize="850,600">	
+<!-- Role maintaining -->
+	<cwhitepanel id="userRoleCreatingContainer" Layout="BorderLayout"  Constraints="BorderLayout.CENTER">
+		<splitpane DividerSize="5"  ContinuousLayout="true" OneTouchExpandable="true"
+			id="roleMaintainSplit">
+			
+			<roundbordercomponent id="containerListAvailableMaintainRole" layout="BorderLayout">
+				<scrollpane id="cListAvailableMaintainRoleScrollPane"  
+								HorizontalScrollBarPolicy="ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED"
+								VerticalScrollBarPolicy="ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED">
+						<clist  id="cListAvailableMaintainRole" Constraints="BorderLayout.CENTER"/>
+						<!--PreferredSize="300,300" MinimumSize="300,300" -->
+				</scrollpane>				
+			</roundbordercomponent>
+					
+			<cwhitepanel id="userRoleMaintainingContainer2" Layout="GridBagLayout" Constraints="BorderLayout.WEST">
+				<cwhitepanel id="userRoleMaintainingPanel" Layout="GridBagLayout">
+					 <gridbagconstraints Anchor="GridBagConstraints.NORTHWEST"
+							 refid="role_maintain_gbc" 
+							 ipadx="0" ipady="0" gridwidth="1" gridheight="1" 
+							 gridx="0" gridy="0" insets="3,3,3,3" 
+							 Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />
+					<cwhitepanel id="roleDetailContainer" Layout="BorderLayout" >
+						<gridbagconstraints Anchor="GridBagConstraints.NORTHWEST"
+									 refid="role_detail_container_gbc" ipadx="0" ipady="0"	gridwidth="3"							 
+									 gridx="0" gridy="0" insets="3,3,3,3" Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+						<cwhitepanel id="roleDetailPanel" Layout="GridBagLayout" Constraints="BorderLayout.NORTH">
+							<clabel text="$langPack.getString('roleNameText')" id="lblRoleName">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+									 refid="role_detail_gbc" ipadx="0" ipady="0" gridx="0" gridy="0"  
+									 insets="3,3,3,3" Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="1.0f" />
+							</clabel>
+							<ctextfield id="txtRoleName" Enabled="$loginUser.canPerformFunction('USER_EDITROLE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+									 refid="role_detail_gbc" gridx="1" gridy="0" insets="3,3,3,3" Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+							</ctextfield>
+							<clabel text="$langPack.getString('roleDescText')" id="lblRoleDesc">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+									 refid="role_detail_gbc" gridx="0" gridy="1" insets="3,3,3,3" Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+							</clabel>
+							<ctextfield id="txtRoleDesc" Enabled="$loginUser.canPerformFunction('USER_EDITROLE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+									 refid="role_detail_gbc" gridx="1" gridy="1" insets="3,3,3,3" Fill="GridBagConstraints.NONE" 
+									 weightx="1.0f" weighty="0.0f" />
+							</ctextfield>
+							<ccheckbox id="chkSystem" text="$langPack.getString('role.system.check')" Enabled="$loginUser.canPerformFunction('USER_EDITROLE_CMDFunc')">						
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+									 refid="role_detail_gbc" gridx="0" gridy="2" insets="3,3,3,3" Fill="GridBagConstraints.NONE" 
+									 weightx="0.0f" weighty="1.0f" />
+							</ccheckbox>
+						</cwhitepanel>
+					</cwhitepanel>
+					<cwhitepanel  id="availableFunctionContainer" Layout="BorderLayout" Border="TitledBorder($langPack.getString('user.system.functions'))" > 	
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+										 refid="role_detail_container_gbc" ipadx="0" ipady="0"								 
+										 gridx="0" gridy="1"  gridwidth="1"	
+										 insets="3,3,3,3"
+										 Fill="GridBagConstraints.BOTH" 
+										 weightx="1.0f" weighty="1.0f" />
+										
+						<roundbordercomponent id = "lstAvailableFunctionPanel" Layout="BorderLayout">
+							 <scrollpane id="availableFunctionScrollPane"  
+								HorizontalScrollBarPolicy="ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS"
+								VerticalScrollBarPolicy="ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS">
+									<clist id="lstAvailableFunction" Constraints="BorderLayout.CENTER"/>
+									<!--PreferredSize="300,300" MinimumSize="300,300" -->
+							</scrollpane>
+						</roundbordercomponent>
+						
+					</cwhitepanel>
+					<cwhitepanel id="roleMaintainAssignActionPanel" Layout="GridLayout(2,1,3,3)" >			 				
+						<gridbagconstraints Anchor="GridBagConstraints.CENTER"
+									 refid="role_detail_container_gbc" ipadx="0" ipady="0"								 
+									 gridx="1" gridy="1"  
+									 insets="3,3,3,3"
+									 Fill="GridBagConstraints.NONE" 
+									 weightx="0.0f" weighty="1.0f" />					
+						<cdlgbutton id="assignFuncButton" text="$langPack.getString('buttonAdd')" PreferredSize="73,22" 
+							MaximumSize="73,22" MinimumSize="73,22" action="assignAction"
+							Enabled="$loginUser.canPerformFunction('USER_EDITROLE_CMDFunc')"/>
+						<cdlgbutton id="removeFuncButton" text="$langPack.getString('buttonRemove')" PreferredSize="73,22" 
+							MaximumSize="73,22" MinimumSize="73,22" action="removeAction"
+							Enabled="$loginUser.canPerformFunction('USER_EDITROLE_CMDFunc')"/>
+					</cwhitepanel>	
+					<cwhitepanel  id="assginedFunctionContainer" Layout="BorderLayout" Border="TitledBorder($langPack.getString('user.assigned.funtions'))" > 
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+									 refid="role_detail_container_gbc" ipadx="0" ipady="0"								 
+									 gridx="2" gridy="1"  
+									 insets="3,3,3,3"
+									 Fill="GridBagConstraints.BOTH" 
+									 weightx="1.0f" weighty="1.0f" />
+							<roundbordercomponent id = "lstAssginedFunctionPanel" Layout="BorderLayout">
+								<scrollpane id="assginedFunctionScrollPane"  
+								HorizontalScrollBarPolicy="ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED"
+								VerticalScrollBarPolicy="ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED">								
+									<clist id="lstAssginedFunction"   Constraints="BorderLayout.CENTER" /> 
+							</scrollpane>
+							</roundbordercomponent>
+							
+					</cwhitepanel>
+				 </cwhitepanel>	
+				 <cwhitepanel id="roleMaintainActionPanel" Layout="FlowLayout(FlowLayout.LEFT,2,2)">
+					<gridbagconstraints Anchor="GridBagConstraints.NORTHWEST"
+							 refid="role_maintain_gbc" 
+							 ipadx="0" ipady="0" gridwidth="1" gridheight="1" gridx="0" gridy="1" insets="3,3,3,3" 
+							 Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />
+					<cdlgbutton id="newRoleButton" text="$langPack.getString('buttonNew')" PreferredSize="73,22" 
+						MaximumSize="73,22" MinimumSize="73,22" action="newRoleButtonAction"
+						Enabled="$loginUser.canPerformFunction('USER_CREATEROLE_CMDFunc')"/>
+					<cdlgbutton id="saveRoleButton" text="$langPack.getString('buttonSave')" PreferredSize="73,22" 
+						MaximumSize="73,22" MinimumSize="73,22" action="saveRoleButtonAction"
+						Enabled="$loginUser.canPerformFunction('USER_CREATEROLE_CMDFunc')"/>						
+				</cwhitepanel>
+			</cwhitepanel>
+		</splitpane>
+	</cwhitepanel>
+</genericdialog>

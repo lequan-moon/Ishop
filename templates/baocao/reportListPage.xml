@@ -1,0 +1,23 @@
+<cwhitepanel id="reportListPanel" Layout="GridBagLayout">
+	<list id="reportList" ><!--  PreferredSize="400,600" MaximumSize="400,600" MinimumSize="400,600"-->
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="report_list_gbc" ipadx="0" ipady="0"
+						gridx="0" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />
+	</list>
+	
+	<cwhitepanel id="reportActionPanel" Layout="FlowLayout(FlowLayout.CENTER,5,5)">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="report_list_gbc" ipadx="0" ipady="0"
+						gridx="0" gridy="1"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />
+		<cdlgbutton Enabled="$loginUser.canPerformFunction('RPT_EXECUTE_CMDFunc')" id="reportActionPanelCreateReportButton"  text="$langPack.getString('button.create')" 
+				action ="printButtonAction" PreferredSize="73,22"/>
+	</cwhitepanel>
+	<label id="Space_2" text="" >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="report_list_gbc" ipadx="0" ipady="0"
+						gridx="0" gridy="2"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="1.0f" />
+	</label>	
+</cwhitepanel>

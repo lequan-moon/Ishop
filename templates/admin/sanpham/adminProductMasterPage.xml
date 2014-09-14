@@ -1,0 +1,52 @@
+<!-- 
+	Product Maintenance UI
+ -->
+<splitpane DividerSize="5"  ContinuousLayout="true" id="mainProductSplit">	
+	<!-- Category and master information -->	
+	<cwhitepanel id="productDetailInformationContainer" layout="BorderLayout" 
+		constraints="BorderLayout.CENTER">	
+		<!--scrollpane id="productCatScrollPane" 
+			HorizontalScrollBarPolicy="ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED"		
+			VerticalScrollBarPolicy="ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED"-->
+			<ctwomodepanel id="itemCatInforMainContainer" 
+				layout="BorderLayout"
+				constraints="BorderLayout.CENTER" Background="Color.WHITE"/>
+		<!--/scrollpane-->
+	</cwhitepanel>
+	<!-- Product information -->
+	<roundbordercomponent id="productDetailMasterContainer" layout="BorderLayout" 
+			constraints="BorderLayout.CENTER">					
+		<cwhitepanel id="productDetailContainer" layout="GridBagLayout" 
+			constraints="BorderLayout.CENTER">
+			<splitpane DividerSize="6"  ContinuousLayout="true" OneTouchExpandable="true"
+				id="itemDetailSplit" Orientation="0" DividerLocation="400">	
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="itemListPnl_gbc11" ipadx="0" ipady="0"
+									gridx="0" gridy="0"  insets="0,0,0,0"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />	
+				<scrollpane id="productDetailScrollPane"  
+					HorizontalScrollBarPolicy="ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED"
+					VerticalScrollBarPolicy="ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED">			
+					<cwhitepanel id="itemListPnl" layout="BorderLayout"><!--Border="EmptyBorder(2,2,2,2)"-->
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="itemListPnl_gbc" ipadx="0" ipady="0"
+									gridx="0" gridy="0"  insets="1,1,1,1"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />		
+					</cwhitepanel>
+				</scrollpane>
+				<!-- Item information center -->				
+				<scrollpane id="productDetailScrollPane2"  
+					HorizontalScrollBarPolicy="ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED"
+					VerticalScrollBarPolicy="ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED">
+					<cwhitepanel id="itemDetailPnl" layout="BorderLayout"  
+						Border="TitledBorder($langPack.getString('admin.product.infor'))">	
+						<gridbagconstraints Anchor="GridBagConstraints.SOUTHWEST" 
+									refid="itemListPnl_gbc" ipadx="0" ipady="0"
+									gridx="0" gridy="1"  insets="1,1,1,1"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />							
+					</cwhitepanel>		
+				</scrollpane>
+			</splitpane>
+		</cwhitepanel>			
+	</roundbordercomponent>	
+</splitpane>

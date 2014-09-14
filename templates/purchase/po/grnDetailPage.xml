@@ -1,0 +1,174 @@
+<cwhitepanel id="grnHeaderPanel_1" Layout="BorderLayout">
+	<cwhitepanel id="grnDetailPanel1" Layout="GridBagLayout"  Constraints="BorderLayout.WEST">
+		<!-- Line 1 -->	
+		<clabel id="lblItem_id" text="$langPack.getString('ItemId')" Background="121,121,121">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="0" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</clabel>
+		<ctextfield id="txtItem_id" PreferredSize="130,23" MaximumSize="130,23" MinimumSize="130,23" Editable="$loginUser.canPerformFunction('POSC_CREATEPROD_CMDFunc')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="1" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</ctextfield>
+		
+		<clabel id="lblItem_name" text="$langPack.getString('Item name')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="2" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</clabel>
+		<ctextfield id="txtItem_name" PreferredSize="130,23" MinimumSize="130,23" MaximumSize="130,23" Editable="false">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="3" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</ctextfield>		
+		<cbutton2 
+			Enabled="$loginUser.canPerformFunction('POSC_SELECTPROD_CMDFunc')"
+			Icon="com/nn/ishop/client/img/button/treeicon.png"
+			SelectedIcon="com/nn/ishop/client/img/button/treeicon.png"
+			RolloverIcon="com/nn/ishop/client/img/button/treeicon.png"
+			RolloverSelectedIcon="com/nn/ishop/client/img/button/treeicon.png" 
+			preferredSize="22,22" 
+			id="btnChooseProduct" text="" action="ACT_OPEN_PRODUCT_DIALOG">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="po_detail_gbc1" ipadx="0" ipady="0"
+							 gridx="4" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+		</cbutton2>
+		<clabel id="lblCurrency" text="$langPack.getString('Item name')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="2" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</clabel>
+		<ccombobox id="cbbCurrency" PreferredSize="130,23" MinimumSize="130,23" MaximumSize="130,23" Enabled="$loginUser.canPerformFunction('POSC_CREATEPROD_CMDFunc')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="3" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</ccombobox>
+		
+		<clabel id="lblReceiveQuantity" text="$langPack.getString('Receive Quantity')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="5" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</clabel>
+		
+		<ctextfield id="txtReceiveQuantity" PreferredSize="130,23"  MaximumSize="130,23" MinimumSize="130,23" Editable="$loginUser.canPerformFunction('POSC_CREATEPROD_CMDFunc')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="6" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</ctextfield>
+		
+		<clabel id="lblCorruptedQuantity" text="$langPack.getString('Corrupted Quantity')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="5" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</clabel>
+		
+		<ctextfield id="txtCorruptedQuantity" PreferredSize="130,23"  MaximumSize="130,23" MinimumSize="130,23" Editable="$loginUser.canPerformFunction('POSC_CREATEPROD_CMDFunc')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="6" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</ctextfield>
+		
+		<clabel id="lblTotalQuantity" text="$langPack.getString('TotalQuantity')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="5" gridy="2"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</clabel>
+		
+		<ctextfield id="txtTotalQuantity" PreferredSize="130,23"  MaximumSize="130,23" MinimumSize="130,23" Editable="false">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="6" gridy="2"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</ctextfield>
+		
+		<clabel id="lblPurchasingPrice" text="$langPack.getString('Purchasing Price')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="7" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</clabel>
+		
+		<ctextfield id="txtPurchasingPrice" PreferredSize="130,23"  MaximumSize="130,23" MinimumSize="130,23" Editable="false">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="8" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="20.0f" weighty="0.0f" />		
+		</ctextfield>
+		
+		<clabel id="lblPurchasingDiscount" text="$langPack.getString('PurchasingDiscount')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="7" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</clabel>
+		
+		<ctextfield id="txtPurchasingDiscount" PreferredSize="130,23"  MaximumSize="130,23" MinimumSize="130,23" Editable="$loginUser.canPerformFunction('POSC_CREATEPROD_CMDFunc')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="8" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="20.0f" weighty="0.0f" />		
+		</ctextfield>
+		
+		<clabel id="lblOtherDiscount" text="$langPack.getString('OtherDiscount')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="7" gridy="2"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</clabel>
+		
+		<ctextfield id="txtOtherDiscount" PreferredSize="130,23"  MaximumSize="130,23" MinimumSize="130,23" Editable="$loginUser.canPerformFunction('POSC_CREATEPROD_CMDFunc')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="8" gridy="2"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="20.0f" weighty="0.0f" />		
+		</ctextfield>
+		
+		<clabel id="lblVAT" text="$langPack.getString('VAT')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="7" gridy="3"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</clabel>
+		
+		<ctextfield id="txtVAT" PreferredSize="130,23"  MaximumSize="130,23" MinimumSize="130,23" Editable="$loginUser.canPerformFunction('POSC_CREATEPROD_CMDFunc')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="8" gridy="3"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="20.0f" weighty="0.0f" />		
+		</ctextfield>
+		
+		<clabel id="lblTotalPrice" text="$langPack.getString('TotalPrice')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="7" gridy="4"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</clabel>
+		
+		<ctextfield id="txtTotalPrice" PreferredSize="130,23"  MaximumSize="130,23" MinimumSize="130,23" Editable="false">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="8" gridy="4"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</ctextfield>
+		<cdlgbutton id="btnAdd" label="Add" action="cmdAdd" MinimumSize="74,23" MaximumSize="74,23" PreferredSize="74,23" Enabled="$loginUser.canPerformFunction('POSC_CREATEPROD_CMDFunc')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				refid="grn_master_gbc2" ipadx="0" ipady="0" gridx="8" gridy="5"
+				insets="3,3,3,3" gridwidth="1" gridheight="1" Fill="GridBagConstraints.NONE"
+				weightx="0.0f" weighty="0.0f" />
+		</cdlgbutton>
+		
+	</cwhitepanel>
+</cwhitepanel>	

@@ -1,0 +1,81 @@
+<cwhitepanel id="grnHeaderPanel_1" Layout="BorderLayout" Background="234,234,234">
+	<cwhitepanel id="grnHeaderPanel" Layout="GridBagLayout" Constraints="BorderLayout.NORTH">
+		<!-- Line 1-->
+		<clabel id="lblGRNId" text="$langPack.getString('GRNId')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_header_gbc" ipadx="0" ipady="0"
+			 	gridx="0" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+		</clabel>
+		<ctextfield id="txtGRNId" PreferredSize="230,23" MaximumSize="230,23" MinimumSize="230,23" Editable="false">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="1" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+		</ctextfield>
+		
+		<clabel id="lblPPId" text="$langPack.getString('Purchasing plan id')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="2" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<ctextfield id="txtPPId" PreferredSize="230,23" MaximumSize="230,23" MinimumSize="230,23" Editable="false">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="3" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />	
+		</ctextfield>
+		<clabel id="lblPurchaseNote" text="$langPack.getString('purchase.note')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_header_gbc" ipadx="0" ipady="0"
+			 	gridx="4" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+		</clabel>
+		<ctextfield id="txtPurchaseNote" MinimumSize="200,23" Editable="false">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="5" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />
+		</ctextfield>
+		<!-- Line 2-->
+		<clabel id="lblReceiveDate" text="$langPack.getString('ReceiveDate')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="0" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<datechooser id="dcReceiveDate" PreferredSize="200,23" MaximumSize="200,23" MinimumSize="200,23"  Enabled="$loginUser.canPerformFunction('POSC_EDITCARD_CMDFunc')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="1" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />	
+		</datechooser>
+		
+		<clabel id="lblProvider" text="$langPack.getString('Provider')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="2" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />	
+		</clabel>		
+		<ctextfield id="txtProvider" MinimumSize="130,23" Editable="$loginUser.canPerformFunction('POSC_EDITCARD_CMDFunc')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="3" gridy="1"  insets="3,3,3,3"  gridwidth="3" gridheight="1"
+					Fill="GridBagConstraints.BOTH" weightx="0.5f" weighty="0.0f" />	
+		</ctextfield>
+		<!-- Line 3-->
+		<clabel id="lblNote" text="$langPack.getString('Note')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="0" gridy="2"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<ctextfield id="txtNote" MinimumSize="130,23" Editable="$loginUser.canPerformFunction('POSC_EDITCARD_CMDFunc')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="1" gridy="2"  insets="3,3,3,3"  gridwidth="5" gridheight="1"
+					Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />	
+		</ctextfield>		
+	</cwhitepanel>
+</cwhitepanel>

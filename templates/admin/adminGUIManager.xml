@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cwhitepanel id="adminContentPanel" layout="BorderLayout" constraints="BorderLayout.NORTH"> 
+	<!--tabbedPane-->
+	<cwhitepanel id="cTabbedPanePanel" 
+			layout="GridBagLayout"
+			constraints="BorderLayout.CENTER">
+	<ctabbedpane id="adminTabbedPane">
+		<gridbagconstraints refid="tabbed_gbc" gridy="1"  insets="2,0,0,0"
+			Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />
+		#if($loginUser.canMaintainCOMP())
+		<cwhitepanel id="companyFormPanel" 
+			layout="BorderLayout"
+			constraints="BorderLayout.CENTER" Border="EmptyBorder(0,0,0,0)"/>						
+		#end
+		#if($loginUser.canMaintainWAHS())
+		<cwhitepanel id="warehouseFormPanel" 
+			layout="BorderLayout"
+			constraints="BorderLayout.CENTER" Border="EmptyBorder(0,0,0,0)">
+		</cwhitepanel>
+		#end
+		#if($loginUser.canMaintainUSER())
+		<cwhitepanel id="userFormPanel" 
+			layout="BorderLayout"
+			constraints="BorderLayout.CENTER" Border="EmptyBorder(0,0,0,0)">
+			<cwhitepanel id="userInformationPanel" 
+					layout="BorderLayout"
+					constraints="BorderLayout.CENTER"/>
+		</cwhitepanel>
+		#end
+		#if($loginUser.canMaintainCUST())
+		<cwhitepanel id="customerFormPanel" 
+			layout="BorderLayout"
+			constraints="BorderLayout.CENTER" Border="EmptyBorder(0,0,0,0)"/>								
+		#end
+		#if($loginUser.canMaintainPROD())
+		<cwhitepanel id="itemTopPanel" Background="Color.RED" 
+				layout="BorderLayout"
+				constraints="BorderLayout.CENTER" Border="EmptyBorder(0,0,0,0)">
+		</cwhitepanel>
+		#end
+	</ctabbedpane>
+	</cwhitepanel>	
+ </cwhitepanel>

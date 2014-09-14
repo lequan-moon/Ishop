@@ -1,0 +1,42 @@
+<ctabbedpane id="userRoleAssignmentTabbedPane" constraints="BorderLayout.CENTER">			
+    <!-- Role assignment -->				
+	<cwhitepanel id="userRoleAssignmentContainer" Layout="BorderLayout" Constraints="BorderLayout.NORTH">
+		<cwhitepanel id="userRoleAssignmentContainer2" Layout="GridBagLayout" Constraints="BorderLayout.WEST">
+			 <cwhitepanel id="userAssignRolePanel" Layout="FlowLayout(FlowLayout.CENTER,2,2)">
+				 <gridbagconstraints Anchor="GridBagConstraints.CENTER"
+						 refid="role_detail_gbc" 
+						 ipadx="0" ipady="0"
+						 gridwidth="1" gridheight="1"
+						 gridx="0" gridy="1"  
+						 insets="3,3,3,3"
+						 Fill="GridBagConstraints.BOTH" 
+						 weightx="1.0f" weighty="1.0f" />
+				 <roundbordercomponent id="pnlAvailableRole" Layout="BorderLayout">
+					<clist id="lstAvailableRole" Border="TitledBorder($langPack.getString('user.available.role.list'))" 
+					  PreferredSize="400,300" Constraints="BorderLayout.CENTER" MinimumSize="400,300" />
+				</roundbordercomponent>				
+				<cwhitepanel id="roleAssigneActionPanel" Layout="GridLayout(2,1,3,3)">			 				
+					<cdlgbutton id="userRoleAssignButton" text="$langPack.getString('buttonAdd')" PreferredSize="73,22" 
+						MaximumSize="73,22" MinimumSize="73,22" action="assignRoleAction"/>
+					<cdlgbutton id="userRoleRemoveButton" text="$langPack.getString('buttonRemove')" PreferredSize="73,22" 
+						MaximumSize="73,22" MinimumSize="73,22" action="unassignRoleAction"/>
+				</cwhitepanel>
+				<roundbordercomponent id="pnlAssginedRole" Layout="BorderLayout">
+					<clist id="lstAssginedRole" Border="TitledBorder($langPack.getString('user.assigned.role.list'))"
+						 PreferredSize="400,300" MinimumSize="400,300"/>
+				</roundbordercomponent>	
+			 </cwhitepanel>
+			 <cwhitepanel id="userAssignRoleBottomPanel" Layout="FlowLayout">
+				<gridbagconstraints Anchor="GridBagConstraints.CENTER"
+						 refid="role_detail_gbc" ipadx="0" ipady="0"
+						 gridwidth="1" gridheight="1"
+						 gridx="0" gridy="3"  
+						 insets="5,3,3,3"
+						 Fill="GridBagConstraints.NONE" 
+						 weightx="1.0f" weighty="1.0f" />
+			 </cwhitepanel>
+		</cwhitepanel>
+	</cwhitepanel>
+	
+</ctabbedpane>
+

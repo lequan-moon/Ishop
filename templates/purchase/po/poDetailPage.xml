@@ -1,0 +1,81 @@
+<cwhitepanel id="poHeaderPanel_1" Layout="GridBagLayout">
+	<cwhitepanel id="poDetailPanel1" Layout="GridBagLayout">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+			refid="purchase_master_gbc2" ipadx="0" ipady="0" gridx="0" gridy="0"
+			insets="3,3,3,3" gridwidth="1" gridheight="1"
+			Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />
+		<cbutton2 
+			Enabled="$loginUser.canPerformFunction('POOR_CREATESTO_CMDFunc')"
+			Icon="com/nn/ishop/client/img/button/treeicon.png"
+			SelectedIcon="com/nn/ishop/client/img/button/treeicon.png"
+			RolloverIcon="com/nn/ishop/client/img/button/treeicon.png"
+			RolloverSelectedIcon="com/nn/ishop/client/img/button/treeicon.png" 
+			preferredSize="22,22" 
+			id="btnChooseProduct" text="" action="ACT_OPEN_PRODUCT_DIALOG">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="po_detail_gbc1" ipadx="0" ipady="0"
+							 gridx="0" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+		</cbutton2>
+		<!-- MA Hang -->	
+		<clabel id="lblItem_id" text="$langPack.getString('ItemId')" Background="121,121,121">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="1" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</clabel>
+		<ctextfield id="txtItem_id" PreferredSize="200,23" MaximumSize="200,23" MinimumSize="200,23" editable="$loginUser.canPerformFunction('POOR_CREATESTO_CMDFunc')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="2" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</ctextfield>
+		
+		<clabel id="lblItem_name" text="$langPack.getString('Item name')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="3" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</clabel>
+		<ctextfield id="txtItem_name" PreferredSize="250,23" MinimumSize="250,23" MaximumSize="130,23" 
+		editable="false">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="4" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</ctextfield>
+		<clabel id="lblQuantity" text="$langPack.getString('Quantity')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="5" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</clabel>
+		<ctextfield id="txtQuantity" PreferredSize="130,23"  MaximumSize="130,23" MinimumSize="130,23" editable="$loginUser.canPerformFunction('POOR_CREATESTO_CMDFunc')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="6" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</ctextfield>
+		<clabel id="lblUnit" text="">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="7" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="20.0f" weighty="0.0f" />		
+		</clabel>
+	</cwhitepanel>
+	<cwhitepanel id="purchasePOItemListContainer" layout="BorderLayout"
+		Border="TitledBorder($langPack.getString('po.list.container.title'))">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+			refid="purchase_master_gbc2" ipadx="0" ipady="0" gridx="0" gridy="1"
+			insets="3,3,3,3" gridwidth="1" gridheight="1" Fill="GridBagConstraints.BOTH"
+			weightx="1.0f" weighty="1.0f" />
+		<cwhitepanel layout="GridbagLayout">
+			<cpaging id="poDetailList">
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					refid="po_detail_gbc1" ipadx="0" ipady="0" gridx="0" gridy="0"
+					gridwidth="4" gridheight="1" Fill="GridBagConstraints.BOTH"
+					weightx="1.0f" weighty="1.0f" />
+			</cpaging>
+		</cwhitepanel>
+	</cwhitepanel>
+</cwhitepanel>	

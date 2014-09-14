@@ -1,0 +1,179 @@
+	<cwhitepanel id="salePerspectivePanel" layout="BorderLayout" constraints="BorderLayout.NORTH"> 
+		<!--tabbedPane-->
+		<cwhitepanel id="cTabbedPanePanel" layout="BorderLayout" constraints="BorderLayout.CENTER">
+			<ctabbedpane id="saleTabbedPane">		
+					#if($loginUser.canMaintainSALEMA())	
+					<splitpane DividerSize="5" ContinuousLayout="true" id="saleTranxSplit" Orientation="0">
+						<!-- Transaction list-->
+						<!--scrollpane id="txListScrollPane" 
+							HorizontalScrollBarPolicy="ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED"		
+							VerticalScrollBarPolicy="ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED"-->
+							<ctwomodepanel id="tranxTwoModePanel" Layout="BorderLayout">
+							<cwhitepanel id="pnlMasterTranxList"
+									Layout="GridBagLayout"  constraints="BorderLayout.CENTER">
+								<cwhitepanel id="pnlWorkflowList" Border="TitledBorder"
+									Layout="FlowLayout(FlowLayout.LEFT,0,0)">
+									<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+											refid="pnlMasterTranxList_gbc" ipadx="0" ipady="0"
+											 gridx="0" gridy="0"  insets="3,1,1,1"  gridwidth="1" gridheight="1"
+											Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />									
+									<cbutton2 Enabled="$loginUser.canPerformFunction('SALEMA_CREATE_CMDFunc')" background="255,255,255" id="newTranxButton" text="$langPack.getString('new.transaction')"
+										Icon="com/nn/ishop/client/img/button/new_tranx.png" Action="ACT_NEW_TRANX"/>	
+									<clabel Icon="com/nn/ishop/client/img/button/arrow.png"/>
+									<cbutton2 Enabled="$loginUser.canPerformFunction('SALEMA_CREATEPRI_CMDFunc')" background="255,255,255" id="quoteButton" text="$langPack.getString('qouting')"
+										Icon="com/nn/ishop/client/img/button/qoute.png"  Action="ACT_QUOTE"/>	
+									<clabel Icon="com/nn/ishop/client/img/button/arrow.png"/>
+									<cbutton2 Enabled="$loginUser.canPerformFunction('SALEMA_ORDER_CMDFunc')" background="255,255,255" id="reservedItemButton" text="$langPack.getString('reserved.item')"
+										Icon="com/nn/ishop/client/img/button/reserved.png"  Action="ACT_RESERVED"/>	
+									<clabel Icon="com/nn/ishop/client/img/button/arrow.png"/>
+									<cbutton2 Enabled="$loginUser.canPerformFunction('SALEMA_CREATEFORM_CMDFunc')" background="255,255,255" id="createSOButton" text="$langPack.getString('create.so')"
+										Icon="com/nn/ishop/client/img/button/shopping-cart-icon.png" Action="ACT_CREATE_SO"/>	
+									<clabel Icon="com/nn/ishop/client/img/button/arrow.png"/>
+									<cbutton2 Enabled="$loginUser.canPerformFunction('SALEMA_LIAB_CMDFunc')" background="255,255,255" id="debtMgmtButton"  text="$langPack.getString('debt.control')"
+										Icon="com/nn/ishop/client/img/button/visa.png"  Action="ACT_DEBT_MGMT"/>
+									<clabel Icon="com/nn/ishop/client/img/button/arrow.png"/>
+									<cbutton2 Enabled="$loginUser.canPerformFunction('SALEMA_EXPORTSTO_CMDFunc')" background="255,255,255" id="issueSlipButton" text="$langPack.getString('issue.slip')"
+										Icon="com/nn/ishop/client/img/button/truck.png" Action="ACT_ISSUE_SLIP"/>		
+								</cwhitepanel>						
+								<cwhitepanel id="pnlTranxList" Border="TitledBorder($langPack.getString('sale.transactions.list'))"
+									Layout="BorderLayout">								
+									<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+											refid="pnlMasterTranxList_gbc" ipadx="0" ipady="0"
+											 gridx="0" gridy="1"  insets="1,1,1,1"  gridwidth="1" gridheight="1"
+											Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />								
+									<cpaging id="saleMasterTranxListPage" constraints="BorderLayout.CENTER"/>
+								</cwhitepanel>
+							</cwhitepanel>
+							</ctwomodepanel>
+						<!--/scrollpane-->
+						<ctwomodepanel id="detailTwoModePanel" Layout="BorderLayout">
+						<!-- Transaction detail -->
+						<cwhitepanel id="tranxDetailTabbedPaneContainer" Layout="BorderLayout" constraints="BorderLayout.CENTER">
+							<ctabbedpane id="tranxDetailTabbedPane" Background="121,121,121">
+								<cwhitepanel id="tranxDetailParentPage"  Layout="GridBagLayout"  constraints="BorderLayout.CENTER">
+									<!--scrollpane id="txDetailScrollPane"-->						
+										<cwhitepanel id="pnlTranxDetail" Layout="GridBagLayout">
+											<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+													refid="sale_tranx_tabledetail_gbc1" ipadx="0" ipady="0"
+													 gridx="0" gridy="0"  insets="0,1,0,0"  gridwidth="1" gridheight="1"
+													Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />
+											<!-- Line 1: khach hang + tong tien-->
+											<clabel text="$langPack.getString('khach.hang')">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="0" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" /></clabel>
+											<ctextfield id="txtCustomerName" Editable="false">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="1" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" /></ctextfield>
+											<clabel text="$langPack.getString('tong.tien.don.hang')">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="2" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" /></clabel>
+											<ctextfield id="txtSOAmountMoney" Editable="false">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="3" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" /></ctextfield>
+											<clabel text="$langPack.getString('currency.type')">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="4" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" /></clabel>
+											<ctextfield id="txtSOCurrencyType" Editable="false">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="5" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" /></ctextfield>
+											
+											<!--Line 1: currency + so.number-->
+											<clabel text="$langPack.getString('so.number')">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="0" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" /></clabel>
+											<ctextfield id="txtSONumber" Editable="false">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="1" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" /></ctextfield>
+											<clabel text="$langPack.getString('vat.tax')">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="2" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" /></clabel>
+											<ctextfield id="txtSOVATTax" Editable="false">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="3" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" /></ctextfield>
+											<clabel text="$langPack.getString('so.type')">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="4" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" /></clabel>
+											<ctextfield id="txtSOType" Editable="false">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="5" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" /></ctextfield>
+											
+											<clabel text="$langPack.getString('other.expense')">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="0" gridy="2"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" /></clabel>
+											<ctextfield id="txtSOOtherExpense" Editable="false">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="1" gridy="2"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" /></ctextfield>
+											<clabel text="$langPack.getString('from.warehouse')">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="2" gridy="2"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" /></clabel>
+											<ctextfield id="txtFromWarehouse" Editable="false">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="3" gridy="2"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" /></ctextfield>
+											<clabel text="$langPack.getString('gross.amount')">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="4" gridy="2"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" /></clabel>
+											<ctextfield id="txtSOGrossAmount" Editable="false">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="5" gridy="2"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" /></ctextfield>
+											
+											<clabel text="$langPack.getString('creator')">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="0" gridy="3"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" /></clabel>
+											<ctextfield id="txtSOCreator" Editable="false">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="1" gridy="3"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" /></ctextfield>
+											<clabel text="$langPack.getString('create.date')">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="2" gridy="3"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" /></clabel>
+											<ctextfield id="txtSOCreateDate" Editable="false">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="3" gridy="3"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" /></ctextfield>
+											<clabel text="$langPack.getString('modify.user')">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="4" gridy="3"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" /></clabel>
+											<ctextfield id="txtSOModifyUser" Editable="false">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="5" gridy="3"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" /></ctextfield>
+													 
+											<clabel text="$langPack.getString('modify.date')">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="0" gridy="4"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" /></clabel>
+											<ctextfield id="txtSOModifyDate" Editable="false">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="1" gridy="4"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" /></ctextfield>								
+											<clabel text="$langPack.getString('phase')">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="2" gridy="4"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="1.0f" /></clabel>
+											<ctextfield id="txtSOPhase" Editable="false">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="3" gridy="4"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="1.0f" /></ctextfield>
+											<clabel text="$langPack.getString('current.voucher.number')">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="4" gridy="4"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="1.0f" /></clabel>
+											<ctextfield id="txtSOCurrentVoucherNumber" Editable="false">
+												<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+													 gridx="5" gridy="4"  insets="3,3,3,3"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="1.0f" /></ctextfield>
+											
+										</cwhitepanel>
+								</cwhitepanel>
+							</ctabbedpane>
+						</cwhitepanel>
+						</ctwomodepanel>
+					</splitpane>
+					#end
+					<!-- Other tabbedpanes -->
+					<!--Sale Order -->
+					#if($loginUser.canMaintainSALESO())	
+					<cwhitepanel id="saleOrderComp" Layout="BorderLayout"/>
+					#end
+					
+					#if($loginUser.canMaintainSALEIS())	
+					<cwhitepanel id="saleOrderWarehouseIssueSlipComp" Layout="BorderLayout"/>
+					#end
+					
+					#if($loginUser.canMaintainSALEST())	
+					<cwhitepanel id="saleOrderStatsComp" Layout="BorderLayout"/>
+					#end
+			</ctabbedpane>
+		</cwhitepanel>
+	</cwhitepanel>

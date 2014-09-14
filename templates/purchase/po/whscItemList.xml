@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- List -->
+<cwhitepanel layout="GridbagLayout">
+		<ccombobox id="cbbwarehouse" Background="121,121,121" Enabled="$loginUser.canPerformFunction('POGRN_CREATESTO_CMDFunc')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="0" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</ccombobox>
+		<!--<ccombobox id="cbbLot" Background="121,121,121" Enabled="$loginUser.canPerformFunction('POGRN_CREATESTO_CMDFunc')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="1" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</ccombobox>-->
+		<cpaging id="whscItemList">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="0" gridy="1"  insets="3,3,3,3"  gridwidth="4" gridheight="1"
+				Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />
+		</cpaging>
+</cwhitepanel>

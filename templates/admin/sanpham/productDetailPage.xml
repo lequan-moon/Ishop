@@ -1,0 +1,240 @@
+
+<cwhitepanel id="productDetailContainer" layout="GridBagLayout" constraints="BorderLayout.CENTER">
+ <cwhitepanel id="imageLabelPnl" layout="BorderLayout">
+	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+		refid="master_item_detail_gbc" ipadx="0" ipady="0"
+		gridx="0" gridy="0"  insets="3,3,3,3"
+		gridwidth="1" gridheight="1"
+		Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+	<imagelabel id="avataImg" text="" 
+				Size="120,120" PreferredSize="120,120" MaximumSize="120,120" MinimumSize="120,120"  constraints="BorderLayout.CENTER" Enabled="$loginUser.canPerformFunction('PROD_EDITINFO_CMDFunc')">				
+	</imagelabel>
+ </cwhitepanel>
+ <cwhitepanel id="productDetailMasterContainer" layout="GridBagLayout" MinimumSize="700,300">
+ 	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="master_item_detail_gbc" ipadx="0" ipady="0"
+				 gridx="1" gridy="0"  insets="3,3,3,3"
+				 gridwidth="6" gridheight="1"
+				Fill="GridBagConstraints.BOTH" weightx="10.0f" weighty="0.0f" />					
+			<!-- Ma hang-->
+			<label id="lblItemBarcodeId" text="$langPack.getString('ma.mat.hang')" 
+				 MinimumSize="80,20">			
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_END" 
+					refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 	gridx="0" gridy="1"  insets="3,3,3,3"
+				 	gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</label>
+			
+			<ctextfield id="txtItemBarcodeId" text=" "  MinimumSize="110,22" 
+				Action="cmdUpdateBarcode" Background="251,229,229">		
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				 refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="1" gridy="1"  insets="3,3,3,3"
+				 gridwidth="1" gridheight="1"
+				 Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" Enabled="$loginUser.canPerformFunction('PROD_EDITINFO_CMDFunc')" />
+			</ctextfield>
+			
+			<label id="lblItemBarcodeImage" text="" 
+				 MinimumSize="80,20">			
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_END" refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="2" gridy="1"  insets="3,3,3,3"
+				 gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</label>
+			<barcode id="itemBarcode" text=" " >		
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				 refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="3" gridy="1"  insets="3,3,3,3"
+				 gridwidth="3" gridheight="1"
+				 Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />
+			</barcode>
+			<!-- Ten hang -->
+			<label id="lblItemName" text="$langPack.getString('ten.mat.hang')" 
+				 MinimumSize="80,20">			
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_END" refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="0" gridy="2"  insets="3,3,3,3"
+				 gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</label>
+			
+			<ctextfield id="txtItemName" text=" "  MinimumSize="110,22"   Background="251,229,229" Enabled="$loginUser.canPerformFunction('PROD_EDITINFO_CMDFunc')">		
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				 refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="1" gridy="2"  insets="3,3,3,3"
+				 gridwidth="1" gridheight="1"
+				 Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />
+			</ctextfield>
+			<label id="lblItemStyle" text="$langPack.getString('quy.cach.san.pham')" 
+				 MinimumSize="80,20">				
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_END" refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="2" gridy="2"  insets="3,3,3,3"
+				 gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</label>
+			<ctextfield id="txtItemStyle" text=" "  MinimumSize="110,22" Enabled="$loginUser.canPerformFunction('PROD_EDITINFO_CMDFunc')" >		
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				 refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="3" gridy="2"  insets="3,3,3,3"
+				 gridwidth="3" gridheight="1"
+				 Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />
+			</ctextfield>
+			<!-- Line 3 -->
+			<!-- Country original -->
+			<label id="lblItemOriginalCountry" text="$langPack.getString('nuoc.san.xuat')" 
+				 MinimumSize="80,20">			
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_END" refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="0" gridy="3"  insets="3,3,3,3"
+				 gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</label>
+			<ctextfield id="txtItemOriginalCountry" text=" "  MinimumSize="110,22" Enabled="$loginUser.canPerformFunction('PROD_EDITINFO_CMDFunc')">		
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				 refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="1" gridy="3"  insets="3,3,3,3"
+				 gridwidth="1" gridheight="1"
+				 Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />
+			</ctextfield>
+			<label id="lblItemProducedCompany" text="$langPack.getString('cong.ty.san.xuat')" 
+				 MinimumSize="80,20">			
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_END" refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="2" gridy="3"  insets="3,3,3,3"
+				 gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</label>
+			<ctextfield id="txtItemProducedCompany" text=" "  MinimumSize="110,22" Enabled="$loginUser.canPerformFunction('PROD_EDITINFO_CMDFunc')">		
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				 refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="3" gridy="3"  insets="3,3,3,3"
+				 gridwidth="3" gridheight="1"
+				 Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />
+			</ctextfield>
+			<!-- Line 4 -->
+			<!-- Produced Date -->
+			<label id="lblItemProducedated" text="$langPack.getString('ngay.san.xuat')" 
+				 MinimumSize="80,20">			
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_END" refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="0" gridy="4"  insets="3,3,3,3"
+				 gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</label>
+			<datechooser id="dateItemProducedated"  MinimumSize="110,25" Enabled="$loginUser.canPerformFunction('PROD_EDITINFO_CMDFunc')">		
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				 refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="1" gridy="4"  insets="3,3,3,3"
+				 gridwidth="1" gridheight="1"
+				 Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+			</datechooser>
+			<!-- Expired date -->
+			<label id="lblItemExpiredDate" text="$langPack.getString('ngay.het.han')" 
+				 MinimumSize="80,20">
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_END" refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="2" gridy="4"  insets="3,3,3,3"
+				 gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</label>
+			<datechooser id="dateItemExpiredDate"  MinimumSize="110,25" Enabled="$loginUser.canPerformFunction('PROD_EDITINFO_CMDFunc')">		
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				 refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="3" gridy="4"  insets="3,3,3,3"
+				 gridwidth="3" gridheight="1"
+				 Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+			</datechooser>
+			<!-- Line 5 -->
+			<!-- Unit of measurement (UOM) -->
+			<label id="lblItemUnitPrice" text="$langPack.getString('don.vi.tinh')" 
+				 MinimumSize="80,20">				
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_END" refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="0" gridy="5"  insets="3,3,3,3"
+				 gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</label>
+			<ccombobox id="comboItemUnitPrice" text=" "  MinimumSize="110,25"  Background="251,229,229" Enabled="$loginUser.canPerformFunction('PROD_EDITINFO_CMDFunc')">		
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				 refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="1" gridy="5"  insets="3,3,3,3"
+				 gridwidth="1" gridheight="1"
+				 Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f"/>
+			</ccombobox>
+			<!-- Danh muc hang -->
+			<label id="lblItemCategory" text="$langPack.getString('danh.muc.hang')" 
+				 MinimumSize="80,20">				
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_END" refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="2" gridy="5"  insets="3,3,3,3"
+				 gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+			</label>
+			<ctextfield id="txtItemCategory" text=" "  MinimumSize="200,22"
+				preferredSize="200,20"
+				 Background="251,229,229" Enabled="$loginUser.canPerformFunction('PROD_EDITINFO_CMDFunc')">		
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				 	refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 	gridx="3" gridy="5"  insets="3,3,3,3"
+				 	gridwidth="2" gridheight="1"
+				 	Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />
+			</ctextfield>
+			<cbutton2 
+				Icon="com/nn/ishop/client/img/button/treeicon.png"
+				SelectedIcon="com/nn/ishop/client/img/button/treeicon.png"
+				RolloverIcon="com/nn/ishop/client/img/button/treeicon.png"
+				RolloverSelectedIcon="com/nn/ishop/client/img/button/treeicon.png" 
+				preferredSize="22,22" 
+				id="btnChooseCat" text="" action="cmdChooseCatDialog" Enabled="$loginUser.canPerformFunction('PROD_EDITINFO_CMDFunc')">
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				 refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="5" gridy="5"  insets="3,3,3,3"
+				 gridwidth="1" gridheight="1"
+				 Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+			</cbutton2>
+	</cwhitepanel>
+	<cwhitepanel id="descPnl" layout="GridBagLayout">
+		<gridbagconstraints Anchor="GridBagConstraints.NORTHWEST" refid="master_item_detail_gbc" ipadx="0" ipady="0"
+					 gridx="0" gridy="1"  insets="3,3,3,3"
+					 gridwidth="7" gridheight="1"
+					Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+			<label id="lblItemDescription" text="$langPack.getString('item.ghi.chu')" 
+				 MinimumSize="80,20">			
+				<gridbagconstraints Anchor="GridBagConstraints.NORTHWEST" refid="item_detail_gbc2" ipadx="0" ipady="0"
+				 gridx="0" gridy="0"  insets="3,3,3,3"
+				 gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />
+			</label>
+			<ctextarea id="atxtItemDescription" text=" "  PreferredSize="110,60" MinimumSize="110,60">		
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				 refid="item_detail_gbc2" ipadx="0" ipady="0"
+				 gridx="0" gridy="1"  insets="3,3,3,3"
+				 gridwidth="1" gridheight="1"
+				 Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" 
+				 Enabled="$loginUser.canPerformFunction('PROD_EDITINFO_CMDFunc')"/>
+			</ctextarea>
+	 </cwhitepanel>	
+	 <cwhitepanel  id="spacePnl" layout="BorderLayout">	
+	 	<gridbagconstraints Anchor="GridBagConstraints.SOUTHWEST" refid="master_item_detail_gbc" ipadx="0" ipady="0"
+				 gridx="0" gridy="2"  insets="0,0,0,0"
+				 gridwidth="7" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="1.0f" />	
+	</cwhitepanel>
+	<cwhitepanel  id="commandPnl" layout="BorderLayout">	
+	 	<gridbagconstraints Anchor="GridBagConstraints.SOUTHWEST" refid="master_item_detail_gbc" ipadx="0" ipady="0"
+				 gridx="0" gridy="3"  insets="0,0,0,0"
+				 gridwidth="7" gridheight="1"
+				Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="1.0f" />	
+			<cwhitepanel  id="productDetailNavBarContainer" layout="GridBagLayout" Constraints="BorderLayout.SOUTH">	
+				<cwhitepanel  id="productDetailNavBar" layout="FlowLayout(FlowLayout.LEFT,5,5)">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						 refid="item_detail_nav_gbc" ipadx="0" ipady="0"
+						 gridwidth="1" gridheight="1"
+						 gridx="0" gridy="0"  insets="3,3,3,3"
+						 Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="1.0f" />
+					<cdlgbutton id="saveButton"  text="$langPack.getString('buttonSave')" action ="cmdItemSave" 
+						PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22"
+						Enabled="$loginUser.canPerformFunction('PROD_DELETEPRIN_CMDFunc')"/>
+					<cdlgbutton id="printButton" text="$langPack.getString('buttonPrint')" action ="cmdItemPrint" 
+						PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22"
+						Enabled="$loginUser.canPerformFunction('PROD_DELETEPRIN_CMDFunc')"/>
+					<cdlgbutton id="deleteButton"  text="$langPack.getString('button.new')"  action ="cmdItemRollbackUpdate" 
+						PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22"
+						Enabled="$loginUser.canPerformFunction('PROD_DELETEINFO_CMDFunc')"/>
+				</cwhitepanel>
+			</cwhitepanel>
+	</cwhitepanel>
+</cwhitepanel>

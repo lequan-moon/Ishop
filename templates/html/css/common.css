@@ -1,0 +1,47 @@
+.header
+{
+  FONT-SIZE: 10pt;
+  COLOR: #000000;
+  FONT-FAMILY: Arial;
+  FONT-WEIGHT: BOLD;
+}
+
+.detail{FONT-SIZE: 10pt;COLOR: #030303;FONT-FAMILY: Arial;FONT-WEIGHT: BOLD;}
+.summary_top_border{BORDER-TOP: 1px SOLID;COLOR: #E0DFE3;PADDING:5px 5px 5px 5px;BORDERCOLOR:#E0DFE3;}
+.text
+{
+	FONT-SIZE: 10pt;COLOR: #030303;FONT-FAMILY: Arial;FONT-WEIGHT: PLAIN;
+	PADDING-TOP:5px;PADDING-LEFT:5px;PADDING-BOTTOM:5px;PADDING-RIGHT:5px;
+}
+.border_top_bottom
+{
+	BORDER-TOP: #FFFFFF 1px solid;
+    BORDER-BOTTOM: #FFFFFF 1px solid;
+}
+navigator
+{
+  FONT-SIZE: 10pt;
+  BACKGROUND-COLOR: #E6E6E6;
+  COLOR: #000000;
+  FONT-FAMILY: Arial;
+  FONT-WEIGHT: NORMAL;
+  BORDER-TOP: #FFFFFF 1px solid;
+  BORDER-BOTTOM: #FFFFFF 1px solid;
+}
+:link.navigator {COLOR: #000000; BACKGROUND-COLOR: #E6E6E6;TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-SIZE: 10pt;font-weight:normal}
+:visited.navigator {COLOR: #FFFFFF; BACKGROUND-COLOR: #99CCFF; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-SIZE: 10pt;font-weight:normal}
+:hover.navigator {COLOR: #AFB87A;BACKGROUND-COLOR: #99CCFF;TEXT-DECORATION: none; font-family: Arial; font-size:10pt; font-weight:normal;}
+
+navheader
+{
+  FONT-SIZE: 11pt;
+  BACKGROUND-COLOR: #E6E6E6;
+  COLOR: #000000;
+  FONT-FAMILY: Arial;
+  FONT-WEIGHT: BOLD;
+  BORDER-TOP: #FFFFFF 1px solid;
+  BORDER-BOTTOM: #FFFFFF 1px solid;
+}
+:link.navheader{COLOR: #000000; BACKGROUND-COLOR: #E6E6E6;TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-SIZE: 11pt;font-weight:BOLD;}
+:visited.navheader{COLOR: #FFFFFF; BACKGROUND-COLOR: #99CCFF; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-SIZE: 11pt;font-weight:BOLD;}
+:hover.navheader{COLOR: #AFB87A;BACKGROUND-COLOR: #99CCFF;TEXT-DECORATION: none; font-family: Arial; font-size:11pt; font-weight:BOLD;}

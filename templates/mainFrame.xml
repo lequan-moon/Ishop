@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<frame id="mainFrame" Size="1024,768" Title="$langPack.getString('appTitle')"  ExtendedState="JFrame.MAXIMIZED_BOTH">
+<panel id="rootPanel" layout="BorderLayout" constraints="BorderLayout.CENTER" Background="226,226,226">
+	<panel id="menuAndSearchBar" name="menuAndSearchBar"
+        layout="BorderLayout"   Background="226,226,226"
+        constraints="BorderLayout.NORTH" >
+		<panel id="menuAndLogo" name="menuAndLogo"
+        layout="BorderLayout"  Background="226,226,226"
+        constraints="BorderLayout.WEST" >
+			<nonselectablebutton id="logoButton" text=""
+					Icon="com/nn/ishop/client/img/logo32.png"
+					RolloverIcon="com/nn/ishop/client/img/logo32.png"
+					RolloverSelectedIcon="com/nn/ishop/client/img/logo32.png"
+					SelectedIcon="com/nn/ishop/client/img/logo32.png"
+					 constraints="BorderLayout.WEST" Selected="false" />	
+		   <menubar id="mainMenuBar" constraints="BorderLayout.CENTER" Border="EmptyBorder(0,0,0,0)">
+			  <menu text="$langPack.getString('appFileMenu')">				
+				  <menuitem font="Arial Unicode MS-PLAIN-11" id="menuCurrency" 
+					text="$langPack.getString('menuCurrency')" Action="ACT_OPEN_CURRENCY_DIALOG"/>
+				<menuitem id="priceTableDefMenuItem" text="$langPack.getString('priceTableDef')" enabled="true" Action="AC_PRICE_LIST_MAITAIN"/>	
+				<menuitem id="exchangeRateMenuItem" text="$langPack.getString('exchangeRate')" enabled="true" Action="ACT_OPEN_EXRATE_DIALOG"/>
+				<!--separator/-->
+				<menu text="$langPack.getString('appLanguagesMenuItem')" mnemonic="VK_L">
+				  <menuitem font="Arial Unicode MS-PLAIN-11" id="switchLangEnMenuItem" 
+						Icon="com/nn/ishop/client/img/menu/flag_england.png"
+						text="English" Action="switchLangEn"/>
+				  <menuitem font="Arial Unicode MS-PLAIN-11" id="switchLangDeMenuItem" 
+					  Icon="com/nn/ishop/client/img/menu/flag_german.png"
+					  text="Deustch" Action="switchLangDe"/>
+				  <menuitem font="Arial Unicode MS-PLAIN-11" id="switchLangVnMenuItem" 
+					  Icon="com/nn/ishop/client/img/menu/flag_vietnam.png"
+					  text="Ti&#7871;ng Vi&#7879;t" Action="switchLangVn"/>
+				  <menuitem font="Arial Unicode MS-PLAIN-11" id="switchLangCnMenuItem" 
+					  Icon="com/nn/ishop/client/img/menu/flag_chinese.png"
+					  text="Chinese" Action="switchLangCn"/>
+				</menu>
+				<!--separator/-->
+				<menuitem id="exitMenuItem" text="$langPack.getString('appExitMenuItem')" mnemonic="VK_X" Action="AC_QUIT"/>
+			  </menu>
+			  <!---->
+			  <!--menu text="$langPack.getString('pricing')" mnemonic="VK_P">
+				<menuitem id="priceTableDefMenuItem" text="$langPack.getString('priceTableDef')" enabled="true" Action="AC_PRICE_LIST_MAITAIN"/-->	
+				<!--menuitem id="customerPriceAssociatedMenuItem" text="$langPack.getString('customerPriceAssociated')" enabled="true" Action="AC_HELP"/-->				
+			  <!--/menu-->
+			  <menu text="$langPack.getString('moKhoaNgay')" mnemonic="VK_H">
+				<!--menuitem id="openWorkingDayMenuItem" text="$langPack.getString('openWorkingDay')" enabled="true" Action="AC_HELP"/-->	
+				<menuitem id="closeWorkingDayMenuItem" text="$langPack.getString('closeWorkingDay')" enabled="true" Action="ACT_CLOSE_WORKING_DAY"/>
+			  </menu>
+			  
+			  <!---->
+			  <menu text="$langPack.getString('appToolsMenu')" mnemonic="VK_T">
+			  	<menuitem id="prefMenuItem" text="$langPack.getString('appToolsPrefMenuItem')" enabled="true" Action="AC_PREF"/>
+				<menuitem id="changeProfileMenuItem" text="$langPack.getString('appToolsChangePasswdMenuItem')" enabled="true" Action="AC_PROFILE"/>
+				<!--separator/-->
+			  </menu>
+			  <menu text="$langPack.getString('appHelpMenuItem')" mnemonic="VK_H">
+				<menuitem id="helpMenuItem" text="$langPack.getString('appHelpMenuItem')" enabled="true" Action="AC_HELP"/>
+				<!--separator  Background="Library.DEFAULT_FORM_BACKGROUND"/-->
+				<menuitem id="licenseMenuItem" text="$langPack.getString('appLicenseMenuItem')" enabled="true" Action="AC_HELP"/>
+				<!--separator  Background="Library.DEFAULT_FORM_BACKGROUND"/-->
+				<menuitem id="licenseRegisterMenuItem" text="$langPack.getString('appLicenseRegisterMenuItem')" enabled="true" Action="AC_HELP"/>
+				<!--separator  Background="Library.DEFAULT_FORM_BACKGROUND"/-->
+				<menuitem id="shortKeyMenuItem" text="$langPack.getString('appShortKeyMenuItem')" enabled="true" Action="AC_HELP"/>
+				<!--separator  Background="Library.DEFAULT_FORM_BACKGROUND"/-->								
+				<menuitem id="aboutMenuItem" text="$langPack.getString('appAboutMenuItem')" Action="aboutAction"/>
+			  </menu>
+			</menubar>		
+		</panel>
+		<!--panel id="workingDateContainer" layout="BorderLayout" constraints="BorderLayout.CENTER" visible="true"-->
+			<panel id="workingDate"
+				layout="FlowLayout(FlowLayout.CENTER,3,1)"    	
+				constraints="BorderLayout.CENTER" visible="true">	  
+				<clabel text="$langPack.getString('working.date')" />
+				<ctextfield id="txtWorkingDate" MinimumSize="120,20" Text="dd/mm/YYYY" Background="255, 255, 255"/>					
+			</panel>
+		<!--/panel-->
+		<panel id="searchBarContainer" name="searchBarContainer"
+				layout="FlowLayout(FlowLayout.LEFT,2,2)"
+				constraints="BorderLayout.EAST"  visible="true"  Background="226,226,226">
+				<panel id="searchBar" name="searchBar"
+					layout="FlowLayout(FlowLayout.LEFT,3,1)"    	
+					Background="255, 255, 255">	  
+					<label Icon="com/nn/ishop/client/img/search.png" preferredSize="20,20" Action="searchAction" Background="255,255,255" />					
+					<textfield id="searchText" text="$langPack.getString('defaultSearchText')"
+						preferredSize="120,20"
+						Border="EmptyBorder(0,0,0,0)"
+						Background="255, 255, 255"/>					
+				</panel>
+				<cbutton id="btnLogout" text="" PreferredSize="22,22" MaximumSize="22,22" MinimumSize="22,22"
+					Icon="com/nn/ishop/client/img/button/logout.png"
+					RolloverIcon="com/nn/ishop/client/img/button/logout.png"
+					RolloverSelectedIcon="com/nn/ishop/client/img/button/logout.png"
+					SelectedIcon="com/nn/ishop/client/img/button/logout.png"  Action="ACT_LOG_OUT"/>
+		</panel>
+	</panel>
+    <panel id="mainPanel" name="mainPanel" layout="BorderLayout" PreferredSize="1024,768" constraints="BorderLayout.CENTER">
+      <panel id="mainCompositeToolBar" name="mainCompositeToolBar"
+        layout="BorderLayout"  Background="226,226,226"
+        constraints="BorderLayout.WEST" Border="CLineBorder">
+		<scrollablebar id="mainToolBar" name="mainToolBar"
+	        layout="GridLayout(10,1)"
+	        constraints="BorderLayout.WEST" Border="CLineBorder">  
+			 <cbutton id="homeButton" text="$langPack.getString('mainToolbarButtonHome')"
+	        	Icon="com/nn/ishop/client/img/perspectives/home.png"
+	        	RolloverIcon="com/nn/ishop/client/img/perspectives/home_active.png"
+	        	RolloverSelectedIcon="com/nn/ishop/client/img/perspectives/home_active.png"
+				SelectedIcon="com/nn/ishop/client/img/perspectives/home_active.png"/>	
+            #if($loginUser.canMaintainPROD() || $loginUser.canMaintainUSER() || $loginUser.canMaintainCUST()||$loginUser.canMaintainWAHS()||$loginUser.canMaintainCOMP() )
+                <cbutton id="adminButton" text="$langPack.getString('mainToolbarButtonQuanTri')"
+	        	Icon="com/nn/ishop/client/img/perspectives/quantri_normal.png"
+	        	RolloverIcon="com/nn/ishop/client/img/perspectives/quantri_active.png"
+	        	RolloverSelectedIcon="com/nn/ishop/client/img/perspectives/quantri_active.png"
+				SelectedIcon="com/nn/ishop/client/img/perspectives/quantri_active.png"/>
+            #end
+                        
+	        <cbutton id="purchaseButton"  text="$langPack.getString('mainToolbarButtonMuaHang')"
+	        	Icon="com/nn/ishop/client/img/perspectives/muahang.png"
+	        	RolloverIcon="com/nn/ishop/client/img/perspectives/muahang_active.png"
+	        	RolloverSelectedIcon="com/nn/ishop/client/img/perspectives/muahang_active.png"
+				SelectedIcon="com/nn/ishop/client/img/perspectives/muahang_active.png"/>
+	        #if($loginUser.canMaintainSALEMA() || $loginUser.canMaintainSALESO() || $loginUser.canMaintainSALEIS() || $loginUser.canMaintainSALEST())
+	        <cbutton id="saleButton" text="$langPack.getString('mainToolbarButtonXuatHang')"
+	        	Icon="com/nn/ishop/client/img/perspectives/sale_button_normal.png"
+	        	RolloverIcon="com/nn/ishop/client/img/perspectives/sale_button_highlight.png"
+	        	RolloverSelectedIcon="com/nn/ishop/client/img/perspectives/sale_button_highlight.png"
+				SelectedIcon="com/nn/ishop/client/img/perspectives/sale_button_highlight.png"/>		
+			#end
+			
+			<cbutton id="payableButton" text="$langPack.getString('mainToolbarButtonCongNoNhaCungCap')"
+	        	Icon="com/nn/ishop/client/img/perspectives/phaitra.png"
+	        	RolloverIcon="com/nn/ishop/client/img/perspectives/phaitra_active.png"
+	        	RolloverSelectedIcon="com/nn/ishop/client/img/perspectives/phaitra_active.png"
+				SelectedIcon="com/nn/ishop/client/img/perspectives/phaitra_active.png" />
+	        <cbutton id="reportButton" text="$langPack.getString('mainToolbarButtonBaoCao')"
+	        	Icon="com/nn/ishop/client/img/perspectives/report_normal.png"
+	        	RolloverIcon="com/nn/ishop/client/img/perspectives/report_active.png"
+	        	RolloverSelectedIcon="com/nn/ishop/client/img/perspectives/report_active.png"
+				SelectedIcon="com/nn/ishop/client/img/perspectives/report_active.png" />
+	      </scrollablebar>
+	      <!--/panel-->
+	  </panel>
+	  
+      <cwhitepanel id="contentPanel" name="contentPanel" constraints="BorderLayout.CENTER" layout="BorderLayout"/>
+      <panel id="statusBar"  name="statusBar" constraints="BorderLayout.SOUTH" layout="BorderLayout"  Background="226,226,226">
+      	<panel id="userInforPanel" constraints="BorderLayout.WEST" layout="FlowLayout(FlowLayout.LEFT,2,2)"  Background="226,226,226">
+			<cbutton id="changeProfileButton" text=""
+	        	Icon="com/nn/ishop/client/img/button/profile.png"
+	        	RolloverIcon="com/nn/ishop/client/img/button/profile.png"
+	        	RolloverSelectedIcon="com/nn/ishop/client/img/button/profile.png"
+				SelectedIcon="com/nn/ishop/client/img/button/profile.png"  
+				PreferredSize="19,19" MaximumSize="19,19" MinimumSize="19,19"
+				Action="AC_PROFILE"/>
+      		<label id="userInfoLabel" text="$loginUser.getLoginInfor()"/>
+      	</panel>      	
+      	<panel id="systemInforPanel" constraints="BorderLayout.CENTER" layout="FlowLayout(FlowLayout.CENTER,2,2)"  Background="226,226,226">
+      		<clabel id="systemInfoLabel" text=""/>
+      	</panel>
+      	<panel id="progressBarPanel"  Background="226,226,226"
+      		constraints="BorderLayout.EAST"
+      		layout="FlowLayout(FlowLayout.RIGHT,2,2)"  visible="true">
+      		<cprogressbar Indeterminate="false" id="progressBar" String=""
+      			StringPainted="true" />
+      		<!-- cprogressbar Indeterminate="false" id="progressBar" String=""
+      		StringPainted="true" /-->
+      	</panel>
+      </panel>
+    </panel>
+  </panel>
+</frame>

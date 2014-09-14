@@ -1,0 +1,54 @@
+<splitpane DividerSize="5"
+	id="mainSplit"  ContinuousLayout="true">
+	<!-- List of user -->
+	<cwhitepanel id="userInforContainerPnl" layout="BorderLayout" 
+		constraints="BorderLayout.CENTER">
+		<ctwomodepanel id="userListPanel" layout="BorderLayout"										
+					constraints="BorderLayout.CENTER"/>
+	</cwhitepanel>	
+	<!-- List of role and role assignment-->
+	<roundbordercomponent id="listAndRoleAssignmentContainer" layout="BorderLayout" 
+		constraints="BorderLayout.NORTH">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="user_global_gbc" ipadx="0" ipady="0"
+					 gridx="1" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="3"
+					Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />		
+		<scrollpane id="listAndRoleAssignmentScrollPane"  
+			HorizontalScrollBarPolicy="ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED"
+			VerticalScrollBarPolicy="ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED">
+			<cwhitepanel id="listAndRoleAssignmentPanel" layout="BorderLayout" constraints="BorderLayout.CENTER">
+					<cwhitepanel id="userInforContainer1" layout="GridBagLayout" constraints="BorderLayout.CENTER">
+						<cwhitepanel id="userInforContainer" layout="BorderLayout">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="user_list_role_gbc" ipadx="0" ipady="0"
+									gridx="0" gridy="0"  insets="0,0,0,0"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="1.0f" />
+						</cwhitepanel>
+						<cwhitepanel id="roleTabbedPaneContainer" layout="BorderLayout" >
+							<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+										refid="user_list_role_gbc" ipadx="0" ipady="0"
+										gridx="0" gridy="1"  insets="0,0,0,0" 
+										gridwidth="1" gridheight="1"
+										Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />
+						</cwhitepanel>
+					</cwhitepanel>
+					<cwhitepanel id="userInformationActionContainer" layout="BorderLayout" constraints="BorderLayout.SOUTH">							
+						<cwhitepanel id="userInformationActionPanel" layout="FlowLayout(FlowLayout.LEFT,3,3)" Constraints="BorderLayout.WEST">
+							<cdlgbutton id="userInforNewButton" text="$langPack.getString('buttonNew')"   
+								PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22" action="newAction"
+								Enabled="$loginUser.canPerformFunction('USER_CREATE_CMDFunc')"/>
+							<cdlgbutton id="userInforEditRoleButton" text="$langPack.getString('editRole')"   
+								PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22" action="editRoleAction"
+								Enabled="$loginUser.canPerformFunction('USER_EDIT_CMDFunc')"/>
+							<cdlgbutton id="userInforSaveButton" text="$langPack.getString('buttonSave')"   
+								PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22" action="saveAction"
+								Enabled="$loginUser.canPerformFunction('USER_WRITE_CMDFunc')"/>
+						</cwhitepanel>		
+					</cwhitepanel> 					
+			</cwhitepanel>
+		</scrollpane>
+	</roundbordercomponent>	
+</splitpane>								
+		
+ 

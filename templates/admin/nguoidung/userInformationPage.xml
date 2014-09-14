@@ -1,0 +1,262 @@
+<scrollpane id="userInforScrollPane"  
+		HorizontalScrollBarPolicy="ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED"
+		VerticalScrollBarPolicy="ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED">
+<cwhitepanel id="userInformationContainer"
+				constraints="BorderLayout.NORTH" Layout="GridBagLayout">
+	<cwhitepanel id="userAvataPanel" layout="BorderLayout">
+		<gridbagconstraints Anchor="GridBagConstraints.CENTER"
+						refid="master_user_infor_gbc" ipadx="0" ipady="0"
+						gridx="0" gridy="0"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.NONE" 
+						weightx="0.0f" weighty="0.0f" />						
+		<imagelabel id="txtPhoto" text="" 
+			PreferredSize="150,150" MaximumSize="150,150" MinimumSize="150,150">						
+		</imagelabel>
+	</cwhitepanel>	
+	<cwhitepanel id="userInformationPanel" layout="GridBagLayout">				
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="master_user_infor_gbc" ipadx="0" ipady="0"
+						gridx="1" gridy="0"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.BOTH" 
+						weightx="1.0f" weighty="0.0f" />
+		<!-- Line 2 -->
+		<clabel id="lblTenNguoiDung" text="$langPack.getString('user.full.name')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="0" gridy="1"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="0.0f" weighty="0.0f" />		
+		</clabel>
+		<ctextfield id="txtTenNguoiDung" text="" PreferredSize="220,22" MinimumSize="220,22" Background="251,229,229">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="1" gridy="1"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="0.0f" weighty="0.0f" />			
+		</ctextfield>	
+		<!-- Ten cong ty -->
+		<clabel id="lblTenCongTy" text="$langPack.getString('user.company.name')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" 
+						ipadx="0" ipady="0"
+						gridx="2" gridy="1"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="0.0f" weighty="0.0f" />
+		</clabel>
+		<ctextfield id="txtTenCongTy" text="" PreferredSize="220,22" MinimumSize="220,22" Editable="false">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="3" gridy="1"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="0.0f" weighty="0.0f" />			
+		</ctextfield>
+		<cbutton2 
+				Icon="com/nn/ishop/client/img/button/treeicon.png"
+				SelectedIcon="com/nn/ishop/client/img/button/treeicon.png"
+				RolloverIcon="com/nn/ishop/client/img/button/treeicon.png"
+				RolloverSelectedIcon="com/nn/ishop/client/img/button/treeicon.png" 
+				preferredSize="22,22" 
+				id="btnChooseCompany" text="" action="cmdChooseCompanyDialog">
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				 refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="4" gridy="1"  insets="3,3,3,3"
+				 gridwidth="1" gridheight="1"
+				 Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+			</cbutton2>
+		<!-- <ccombobox id="cbbTenCongty"></ccombobox> -->
+		<!-- Line 2 Ten cong ty -->
+		<clabel id="lblTenDangNhap" text="$langPack.getString('login.id')">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="0" gridy="2"  
+						insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<ctextfield id="txtTenDangNhap" text="" PreferredSize="220,22" MinimumSize="220,22" Background="251,229,229">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="1" gridy="2"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="0.0f" weighty="0.0f" />	
+		</ctextfield>
+		<!-- Ten cong ty -->
+		<clabel id="lblMatKhau" text="$langPack.getString('password')">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="2" gridy="2"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="0.0f" weighty="0.0f" />
+		</clabel>
+		<passwordfield id="txtMatKhau" text="" PreferredSize="220,22" MinimumSize="220,22" Background="251,229,229">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="3" gridy="2"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="1.0f" weighty="0.0f" />	
+		</passwordfield>
+		<cbutton2 
+				Icon="com/nn/ishop/client/img/button/ResetPassword.png"
+				SelectedIcon="com/nn/ishop/client/img/button/ResetPassword.png"
+				RolloverIcon="com/nn/ishop/client/img/button/ResetPassword.png"
+				RolloverSelectedIcon="com/nn/ishop/client/img/button/ResetPassword.png" 
+				preferredSize="22,22" 
+				id="btnResetPassword" text="" action="cmdResetPassword">
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				 refid="item_detail_gbc1" ipadx="0" ipady="0"
+				 gridx="4" gridy="2"  insets="3,3,3,3"
+				 gridwidth="1" gridheight="1"
+				 Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+			</cbutton2>
+		<!-- Line 4 Ten cong ty -->
+		<clabel id="lblDiaChi" text="$langPack.getString('user.address')">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="0" gridy="3"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<ctextfield id="txtDiaChi" text="" PreferredSize="220,22" MinimumSize="220,22">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="1" gridy="3"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="1.0f" weighty="0.0f" />	
+		</ctextfield>
+		<!-- Ten cong ty -->
+		<clabel id="lblDienThoai" text="$langPack.getString('user.telephone')">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="2" gridy="3"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<ctextfield id="txtDienThoai" text="" PreferredSize="220,22" MinimumSize="220,22">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="3" gridy="3"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="1.0f" weighty="0.0f" />	
+		</ctextfield>
+		<!-- Line 5 Ten cong ty -->
+		<clabel id="lblDiDong" text="$langPack.getString('user.mobile')">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="0" gridy="4"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<ctextfield id="txtDiDong" text="" PreferredSize="220,22" MinimumSize="220,22">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="1" gridy="4"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="1.0f" weighty="0.0f" />	
+		</ctextfield>
+		<!-- Ten cong ty -->
+		<clabel id="lblViTri1" text="$langPack.getString('user.position1')">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="2" gridy="4"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<ctextfield id="txtViTri1" text="" PreferredSize="220,22" MinimumSize="220,22">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="3" gridy="4"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="1.0f" weighty="0.0f" />	
+		</ctextfield>
+						
+		<!-- Line 6 Ten cong ty -->
+		<clabel id="lblNgayBatDau" text="$langPack.getString('user.start.date')">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="0" gridy="5"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<datechooser id="dcNgayBatDau" PreferredSize="150,25">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="1" gridy="5"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="1.0f" weighty="0.0f" />	
+		</datechooser>
+		<!-- Ten cong ty -->
+		<clabel id="lblNgayKetThuc" text="$langPack.getString('user.end.date')">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="2" gridy="5"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<datechooser id="dcNgayKetThuc" PreferredSize="150,25">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="3" gridy="5"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="1.0f" weighty="0.0f" />	
+		</datechooser>
+		<!-- Line 7 Ten cong ty -->
+		<clabel id="lblBangCap" text="$langPack.getString('user.diplomas')">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="0" gridy="6"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<ctextfield id="txtBangCap" text="" PreferredSize="220,22" MinimumSize="220,22">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="1" gridy="6"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="1.0f" weighty="0.0f" />	
+		</ctextfield>
+		<!-- Ten cong ty -->
+		<clabel id="lblEmail" text="$langPack.getString('user.mail')">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="2" gridy="6"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<ctextfield id="txtEmail" text="" PreferredSize="220,22" MinimumSize="220,22">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="user_infor_gbc" ipadx="0" ipady="0"
+						gridx="3" gridy="6"  insets="3,3,3,3"  
+						gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.HORIZONTAL" 
+						weightx="1.0f" weighty="1.0f" />	
+		</ctextfield>					
+	</cwhitepanel><!-- END userInformationPanel -->
+		
+</cwhitepanel>	
+	
+</scrollpane>

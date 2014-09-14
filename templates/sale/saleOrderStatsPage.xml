@@ -1,0 +1,120 @@
+<splitpane DividerSize="5"  ContinuousLayout="true"
+	id="saleStatsSplit" Orientation="1"  DividerLocation="350">	
+	<ctwomodepanel id="condTwoModePanel" Layout="BorderLayout">
+	<cwhitepanel id="pnlSaleStatsCond" Border="TitledBorder($langPack.getString('sale.stats.condition'))"
+				Layout="GridBagLayout"  constraints="BorderLayout.CENTER">
+		<clabel id="lblSearchByWarehouse" text="$langPack.getString('sale.search.by.warehouse')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="pnlSaleStatsCond_gbc" ipadx="0" ipady="0"
+					gridx="0" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<ccombobox id="comboSearchByWarehouse" PreferredSize="130,23" MaximumSize="130,23" MinimumSize="130,23">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="pnlSaleStatsCond_gbc" ipadx="0" ipady="0"
+					gridx="1" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />	
+		</ccombobox>
+		<clabel id="lblCustomer" text="$langPack.getString('sale.search.customer.number')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="pnlSaleStatsCond_gbc" ipadx="0" ipady="0"
+					gridx="0" gridy="1"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<ctextfield id="txtCustomerText" PreferredSize="130,23" MaximumSize="130,23" MinimumSize="130,23">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="pnlSaleStatsCond_gbc" ipadx="0" ipady="0"
+					gridx="1" gridy="1"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />	
+		</ctextfield>
+		<clabel id="lblBillNumber" text="$langPack.getString('sale.search.bill.number')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="pnlSaleStatsCond_gbc" ipadx="0" ipady="0"
+					gridx="0" gridy="2"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<ctextfield id="txtBillText" PreferredSize="130,23" MaximumSize="130,23" MinimumSize="130,23">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="pnlSaleStatsCond_gbc" ipadx="0" ipady="0"
+					gridx="1" gridy="2"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />	
+		</ctextfield>
+		<clabel id="lblSearchByItemCategory" text="$langPack.getString('sale.search.by.item.category')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="pnlSaleStatsCond_gbc" ipadx="0" ipady="0"
+					gridx="0" gridy="3"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<ctextfield id="txtSearchByItemCategory" PreferredSize="130,23" MaximumSize="130,23" MinimumSize="130,23">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="pnlSaleStatsCond_gbc" ipadx="0" ipady="0"
+					gridx="1" gridy="3"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />	
+		</ctextfield>
+		<clabel id="lblSearchFromDate" text="$langPack.getString('report.from.date')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="pnlSaleStatsCond_gbc" ipadx="0" ipady="0"
+					gridx="0" gridy="5"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<datechooser id="datechooserFromDate" PreferredSize="130,23" MaximumSize="130,23" MinimumSize="130,23">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="pnlSaleStatsCond_gbc" ipadx="0" ipady="0"
+					gridx="1" gridy="5"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />	
+		</datechooser>
+		<clabel id="lblSearchToDate" text="$langPack.getString('report.to.date')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="pnlSaleStatsCond_gbc" ipadx="0" ipady="0"
+					gridx="0" gridy="6"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<datechooser id="datechooserToDate" PreferredSize="130,23" MaximumSize="130,23" MinimumSize="130,23">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="pnlSaleStatsCond_gbc" ipadx="0" ipady="0"
+					gridx="1" gridy="6"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />	
+		</datechooser>
+		<cdlgbutton Enabled="$loginUser.canPerformFunction('SALEST_SEARCH_CMDFunc')" id="saleSearchByCategoryButton"  text="$langPack.getString('submit.search.button')" 
+			action ="saveButtonAction" PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22">
+			<gridbagconstraints Anchor="GridBagConstraints.CENTER" 
+					refid="pnlSaleStatsCond_gbc" ipadx="0" ipady="0"
+					gridx="0" gridy="7"  insets="5,5,5,5"  gridwidth="4" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="1.0f" />
+		</cdlgbutton>	
+		<clabel id="lblSpace" text="">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="pnlSaleStatsCond_gbc" ipadx="0" ipady="0"
+					gridx="0" gridy="8"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="20.0f" />	
+		</clabel>		
+	</cwhitepanel>
+	
+	</ctwomodepanel>
+	<splitpane DividerSize="5"  ContinuousLayout="true"
+		id="saleStatsResultSplit" Orientation="0">		
+		<scrollpane id="saleStatsResultScrollPane" constraints="BorderLayout.CENTER">	
+			<ctwomodepanel id="searchRetTwoModePanel" Layout="BorderLayout">
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="pnlSaleStatsResult_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="0"  insets="2,2,2,2"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+				<cwhitepanel id="pnlSaleStatsResult" Border="TitledBorder($langPack.getString('sale.stats.result'))"
+					Layout="BorderLayout" Constraints="BorderLayout.CENTER">				
+					<cpaging id="saleTranxListPage2" constraints="BorderLayout.CENTER"/>
+				</cwhitepanel>
+			</ctwomodepanel>
+		</scrollpane>
+		<scrollpane id="saleStatsDetaildScrollPane" constraints="BorderLayout.CENTER">	
+			<ctwomodepanel id="searchRetDetailTwoModePanel" Layout="BorderLayout">	
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="pnlSaleStatsDetail_gbc" ipadx="0" ipady="0"
+						 gridx="0" gridy="0"  insets="2,2,2,2"  gridwidth="1" gridheight="1"
+						Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />			
+				<cwhitepanel id="pnlSaleStatsDetail" Border="TitledBorder($langPack.getString('sale.stats.detail'))"
+					Layout="BorderLayout">
+				</cwhitepanel>
+			</ctwomodepanel>
+		</scrollpane>
+	</splitpane>
+</splitpane>

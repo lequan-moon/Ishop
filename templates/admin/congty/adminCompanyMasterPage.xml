@@ -1,0 +1,16 @@
+<cwhitepanel id="companyMainPage" Layout="BorderLayout" constraints="BorderLayout.WEST">
+<splitpane DividerSize="5"  ContinuousLayout="true" id="mainSplit"><!--  DividerLocation="350" --> 
+	<ctwomodepanel id="companyListPanelContainer" 
+		Layout="BorderLayout" constraints="BorderLayout.WEST">
+	</ctwomodepanel> 
+	<cwhitepanel  id="companyInforPanelContainer1" 
+		Layout="BorderLayout" constraints="BorderLayout.CENTER">
+		<cwhitepanel  id="companyInforPanelContainer2" 
+		Layout="BorderLayout" constraints="BorderLayout.WEST" Border="EmptyBorder(0,1,0,0)">
+		</cwhitepanel>
+		<roundbordercomponent id="companyInforPanelContainer" 
+			Layout="BorderLayout" constraints="BorderLayout.CENTER">
+		</roundbordercomponent>
+	</cwhitepanel>
+</splitpane>
+</cwhitepanel>

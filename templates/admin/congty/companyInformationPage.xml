@@ -1,0 +1,110 @@
+<cwhitepanel Layout="GridBagLayout" id="companyInformationPanel">
+	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+								refid="company_infor_gbc_container" ipadx="0" ipady="0"
+								 gridx="0" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+								Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />
+	<!-- Ten congty - Cong ty -->
+	<clabel id="lblCompanyName" text="$langPack.getString('company.name')"   PreferredSize="100,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="company_infor_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<clabel id="txtCompanyName" text="" PreferredSize="300,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="company_infor_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />
+	</clabel>
+	<clabel id="lblCompanyAddress" text="$langPack.getString('company.address')"   PreferredSize="100,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="company_infor_gbc" ipadx="0" ipady="0"
+							 gridx="2" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<clabel id="txtCompanyAddress" text=""  PreferredSize="100,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="company_infor_gbc" ipadx="0" ipady="0"
+							 gridx="3" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />
+	</clabel>	
+	<!-- Tel - Fax -->
+	<clabel id="lblCompanyTelephone" text="$langPack.getString('company.telephone')"  PreferredSize="100,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="company_infor_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<clabel id="txtCompanyTelephone" text="" PreferredSize="100,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="company_infor_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<clabel id="lblCompanyFax" text="$langPack.getString('company.fax')"  PreferredSize="100,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="company_infor_gbc" ipadx="0" ipady="0"
+							 gridx="2" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<clabel id="txtCompanyFax" text="" PreferredSize="100,25">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="company_infor_gbc" ipadx="0" ipady="0"
+							 gridx="3" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.HORIZONTAL" weightx="9.0f" weighty="0.0f" />
+	</clabel>
+	<!-- Nguoi lien he - ngay thanh lap -->
+	<clabel id="lblContactPerson" text="$langPack.getString('company.contact.person')" PreferredSize="100,25"  >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="company_infor_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="2"  insets="5,5,15,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<clabel id="txtContactPerson" PreferredSize="100,25"  >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="company_infor_gbc" ipadx="0" ipady="0"
+							 gridx="1" gridy="2"  insets="5,5,15,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<clabel id="lblEstablishedDate" text="$langPack.getString('company.established.date')" PreferredSize="150,25"  >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="company_infor_gbc" ipadx="0" ipady="0"
+							 gridx="2" gridy="2"  insets="5,5,15,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<clabel id="dcestablishedDate" PreferredSize="100,25"  >
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="company_infor_gbc" ipadx="0" ipady="0"
+							 gridx="3" gridy="2"  insets="5,5,15,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.HORIZONTAL" weightx="0.0f" weighty="0.0f" />
+	</clabel>
+	<cwhitepanel id="companyInformationActionPanel" layout="FlowLayout(FlowLayout.CENTER,5,5)">
+		<gridbagconstraints Anchor="GridBagConstraints.CENTER" 
+				refid="company_infor_gbc" ipadx="0" ipady="0"
+				gridx="0" gridy="3"  insets="3,3,3,3"  
+				gridwidth="4" gridheight="1"
+				Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />
+		<!-- <cdlgbutton id="companyInforSaveButton" text="$langPack.getString('buttonSave')"  
+					PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22"/> -->
+		<!-- cdlgbutton id="warehouseInforNewButton" text="$langPack.getString('buttonNew')"   
+				PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22"/-->
+	</cwhitepanel>
+	<cwhitepanel id="companyFieldListActionPanel" layout="FlowLayout(FlowLayout.LEFT,5,5)">
+		<gridbagconstraints Anchor="GridBagConstraints.CENTER" 
+				refid="company_infor_gbc" ipadx="0" ipady="0"
+				gridx="0" gridy="4"  insets="3,3,3,3"  
+				gridwidth="4" gridheight="1"
+				Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="0.0f" />
+		<clabel id="lblFieldName" text="$langPack.getString('company.business.field.name')" PreferredSize="180,25"  />
+		<ctextfield id="txtFieldName" PreferredSize="250,22" MaximumSize="250,22" MinimumSize="73,22"></ctextfield>
+		<cdlgbutton id="saveButton" text="$langPack.getString('buttonSave')"  
+					PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22"
+					action="SAVE_BUSINESS_FIELD"/>
+	</cwhitepanel>
+	<cpaging id="businessFieldPaging">
+		<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+			refid="po_detail_gbc1" ipadx="0" ipady="0" gridx="0" gridy="5"
+			insets="3,3,3,3" gridwidth="4" gridheight="1" Fill="GridBagConstraints.BOTH"
+			weightx="1.0f" weighty="1.0f" />
+	</cpaging>
+</cwhitepanel>

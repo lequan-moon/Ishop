@@ -1,0 +1,87 @@
+<cwhitepanel id="whscHeaderPanel_1" Layout="BorderLayout">
+	<!--<cpaging id="saleTranxListPage" constraints="BorderLayout.CENTER"/>-->
+	<!--<cwhitepanel id="whscHeaderPanel" Layout="GridBagLayout" Constraints="BorderLayout.WEST">
+		<clabel id="lblWarehouseName" text="$langPack.getString('WarehouseName')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_header_gbc" ipadx="0" ipady="0"
+			 	gridx="0" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+		</clabel>
+		<ccombobox id="cbbWarehouseName" PreferredSize="130,23" MaximumSize="130,23" MinimumSize="130,23">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="1" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+		</ccombobox>
+		
+		<clabel id="lblLotName" text="$langPack.getString('LotName')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="2" gridy="0"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<ccombobox id="cbbLotName" PreferredSize="130,23" MaximumSize="130,23" MinimumSize="130,23">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="3" gridy="0"  insets="3,3,3,3"  gridwidth="6" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />	
+		</ccombobox>
+		
+		<clabel id="lblNote" text="$langPack.getString('Note')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="0" gridy="1"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+					Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />	
+		</clabel>
+		<ctextfield id="txtNote" MinimumSize="130,23">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+					refid="po_header_gbc" ipadx="0" ipady="0"
+				 	gridx="1" gridy="1"  insets="3,3,3,3"  gridwidth="6" gridheight="1"
+					Fill="GridBagConstraints.BOTH" weightx="20.0f" weighty="0.0f" />	
+		</ctextfield>
+		
+		<clabel id="lblItem_id" text="$langPack.getString('ItemId')" Background="121,121,121">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="0" gridy="2"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</clabel>
+		<ctextfield id="txtItem_id" PreferredSize="130,23" MaximumSize="130,23" MinimumSize="130,23">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="1" gridy="2"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</ctextfield>
+		
+		<clabel id="lblItem_name" text="$langPack.getString('Item name')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="2" gridy="2"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</clabel>
+		<ctextfield id="txtItem_name" PreferredSize="130,23" MinimumSize="130,23" MaximumSize="130,23">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="3" gridy="2"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</ctextfield>
+		<clabel id="lblQuantity" text="$langPack.getString('Quantity')">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="4" gridy="2"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />		
+		</clabel>
+		<ctextfield id="txtQuantity" PreferredSize="130,23"  MaximumSize="130,23" MinimumSize="130,23">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+				refid="po_detail_gbc1" ipadx="0" ipady="0"
+			 	gridx="5" gridy="2"  insets="3,3,3,3"  gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.NONE" weightx="20.0f" weighty="0.0f" />		
+		</ctextfield>
+		<cdlgbutton id="btnAdd" label="Add" action="cmdAdd" MinimumSize="74,23" MaximumSize="74,23" PreferredSize="74,23">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				refid="grn_master_gbc2" ipadx="0" ipady="0" gridx="0" gridy="3"
+				insets="3,3,3,3" gridwidth="1" gridheight="1" Fill="GridBagConstraints.NONE"
+				weightx="0.0f" weighty="0.0f" />
+		</cdlgbutton>
+	</cwhitepanel>-->
+</cwhitepanel>

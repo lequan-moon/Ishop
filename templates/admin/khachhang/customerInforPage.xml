@@ -1,0 +1,919 @@
+<ctabbedpane id="customerInforTabbedPane" Constraints="BorderLayout.NORTH">
+	<scrollpane id="customerInforScrollPane"  
+			HorizontalScrollBarPolicy="ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED"
+		VerticalScrollBarPolicy="ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED">			
+		<cwhitepanel id="customerInforContentContainer11" Layout="BorderLayout" Constraints="BorderLayout.CENTER">		
+			<cwhitepanel id="customerInforContentContainer" Layout="GridBagLayout" Constraints="BorderLayout.NORTH">	
+				<cwhitepanel id="customerInforContentPanel" Layout="GridBagLayout">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="master_customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="0" gridy="0"  insets="0,0,0,0"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.HORIZONTAL" 
+							weightx="1.0f" weighty="0.0f" />
+					<imagelabel id="txtContactAvata" text="" MinimumSize="120,120" PreferredSize="120,120" Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.CENTER" 
+							refid="customer_infor_gbc1" ipadx="0" ipady="0"
+							gridx="0" gridy="0"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="8"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</imagelabel>
+					<!-- Name, established date -->
+					<label id="lblCustomerName" text="$langPack.getString('customer.name')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="1" gridy="0"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />	
+					</label>
+					<ctextfield id="txtCustomerName" text=""   PreferredSize="130,22" Background="251,229,229"
+					 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="2" gridy="0"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="0.0f" weighty="0.0f" />			
+					
+					</ctextfield>
+							
+					<label id="lblCustomerEstablishedDate" text="$langPack.getString('customer.established.date')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="3" gridy="0"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<datechooser id="txtCustomerEstablishedDate" PreferredSize="130,22"  Background="251,229,229"
+					 MinimumSize="130,25"  MaximumSize="130,25" Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="4" gridy="0"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="1.0f" weighty="0.0f" />		
+					</datechooser>
+					
+					<!-- Contact person - Email -->
+					<label id="lblCustomerContactPerson" text="$langPack.getString('customer.contact.person')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="5" gridy="0"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ctextfield id="txtCustomerContactPerson" text=""  PreferredSize="130,22" 
+					 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="6" gridy="0"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="0.0f" weighty="0.0f" />
+					</ctextfield>
+							
+					<label id="lblCustomerEmail" text="$langPack.getString('customer.email')" >
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="1" gridy="1"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ctextfield id="txtCustomerEmail" text=""  PreferredSize="130,22"  Background="251,229,229"
+					 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="2" gridy="1"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="1.0f" weighty="0.0f" />
+					</ctextfield>
+					
+					<!-- Main Address -  Sub Address -->
+					<label id="lblCustomerMainAddress" text="$langPack.getString('customer.main.address')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="3" gridy="1"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ctextfield id="txtCustomerMainAddress" text=""  PreferredSize="130,22"  Background="251,229,229"
+					 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="4" gridy="1"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="0.0f" weighty="0.0f" />		
+					</ctextfield>
+							
+					<label id="lblCustomerSubAddress" text="$langPack.getString('customer.sub.address')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="5" gridy="1"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ctextfield id="txtCustomerSubAddress" text=""  PreferredSize="130,22"
+					 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="6" gridy="1"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="1.0f" weighty="0.0f" />		
+					</ctextfield>
+					<!-- Tel. - Fax -->
+					<label id="lblCustomerTelephone" text="$langPack.getString('customer.telephone')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="1" gridy="2"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ctextfield id="txtCustomerTelephone" text=""  PreferredSize="130,22"
+					 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="2" gridy="2"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="0.0f" weighty="0.0f" />			
+					</ctextfield>
+							
+					<label id="lblCustomerFax" text="$langPack.getString('customer.fax')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="3" gridy="2"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ctextfield id="txtCustomerFax" text=""  PreferredSize="130,22"
+					 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="4" gridy="2"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="1.0f" weighty="0.0f" />
+					</ctextfield>
+					
+					<!-- Bank Account - Website -->
+					<label id="lblCustomerBankAccount" text="$langPack.getString('customer.bank.account')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="5" gridy="2"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ctextfield id="txtCustomerBankAccount" text=""  PreferredSize="130,22"  Background="251,229,229"
+					 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="6" gridy="2"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="0.0f" weighty="0.0f" />		
+					</ctextfield>
+							
+					<label id="lblCustomerWebsite" text="$langPack.getString('customer.website')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="1" gridy="3"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ctextfield id="txtCustomerWebsite" text=""  PreferredSize="130,22"
+					 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="2" gridy="3"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="1.0f" weighty="0.0f" />		
+					</ctextfield>
+					<!-- YM - Skype -->
+					<label id="lblCustomerYM" text="$langPack.getString('customer.YM')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="3" gridy="3"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ctextfield id="txtCustomerYM" text=""  PreferredSize="130,22"
+					 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="4" gridy="3"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="0.0f" weighty="0.0f" />		
+					</ctextfield>
+							
+					<label id="lblCustomerSkype" text="$langPack.getString('customer.skype')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="5" gridy="3"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ctextfield id="txtCustomerSkype" text=""  PreferredSize="130,22"
+					 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="6" gridy="3"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="1.0f" weighty="0.0f" />		
+					</ctextfield>
+					
+					<!-- GTalk - Tax Code -->
+					<label id="lblCustomerGtalk" text="$langPack.getString('customer.gtalk')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="1" gridy="4"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ctextfield id="txtCustomerGtalk" text=""  PreferredSize="130,22"
+					 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="2" gridy="4"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="0.0f" weighty="0.0f" />		
+					</ctextfield>
+							
+					<label id="lblCustomerTaxCode" text="$langPack.getString('customer.tax.code')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="3" gridy="4"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ctextfield id="txtCustomerTaxCode" text=""  PreferredSize="130,22"  Background="251,229,229"
+					 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="4" gridy="4"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="1.0f" weighty="0.0f" />		
+					</ctextfield>
+					<!-- ID card -->
+					<label id="lblIdCardNumber" text="$langPack.getString('contact.id.card')(*)">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="5" gridy="4"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ctextfield id="txtIdCardNumber" text=""  PreferredSize="130,22"  Background="251,229,229"
+						MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="6" gridy="4"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="1.0f" weighty="0.0f" />		
+					</ctextfield>
+					<!-- last line -->
+					<label id="lblCustomerType" text="$langPack.getString('customer.type')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="1" gridy="5"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ccombobox id="comboCustomerType" text=""  PreferredSize="130,25"  Background="251,229,229"
+						MinimumSize="130,25"  MaximumSize="130,25" Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="2" gridy="5"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="1.0f" weighty="0.0f" />		
+					</ccombobox>
+					
+					<label id="lblCustomerRank" text="$langPack.getString('customer.rank')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="3" gridy="5"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ccombobox id="comboCustomerRank" text=""  PreferredSize="130,25" Background="251,229,229"
+						MinimumSize="130,25"  MaximumSize="130,25" Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="4" gridy="5"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="1.0f" weighty="0.0f" />		
+					</ccombobox>
+					<label id="lblCountry" text="$langPack.getString('country')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="5" gridy="5"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ccombobox id="comboCountry" text=""  PreferredSize="130,25"  Background="251,229,229"
+						MinimumSize="130,25"  MaximumSize="130,25" Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="6" gridy="5"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="1.0f" weighty="0.0f" />		
+					</ccombobox>
+					<label id="lblProvince" text="$langPack.getString('province')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="1" gridy="6"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ccombobox id="comboProvince" text=""  PreferredSize="130,25"  Background="251,229,229"
+						MinimumSize="130,25"  MaximumSize="130,25" Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="2" gridy="6"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="1.0f" weighty="0.0f" />		
+					</ccombobox>
+					
+					<label id="lblDistrict" text="$langPack.getString('district')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="3" gridy="6"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ccombobox id="comboDistrict" text=""  PreferredSize="130,25"  Background="251,229,229"
+						MinimumSize="130,25"  MaximumSize="130,25" Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="4" gridy="6"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="1.0f" weighty="0.0f" />		
+					</ccombobox>
+					
+					<label id="lblDebt_limit" text="$langPack.getString('debt_limit')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="5" gridy="6"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ctextfield id="txtDebt_limit" text=""  PreferredSize="130,22"
+						MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="6" gridy="6"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="1.0f" weighty="0.0f" />		
+					</ctextfield>
+					
+					<label id="lblDue_date" text="$langPack.getString('due_date')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="1" gridy="7"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ctextfield id="txtDue_date" text=""  PreferredSize="130,22"
+						MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="2" gridy="7"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="1.0f" weighty="0.0f" />		
+					</ctextfield>
+					
+					<label id="lblBank_code" text="$langPack.getString('bank_code')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="3" gridy="7"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.NONE" 
+							weightx="0.0f" weighty="0.0f" />		
+					</label>
+					<ccombobox id="comboBank_code" text=""  PreferredSize="130,25"  Background="251,229,229"
+						MinimumSize="130,25"  MaximumSize="130,25" Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="4" gridy="7"  insets="3,3,3,3"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="1.0f" weighty="0.0f" />		
+					</ccombobox>
+				</cwhitepanel>										
+				<cwhitepanel id="customerExtraInforPanel" Layout="BorderLayout">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="master_customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="0" gridy="1"  insets="0,0,0,0"  
+							gridwidthc="2" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="1.0f" weighty="0.0f" />
+					<!-- TabbedPane -->
+					<ctabbedpane id="customerExtraInforTabbedPane" constraints="BorderLayout.CENTER">							
+						<cwhitepanel id="customerContractInforPanel" Layout="GridBagLayout" Constraints="BorderLayout.CENTER">
+							<label id="lblContract_address" text="$langPack.getString('Contract_address')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_contract_infor_gbc" ipadx="0" ipady="0"
+									gridx="0" gridy="0" insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="1.0f" />	
+							</label>
+							<ctextfield id="txtContract_address" text=""   PreferredSize="130,22"
+								MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_contract_infor_gbc" ipadx="0" ipady="0"
+									gridx="1" gridy="0"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />
+							</ctextfield>
+							<label id="lblContract_country" text="$langPack.getString('adminTabCountry')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_contract_infor_gbc" ipadx="0" ipady="0"
+									gridx="2" gridy="0"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="1.0f" weighty="0.0f" />	
+							</label>
+							<ccombobox id="comboContract_country" text=""   PreferredSize="130,25"
+							 MinimumSize="130,25"  MaximumSize="130,25" Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_contract_infor_gbc" ipadx="0" ipady="0"
+									gridx="3" gridy="0"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />			
+							
+							</ccombobox>
+							<label id="lblContract_province" text="$langPack.getString('Contract_province')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_contract_infor_gbc" ipadx="0" ipady="0"
+									gridx="4" gridy="0"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="1.0f" weighty="0.0f" />	
+							</label>
+							<ccombobox id="comboContract_province" text=""   PreferredSize="130,25"
+							 MinimumSize="130,25"  MaximumSize="130,25" Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_contract_infor_gbc" ipadx="0" ipady="0"
+									gridx="5" gridy="0"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />			
+							
+							</ccombobox>
+							<label id="lblContract_district" text="$langPack.getString('Contract_district')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_contract_infor_gbc" ipadx="0" ipady="0"
+									gridx="0" gridy="1"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="0.0f" />	
+							</label>
+							<ccombobox id="comboContract_district" text=""   PreferredSize="130,25"
+							 MinimumSize="130,25"  MaximumSize="130,25" Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_contract_infor_gbc" ipadx="0" ipady="0"
+									gridx="1" gridy="1"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />			
+							
+							</ccombobox>
+							<label id="lblContract_sign_person" text="$langPack.getString('Contract_sign_person')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_contract_infor_gbc" ipadx="0" ipady="0"
+									gridx="2" gridy="1"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="0.0f" />	
+							</label>
+							<ctextfield id="txtContract_sign_person" text=""   PreferredSize="130,22"
+							 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_contract_infor_gbc" ipadx="0" ipady="0"
+									gridx="3" gridy="1"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />			
+							
+							</ctextfield>
+							<label id="lblContract_sign_person_position" text="$langPack.getString('Contract_sign_person_position')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_contract_infor_gbc" ipadx="0" ipady="0"
+									gridx="4" gridy="1"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="0.0f" />	
+							</label>
+							<ctextfield id="txtContract_sign_person_position" text=""   PreferredSize="130,22"
+							 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_contract_infor_gbc" ipadx="0" ipady="0"
+									gridx="5" gridy="1"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />			
+							
+							</ctextfield>
+							<label id="lblContract_sign_person_phone" text="$langPack.getString('Contract_sign_person_phone')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_contract_infor_gbc" ipadx="0" ipady="0"
+									gridx="0" gridy="2"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="0.0f" />	
+							</label>
+							<ctextfield id="txtContract_sign_person_phone" text=""   PreferredSize="130,22"
+							 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_contract_infor_gbc" ipadx="0" ipady="0"
+									gridx="1" gridy="2"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />			
+							
+							</ctextfield>
+							
+							<label id="lblContract_sign_person_mobile" text="$langPack.getString('Contract_sign_person_mobile')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_contract_infor_gbc" ipadx="0" ipady="0"
+									gridx="2" gridy="2"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="0.0f" />	
+							</label>
+							<ctextfield id="txtContract_sign_person_mobile" text=""   PreferredSize="130,22"
+							 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_contract_infor_gbc" ipadx="0" ipady="0"
+									gridx="3" gridy="2"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />			
+							
+							</ctextfield>
+							<label id="lblContract_sign_person_email" text="$langPack.getString('Contract_sign_person_email')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_contract_infor_gbc" ipadx="0" ipady="0"
+									gridx="4" gridy="2"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="0.0f" />	
+							</label>
+							<ctextfield id="txtContract_sign_person_email" text=""   PreferredSize="130,22"
+							 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_contract_infor_gbc" ipadx="0" ipady="0"
+									gridx="5" gridy="2"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />			
+							
+							</ctextfield>
+							<label id="lblContract_full_name" text="$langPack.getString('Contract_full_name')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_contract_infor_gbc" ipadx="0" ipady="0"
+									gridx="0" gridy="3"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="1.0f" />	
+							</label>
+							<ctextfield id="txtContract_full_name" text=""   PreferredSize="130,25"
+							 MinimumSize="130,25" Size="130,25" MaximumSize="130,25" Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_contract_infor_gbc" ipadx="0" ipady="0"
+									gridx="1" gridy="3"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="1.0f" />
+							</ctextfield>
+						</cwhitepanel>
+						<!-- ===================================================================== -->
+						<cwhitepanel id="customerShiptoInforPanel" Layout="GridBagLayout" Constraints="BorderLayout.CENTER">								
+							<label id="lblShipto_address" text="$langPack.getString('shipto_address')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_shipto_infor_gbc" ipadx="0" ipady="0"
+									gridx="0" gridy="0"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="0.0f" />	
+							</label>
+							<ctextfield id="txtShipto_address" text=""   PreferredSize="130,22"
+							 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_shipto_infor_gbc" ipadx="0" ipady="0"
+									gridx="1" gridy="0"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />			
+							
+							</ctextfield>
+							<label id="lblShipto_person" text="$langPack.getString('shipto_person')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_shipto_infor_gbc" ipadx="0" ipady="0"
+									gridx="2" gridy="0"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="0.0f" />	
+							</label>
+							<ctextfield id="txtShipto_person" text=""   PreferredSize="130,22"
+							 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_shipto_infor_gbc" ipadx="0" ipady="0"
+									gridx="3" gridy="0"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />			
+							
+							</ctextfield>
+							
+							<label id="lblShipto_person_position" text="$langPack.getString('shipto_person_position')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_shipto_infor_gbc" ipadx="0" ipady="0"
+									gridx="4" gridy="0"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="0.0f" />	
+							</label>
+							<ctextfield id="txtShipto_person_position" text=""   PreferredSize="130,22"
+							 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_shipto_infor_gbc" ipadx="0" ipady="0"
+									gridx="5" gridy="0"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />			
+							
+							</ctextfield>
+							
+							<label id="lblShipto_person_phone" text="$langPack.getString('shipto_person_phone')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_shipto_infor_gbc" ipadx="0" ipady="0"
+									gridx="0" gridy="1"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="0.0f" />	
+							</label>
+							<ctextfield id="txtShipto_person_phone" text=""   PreferredSize="130,22"
+							 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_shipto_infor_gbc" ipadx="0" ipady="0"
+									gridx="1" gridy="1"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />									
+							</ctextfield>
+							
+							<label id="lblShipto_person_mobile" text="$langPack.getString('shipto_person_mobile')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_shipto_infor_gbc" ipadx="0" ipady="0"
+									gridx="2" gridy="1"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="0.0f" />	
+							</label>
+							<ctextfield id="txtShipto_person_mobile" text=""   PreferredSize="130,22"
+							 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_shipto_infor_gbc" ipadx="0" ipady="0"
+									gridx="3" gridy="1"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />									
+							</ctextfield>
+							
+							<label id="lblShipto_person_email" text="$langPack.getString('shipto_person_email')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_shipto_infor_gbc" ipadx="0" ipady="0"
+									gridx="4" gridy="1"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="0.0f" />	
+							</label>
+							<ctextfield id="txtShipto_person_email" text=""   PreferredSize="130,22"
+							 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_shipto_infor_gbc" ipadx="0" ipady="0"
+									gridx="5" gridy="1"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />									
+							</ctextfield>
+							<label id="lblEmpty" text="">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_shipto_infor_gbc" ipadx="0" ipady="0"
+									gridx="0" gridy="2"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="1.0f" />	
+							</label>
+						</cwhitepanel>
+						<cwhitepanel id="customerBilltoInforPanel" Layout="GridBagLayout" Constraints="BorderLayout.CENTER">
+							<!--================================================================================ -->
+							<label id="lblBillto_address" text="$langPack.getString('billto_address')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_extra_infor_gbc" ipadx="0" ipady="0"
+									gridx="0" gridy="0"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="0.0f" />	
+							</label>
+							<ctextfield id="txtBillto_address" text=""   PreferredSize="130,22"
+							 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_extra_infor_gbc" ipadx="0" ipady="0"
+									gridx="1" gridy="0"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />			
+							
+							</ctextfield>
+							<label id="lblBillto_person" text="$langPack.getString('billto_person')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_extra_infor_gbc" ipadx="0" ipady="0"
+									gridx="2" gridy="0"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="0.0f" />	
+							</label>
+							<ctextfield id="txtBillto_person" text=""   PreferredSize="130,22"
+							 MinimumSize="130,25"  MaximumSize="130,25" Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_extra_infor_gbc" ipadx="0" ipady="0"
+									gridx="3" gridy="0"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />			
+							
+							</ctextfield>
+							
+							<label id="lblBillto_person_position" text="$langPack.getString('billto_person_position')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_extra_infor_gbc" ipadx="0" ipady="0"
+									gridx="4" gridy="0"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="0.0f" />	
+							</label>
+							<ctextfield id="txtBillto_person_position" text=""   PreferredSize="130,22"
+							 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_extra_infor_gbc" ipadx="0" ipady="0"
+									gridx="5" gridy="0"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />
+							</ctextfield>
+							
+							<label id="lblBillto_person_phone" text="$langPack.getString('billto_person_phone')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_extra_infor_gbc" ipadx="0" ipady="0"
+									gridx="0" gridy="1"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="0.0f" />	
+							</label>
+							<ctextfield id="txtBillto_person_phone" text=""   PreferredSize="130,22"
+							 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_extra_infor_gbc" ipadx="0" ipady="0"
+									gridx="1" gridy="1"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />									
+							</ctextfield>
+							
+							<label id="lblBillto_person_mobile" text="$langPack.getString('billto_person_mobile')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_extra_infor_gbc" ipadx="0" ipady="0"
+									gridx="2" gridy="1"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="0.0f" />	
+							</label>
+							<ctextfield id="txtBillto_person_mobile" text=""   PreferredSize="130,22"
+							 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_extra_infor_gbc" ipadx="0" ipady="0"
+									gridx="3" gridy="1"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />									
+							</ctextfield>
+							
+							<label id="lblBillto_person_email" text="$langPack.getString('billto_person_email')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_extra_infor_gbc" ipadx="0" ipady="0"
+									gridx="4" gridy="1"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="0.0f" />	
+							</label>
+							<ctextfield id="txtBillto_person_email" text=""   PreferredSize="130,22"
+							 MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_extra_infor_gbc" ipadx="0" ipady="0"
+									gridx="5" gridy="1"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />									
+							</ctextfield>
+							<label id="lblBillto_note" text="$langPack.getString('billto_note')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_extra_infor_gbc" ipadx="0" ipady="0"
+									gridx="0" gridy="2"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="0.0f" />	
+							</label>
+							<ctextfield id="txtBillto_note" text="" PreferredSize="130,22"
+								MinimumSize="130,22"  Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_extra_infor_gbc" ipadx="0" ipady="0"
+									gridx="1" gridy="2"  insets="3,3,3,3"  
+									gridwidth="6" gridheight="1"
+									Fill="GridBagConstraints.BOTH" 
+									weightx="1.0f" weighty="0.0f" />									
+							</ctextfield>
+							<label id="lblBilltoEmpty" text="">
+								<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="customer_extra_infor_gbc" ipadx="0" ipady="0"
+									gridx="2" gridy="2"  insets="3,3,3,3"  
+									gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" 
+									weightx="0.0f" weighty="1.0f" />	
+							</label>
+						</cwhitepanel>
+					</ctabbedpane>
+				</cwhitepanel>
+				<cwhitepanel id="spacePanel" Layout="BorderLayout">
+					<gridbagconstraints Anchor="GridBagConstraints.SOUTHWEST" 
+							refid="master_customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="0" gridy="2"  insets="0,0,0,0"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="1.0f" weighty="1.0f" />					
+					<label />
+				</cwhitepanel>
+				<cwhitepanel id="customerInforActionPanel1" Layout="BorderLayout">
+					<gridbagconstraints Anchor="GridBagConstraints.SOUTHWEST" 
+							refid="master_customer_infor_gbc" ipadx="0" ipady="0"
+							gridx="0" gridy="3"  insets="0,0,0,0"  
+							gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" 
+							weightx="1.0f" weighty="0.0f" />					
+					<cwhitepanel id="customerInforActionPanel" Layout="FlowLayout(FlowLayout.LEFT,3,3)" Constraints="BorderLayout.SOUTH">
+						<cdlgbutton id="customerSaveButton" text="$langPack.getString('buttonSave')" PreferredSize="73,22" 
+									Action="ACTION_SAVE_CUS"
+									MaximumSize="73,22" MinimumSize="73,22" Enabled="$loginUser.canPerformFunction('CUST_UPDATE_CMDFunc')"/>
+						<cdlgbutton id="customerNewButton" text="$langPack.getString('buttonNew')" PreferredSize="73,22"
+									Action="ACTION_NEW_CUS"
+									MaximumSize="73,22" MinimumSize="73,22" Enabled="$loginUser.canPerformFunction('CUST_CREATE_CMDFunc')"/>
+					</cwhitepanel>
+				</cwhitepanel>
+			</cwhitepanel>
+		</cwhitepanel>
+	</scrollpane>	
+	<cwhitepanel id="customerNetworkContainer2"  Layout="BorderLayout" constrants="BorderLayout.CENTER">
+		<cwhitepanel id="customerNetworkContainer1" Layout="BorderLayout" constrants="BorderLayout.CENTER"/>	
+	</cwhitepanel>	
+</ctabbedpane>

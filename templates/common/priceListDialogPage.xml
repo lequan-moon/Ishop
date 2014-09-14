@@ -1,0 +1,126 @@
+<genericdialog id="priceListDialog" layout="BorderLayout" Title="$langPack.getString('pl.dialog.title')">	
+	 <!--MinimumSize="800,200"-->
+	<!--splitpane DividerSize="5" ContinuousLayout="true" OneTouchExpandable="true"
+			id="priceListSplit" Orientation="0"-->
+		<cwhitepanel id="masterPanel"
+			Border="TitledBorder()" Layout="BorderLayout" constraints="BorderLayout.CENTER" >
+			
+			<cwhitepanel id="priceListMasterPanel"
+				Border="TitledBorder($langPack.getString('chi.tiet'))" Layout="GridBagLayout"  constraints="BorderLayout.SOUTH" >										
+				<!-- Currency-->	
+				<clabel id="lblPriceListCurrency" text="$langPack.getString('currency.type')">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="pl_global_gbc" ipadx="0" ipady="0"
+									 gridx="0" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+				</clabel>
+				<ccombobox id="comboPriceListCurency" text=" " font="Arial Unicode MS-PLAIN-11" 
+					 PreferredSize="150,20"  Background="251,229,229">							
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="pl_global_gbc" ipadx="0" ipady="0"
+									 gridx="1" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />
+									
+				</ccombobox>
+				<!-- Product -->	
+				<clabel id="lblPriceListProduct" text="$langPack.getString('pl.product')">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="pl_global_gbc" ipadx="0" ipady="0"
+									 gridx="2" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+				</clabel>
+				<ctextfield id="txtPriceListProduct" text="  " PreferredSize="150,20"  Background="251,229,229">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="pl_global_gbc" ipadx="0" ipady="0"
+									 gridx="3" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+									
+				</ctextfield>
+				<cbutton2 
+					Icon="com/nn/ishop/client/img/button/treeicon.png"
+					SelectedIcon="com/nn/ishop/client/img/button/treeicon.png"
+					RolloverIcon="com/nn/ishop/client/img/button/treeicon.png"
+					RolloverSelectedIcon="com/nn/ishop/client/img/button/treeicon.png" 
+					preferredSize="22,22" 
+					id="btnChooseProduct" text="" action="ACT_OPEN_PRODUCT_DIALOG">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="pl_global_gbc" ipadx="0" ipady="0"
+									 gridx="4" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+				</cbutton2>
+				<!-- PL Type-->	
+				<clabel id="lblPriceListType" text="$langPack.getString('pl.type')">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="pl_global_gbc" ipadx="0" ipady="0"
+									 gridx="5" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+				</clabel>
+				<ccombobox id="comboPriceListType" text=" " font="Arial Unicode MS-PLAIN-11" 
+					 PreferredSize="150,20"  Background="251,229,229">							
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="pl_global_gbc" ipadx="0" ipady="0"
+									 gridx="6" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" weightx="9.0f" weighty="0.0f" />										
+				</ccombobox>
+				<!-- Selling price-->	
+				<clabel id="lblPriceListSellingPrice" text="$langPack.getString('pl.selling.price')">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="pl_global_gbc" ipadx="0" ipady="0"
+									 gridx="0" gridy="1"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+				</clabel>
+				<ctextfield id="txtPriceListSellingPrice" text=" " font="Arial Unicode MS-PLAIN-11" 
+					PreferredSize="150,20">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="pl_global_gbc" ipadx="0" ipady="0"
+									 gridx="1" gridy="1"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+									
+				</ctextfield>
+				<!--Purchasing price -->	
+				<clabel id="lblPriceListPurchasingPrice" text="$langPack.getString('pl.purchasing.price')">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="pl_global_gbc" ipadx="0" ipady="0"
+									 gridx="2" gridy="1"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+				</clabel>
+				<ctextfield id="txtPriceListPurchasingPrice" text="  " PreferredSize="150,20">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="pl_global_gbc" ipadx="0" ipady="0"
+									 gridx="3" gridy="1"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+									
+				</ctextfield>
+				<!--Discount with base price -->	
+				<clabel id="lblPriceListDiscount" text="$langPack.getString('pl.discount')">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="pl_global_gbc" ipadx="0" ipady="0"
+									 gridx="5" gridy="1"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+				</clabel>
+				<ctextfield id="txtPriceListDiscount" text="  " PreferredSize="150,20">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="pl_global_gbc" ipadx="0" ipady="0"
+									 gridx="6" gridy="1"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />
+									
+				</ctextfield>			
+				<cwhitepanel id="priceListActionPanel" Layout="FlowLayout(FlowLayout.CENTER,5,5)">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="pl_global_gbc" ipadx="0" ipady="0"
+									 gridx="0" gridy="2"  insets="5,5,5,5"  gridwidth="7" gridheight="1"
+									Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />
+									
+					<cdlgbutton id="savePriceListButton" text="$langPack.getString('buttonSave')"  
+								PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22" Action="ACT_SAVE_PRICELIST"/>
+					<cdlgbutton id="newpriceListButton" text="$langPack.getString('buttonNew')"   
+							PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22" Action="ACT_NEW_PRICELIST"/>
+				</cwhitepanel>
+			</cwhitepanel>
+			<cwhitepanel id="priceListPagePanel"
+				Border="TitledBorder($langPack.getString('danh.sach'))" Layout="BorderLayout"  constraints="BorderLayout.CENTER" >
+				<cpaging id="plListPage"  Constraints="BorderLayout.CENTER"/>
+			</cwhitepanel>
+		</cwhitepanel>
+	<!--/splitpane-->
+</genericdialog>

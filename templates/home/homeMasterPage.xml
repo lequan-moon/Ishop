@@ -1,0 +1,39 @@
+<cwhitepanel id="homePerspectivePanel" layout="BorderLayout" constraints="BorderLayout.NORTH"> 
+	<cwhitepanel id="cTabbedPanePanel" layout="BorderLayout" constraints="BorderLayout.CENTER">
+		<ctabbedpane id="homeTabbedPane">
+			<!-- Transaction list-->
+			<scrollpane id="scMain" 
+				HorizontalScrollBarPolicy="ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED"		
+				VerticalScrollBarPolicy="ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED">
+				<cwhitepanel id="pnlHome"
+						Layout="GridBagLayout"  constraints="BorderLayout.CENTER">													
+					<cwhitepanel id="pnlChart1" Layout="BorderLayout">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+							 gridx="0" gridy="0"  insets="2,2,2,2"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+					</cwhitepanel>
+					<cwhitepanel id="pnlChart2" Layout="BorderLayout">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+							 gridx="1" gridy="0"  insets="2,2,2,2"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+					</cwhitepanel>
+					<cwhitepanel id="pnlChart3" Layout="BorderLayout">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+							 gridx="0" gridy="1"  insets="2,2,2,2"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+					</cwhitepanel>
+					<cwhitepanel id="pnlChart4" Layout="BorderLayout">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+							 gridx="1" gridy="1"  insets="2,2,2,2"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />
+					</cwhitepanel>
+					<cwhitepanel id="pnlChart5" Layout="BorderLayout">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+							 gridx="0" gridy="2"  insets="2,2,2,2"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+					</cwhitepanel>
+					<cwhitepanel id="pnlChart6" Layout="BorderLayout">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="sale_tranx_detail_gbc1" ipadx="0" ipady="0"
+							 gridx="1" gridy="2"  insets="2,2,2,2"  gridwidth="1" gridheight="1" Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />
+					</cwhitepanel>
+				</cwhitepanel>
+			</scrollpane>
+				
+		</ctabbedpane>
+	</cwhitepanel>
+</cwhitepanel>

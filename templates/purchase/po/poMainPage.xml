@@ -1,0 +1,58 @@
+<splitpane DividerSize="5" ContinuousLayout="true" 
+				id="poTranxSplit" Orientation="0" DeviderLocation="300">
+<ctwomodepanel id="tranxTwoModePnl" Layout="BorderLayout">
+<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				refid="purchase_master_gbc2" ipadx="0" ipady="0" gridx="0" gridy="0"
+				insets="3,3,3,3" gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />
+	<cwhitepanel id="purchaseTranxListPageAtPPCnt" Layout="BorderLayout"  Border="EmptyBorder(2,2,2,2)" constraints="BorderLayout.CENTER">		
+		<cpaging id="purchaseTranxListPageAtPP" constraints="BorderLayout.CENTER"/>
+	</cwhitepanel>
+</ctwomodepanel>
+<scrollpane>
+<ctwomodepanel id="detailTwoModePnl" Layout="BorderLayout">
+	<cwhitepanel id="purchaseMainPage" Layout="GridBagLayout" constrains="BorderLayout.CENTER">
+		<cwhitepanel id="purchasePOHeaderContainer"
+			layout="BorderLayout"><!--Border="TitledBorder($langPack.getString('po.header.container.title')"-->
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				refid="purchase_master_gbc2" ipadx="0" ipady="0" gridx="0" gridy="0"
+				gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />
+		</cwhitepanel>
+		<cwhitepanel id="purchasePOInputItemContainer" layout="BorderLayout"
+			Border="TitledBorder($langPack.getString('po.detail.container.title'))">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				refid="purchase_master_gbc2" ipadx="0" ipady="0" gridx="0" gridy="1"
+				gridwidth="1" gridheight="1"
+				Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />
+		</cwhitepanel>	
+		<cwhitepanel id="buttonSet" layout="GridbagLayout"
+			constrains="GridBagConstraints.FIRST_LINE_START">
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+				refid="purchase_master_gbc2" ipadx="0" ipady="0" gridx="0" gridy="3"
+				gridwidth="1" gridheight="1" Fill="GridBagConstraints.NONE"
+				weightx="0.0f" weighty="0.0f" />
+			<cdlgbutton id="btnNew" label="$langPack.getString('buttonNew')" action="cmdNew" MinimumSize="74,23" MaximumSize="74,23" PreferredSize="74,23" Enabled="$loginUser.canPerformFunction('POOR_NEW_CMDFunc')">
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					refid="purchase_master_gbc2" ipadx="0" ipady="0" gridx="0" gridy="0"
+					insets="3,3,3,3" gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL"
+					weightx="0.0f" weighty="0.0f" />
+			</cdlgbutton>
+			<cdlgbutton id="btnSave" label="$langPack.getString('buttonSave')" action="cmdSave" MinimumSize="74,23" MaximumSize="74,23" PreferredSize="74,23" Enabled="$loginUser.canPerformFunction('POOR_SAVE_CMDFunc')">
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					refid="purchase_master_gbc2" ipadx="0" ipady="0" gridx="1" gridy="0"
+					insets="3,3,3,3" gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL"
+					weightx="0.0f" weighty="0.0f" />
+			</cdlgbutton>
+			<cdlgbutton id="btnCancel" label="$langPack.getString('buttonCancel')" action="cmdCancel" MinimumSize="74,23" MaximumSize="74,23" PreferredSize="74,23" Enabled="$loginUser.canPerformFunction('POOR_CANCEL_CMDFunc>')">
+				<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					refid="purchase_master_gbc2" ipadx="0" ipady="0" gridx="2" gridy="0"
+					insets="3,3,3,3" gridwidth="1" gridheight="1" Fill="GridBagConstraints.HORIZONTAL"
+					weightx="0.0f" weighty="0.0f" />
+			</cdlgbutton>
+		</cwhitepanel>
+	</cwhitepanel>
+</ctwomodepanel>
+</scrollpane>
+
+</splitpane>

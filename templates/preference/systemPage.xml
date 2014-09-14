@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cwhitepanel  id="generalPanel" layout="BorderLayout" constraints="BorderLayout.CENTER"  PreferredSize="600,400">	
+	<cwhitepanel  id="generalPanelContainer" layout="GridBagLayout" constraints="BorderLayout.NORTH">	
+		<cwhitepanel id="cacheInforPanel"  border="TitledBorder($langPack.getString('cache.option'))" 
+			layout="GridBagLayout">	
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+			 refid="pref_system_gbc" ipadx="0" ipady="0"
+			 gridwidth="1" gridheight="1"
+			 gridx="0" gridy="0"  insets="5,5,5,5"
+			 Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />		 
+			 <ccheckbox background="Color.WHITE" id="checkAlwaysCache" text="$langPack.getString('always.cache')">
+			 	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_cache_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="0" gridy="0"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />				 
+			 </ccheckbox>
+			 <!-- Label cache folder -->
+			 <clabel id="labelCacheFolder" text="$langPack.getString('cache.folder')">
+			 	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_cache_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="1" gridy="0"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+			 </clabel>
+			 <!-- text cache folder -->
+			 <ctextfield id="txtCacheFolder">
+				 <gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+						 refid="pref_cache_gbc" ipadx="0" ipady="0"
+						 gridwidth="1" gridheight="1"
+						 gridx="2" gridy="0"  insets="5,5,5,5"
+						 Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />
+			 </ctextfield>			 
+		</cwhitepanel>		
+		<!--  Audit option -->
+		<cwhitepanel id="auditInforPanel"  border="TitledBorder($langPack.getString('pref.system.audit.option'))" layout="GridBagLayout">		
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+			 refid="pref_system_gbc" ipadx="0" ipady="0"
+			 gridwidth="1" gridheight="1"
+			 gridx="0" gridy="1"  insets="5,5,5,5"
+			 Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="1.0f" />
+			  <!-- LINE 1  -->
+			 <ccheckbox background="Color.WHITE" id="checkDbAction" text="$langPack.getString('pref.system.audit.db.action')">
+			 	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_audit_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="0" gridy="0"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />				 
+			 </ccheckbox>
+			 <ccheckbox background="Color.WHITE" id="checkBackendAction" text="$langPack.getString('pref.system.audit.backend.action')">
+			 	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_audit_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="1" gridy="0"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />				 
+			 </ccheckbox>
+			   <!-- LINE 2  -->
+			 <ccheckbox background="Color.WHITE" id="checkFrontendAction" text="$langPack.getString('pref.system.audit.frontend.action')">
+			 	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_audit_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="0" gridy="1"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />				 
+			 </ccheckbox>
+			 <ccheckbox background="Color.WHITE" id="checkAllAction" text="$langPack.getString('pref.system.audit.all.action')">
+			 	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_audit_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="1" gridy="1"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />				 
+			 </ccheckbox>
+			 
+		</cwhitepanel>	
+		
+		<!--  auto backup infor panel-->
+		<cwhitepanel id="autoBackupInforPanel"  border="TitledBorder($langPack.getString('pref.system.auto.backup'))" layout="GridBagLayout">		
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+			 refid="pref_system_gbc" ipadx="0" ipady="0"
+			 gridwidth="1" gridheight="1"
+			 gridx="0" gridy="2"  insets="5,5,5,5"
+			 Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="1.0f" />		 
+			 <ccheckbox background="Color.WHITE" id="whenSystemShutdown" text="$langPack.getString('pref.system.autobackup.shutdown.system')">
+			 	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_auto_backup_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="0" gridy="0"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />				 
+			 </ccheckbox>
+			 <ccheckbox background="Color.WHITE" id="manualBackup" text="$langPack.getString('pref.system.autobackup.manual')">
+			 	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_auto_backup_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="0" gridy="1"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />				 
+			 </ccheckbox>
+			 <ccheckbox background="Color.WHITE" id="neverBackup" text="$langPack.getString('pref.system.autobackup.never')">
+			 	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_auto_backup_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="0" gridy="2"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />				 
+			 </ccheckbox>
+			 
+		</cwhitepanel>	
+		
+		<cwhitepanel id="dateTimeInforPanel"  border="TitledBorder($langPack.getString('date.time.option'))" 
+			layout="GridBagLayout">	
+			<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+			 refid="pref_system_gbc" ipadx="0" ipady="0"
+			 gridwidth="1" gridheight="1"
+			 gridx="0" gridy="3"  insets="5,5,5,5"
+			 Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="0.0f" />		 
+			 
+			 <!-- Label date/time -->
+			 <clabel id="labelDateTimeFormat" text="$langPack.getString('date.pattern')">
+			 	<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+					 refid="pref_datetime_gbc" ipadx="0" ipady="0"
+					 gridwidth="1" gridheight="1"
+					 gridx="0" gridy="0"  insets="5,5,5,5"
+					 Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+			 </clabel>
+			 <!-- text cache folder -->
+			 <ctextfield id="txtDateTimeFormat" text="dd.MM.yyyy">
+				 <gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START"
+						 refid="pref_datetime_gbc" ipadx="0" ipady="0"
+						 gridwidth="1" gridheight="1"
+						 gridx="1" gridy="0"  insets="5,5,5,5"
+						 Fill="GridBagConstraints.BOTH" weightx="1.0f" weighty="1.0f" />
+			 </ctextfield>			 
+		</cwhitepanel>	
+		
+	</cwhitepanel>
+	</cwhitepanel>		

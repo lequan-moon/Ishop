@@ -1,0 +1,8 @@
+<splitpane DividerSize="5"
+	id="mainSplit" ContinuousLayout="true">	
+	<ctwomodepanel id="customerListContainer" Layout="BorderLayout"/>	
+	<roundbordercomponent id="customerInforMasterContainer" 
+		border="EmptyBorder(6,0,0,0)" Layout="BorderLayout" 
+		constrants="BorderLayout.CENTER">			
+	</roundbordercomponent>
+</splitpane>

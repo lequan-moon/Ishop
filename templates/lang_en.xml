@@ -1,0 +1,353 @@
+﻿<langpack>
+<!-- About dialog -->
+<str id="about.infor.about.header.title" txt="About"/>	
+	<!-- Search conditions-->
+	<str id="item.search.conditions" txt="Search conditions"/>
+	<str id="search.item.by.name" txt="By Name"/>
+	<str id="search.item.by.id" txt="By ID"/>
+	<str id="submit.search.button" txt="Search"/>
+	
+	<!-- Packing Style -->
+	<str id="item.packing.style.name" txt="Packing style name"/>
+	<str id="item.packing.style.id" txt="Packing style id"/>
+	
+	
+	<!-- BP Group -->
+	<str id="item.section.id" txt="Section Id"/>
+	<str id="item.section.name" txt="Section Name"/>
+	<!-- BP Group -->
+	<str id="BPG.id" txt="BP Group ID"/>
+	<str id="BPG.name" txt="BP Group Name"/>	
+	
+	<!-- UOM -->
+	<str id="UOM.title" txt="Unit of Measurement"/>
+	<str id="UOM.id" txt="ID"/>
+	<str id="UOM.name" txt="Name"/>
+	
+	<!-- Packing style -->
+	<str id="packing.style.title" txt="Packing Style"/>
+	<str id="packing.style.id" txt="ID"/>
+	<str id="packing.style.name" txt="Name"/>
+	<str id="packing.style.desc" txt="Description"/>
+	
+	<!--  product category  -->
+	<str id="category.id" txt="Category ID"/>
+	<str id="category.name" txt="Category Name"/>
+	<str id="category.desc" txt="Description"/>
+
+	
+	<!--  product group  -->
+	<str id="group.id" txt="Group ID"/>
+	<str id="group.name" txt="Group Name"/>
+	<str id="group.desc" txt="Description"/>
+	<!-- Item information -->
+	
+	<str id="item.bom" txt=""/>
+	<str id="item.id" txt=""/>
+	<str id="item.org" txt=""/>
+	<str id="item.vendor.code" txt=""/>
+	<str id="item.supplier_code" txt=""/>
+	<str id="item.uom" txt=""/>
+	<str id="item.packing.style" txt=""/>
+	<str id="item.country.of.original" txt=""/>
+	<str id="item.commission.payable" txt=""/>
+	<str id="item.category" txt=""/>
+	<str id="item.produced.date" txt=""/>
+	<str id="item.expired.date" txt=""/>
+	<str id="item.type" txt=""/>
+	<str id="item.status" txt=""/>
+	<str id="item.stockable" txt=""/>
+	<str id="item.transactable" txt=""/>
+	<str id="item.reserveable" txt=""/>
+	<str id="item.desc" txt=""/>
+<!--  Product definition sheet -->
+	<str id="admin.product.category" txt="Product Category"/>
+	<str id="admin.product.group" txt="Product Group"/>
+	<str id="admin.product.bp.group" txt="BP Group"/>
+	<str id="admin.product.section" txt="Section"/>
+	<str id="admin.product.infor" txt="Thông tin hàng hóa"/>
+	
+<!--  Product definition sheet -->
+	<str id="adminTabCountry" txt="Country  "/>
+	<str id="adminTabCompany" txt="Company  "/>
+	<str id="adminTabWarehouse" txt="Warehouse  "/>
+	<str id="adminTabLot" txt="Lots  "/>
+	<str id="adminTabUser" txt="User  "/>
+	<str id="adminTabCustomer" txt="Customer  "/>
+	<str id="adminTabProduct" txt="Goods  "/>
+	
+	<str id="appTitle" txt="SIC V1.1 - Trial version with 30 days try-out"/>
+	<str id="progressStatus" txt="Process"/>
+	<str id="userName" txt="User Name"/>
+	<str id="appExitMenuItem" txt="Exit"/>
+	<str id="appLanguagesMenuItem" txt="Languages"/>
+	
+	<str id="appHelpMenuItem" txt="Help"/>
+	<str id="appAboutMenuItem" txt="About"/>
+	<str id="appFileMenu" txt="File"/>
+	
+	<!-- 20.11.2008 -->
+	<!-- button -->
+	<str id="buttonSave" txt="Save"/>	
+	<str id="buttonCancel" txt="Cancel"/>
+	<str id="buttonAdd" txt="Add"/>
+	<str id="selectAll" txt="Select All"/>
+	<str id="addPerson" txt="Add Person"/>
+	
+	
+	<str id="pagingLabelAssociated" txt="Associated"/>
+	<str id="pagingLabelUnassociated" txt="Unassociated"/>
+	<str id="pagingLabelShowEntries" txt="Show entries"/>
+	<str id="defaultSearchText" txt="Seach For"/>	
+	<!-- Buttons -->
+	<str id="button.save" txt="Save"/>
+	<str id="checkbox.check.all" txt="Select All"/>
+	<str id="paging.panel.show.entries" txt="Show entries"/>
+	<str id="buttonPrint" txt="Print"/>
+	<str id="buttonDelete" txt="Delete"/>
+	<str id="buttonPrice" txt="Price"/>
+	<str id="buttonEditPrice" txt="Edit Price"/>	
+	<!-- About dialog -->
+	<str id="application.name" txt="2N iShop"/>
+	<str id="about.infor.copyright" txt="Copyright(c) 2007-2011 2N Technologies Jsc. "/>
+	<str id="about.infor.contact.email" txt="Email: contact@2n.com.vn"/>
+	<str id="about.infor.contact.tel" txt="ĐT: pending "/>
+	<str id="about.infor.contact.mobile" txt="Mobile: 0904961275"/>
+	<!-- Bổ sung thông tin hàng hóa -->
+	
+	<str id="loc.theo.ten.hoac.id" txt="Filter by Name or ID"/>
+	<str id="button.loc.hang.hoa" txt="Filter"/>
+	<!-- Chi tiet hang hoa -->
+	<str id="ma.mat.hang" txt="Id"/>
+	<str id="ten.mat.hang" txt="Item Name"/>
+	<str id="quy.cach.san.pham" txt="Style"/>
+	<str id="nuoc.san.xuat" txt="Country"/>
+	<str id="cong.ty.san.xuat" txt="Company"/>
+	<str id="ngay.san.xuat" txt="Prod. Date"/>
+	<str id="ngay.het.han" txt="Exp. Date"/>
+	<str id="don.vi.tinh" txt="UOM"/>
+	<str id="danh.muc.hang" txt="Category"/>
+	<str id="item.ghi.chu" txt="Description"/>	
+	<str id="danh.sach.hang.hoa" txt="Item List"/>
+<!-- Nguoi dung -->	
+	<str id="user.full.name" txt="Full name"/>	
+	<str id="user.company.name" txt="Company name"/>
+	<str id="login.id" txt="Login Id"/>
+	<str id="password" txt="Password"/>
+	<str id="user.address" txt="Address"/>
+	<str id="user.telephone" txt="Telephone"/>
+	<str id="user.mobile" txt="Mobile"/>
+	<str id="user.position1" txt="Position 1"/>
+	<str id="user.position2" txt="Position 2"/>
+	<str id="user.start.date" txt="Started date"/>
+	<str id="user.end.date" txt="End date"/>
+	<str id="user.diplomas" txt="Dipmas"/>
+	<str id="user.occupation" txt="Occupation"/>
+	<str id="user.danh.sach.nguoi.dung" txt="User List"/>
+	
+	<str id="user.available.role.list" txt="Available Role"/>
+	<str id="user.assigned.role.list" txt="Asigned Role"/>
+	<str id="buttonRemove" txt="Remove"/>
+	<str id="buttonEdit" txt="Edit"/>
+	<str id="buttonNew" txt="Create New"/>
+	
+	<!-- Customer information -->
+	<str id="customer.information.title" txt="Customer Information"/>
+	<str id="customer.list.title" txt="Customer List"/>
+	
+	<str id="customer.name" txt="Customer Name (*)"/>
+	<str id="customer.established.date" txt="Establish Date(*)"/>
+	<str id="customer.contact.person" txt="Contact Person(*)"/>
+	<str id="customer.email" txt="Email(*)"/>
+	<str id="customer.main.address" txt="Address 1(*)"/>
+	<str id="customer.sub.address" txt="Address 2"/>
+	<str id="customer.telephone" txt="Telephone(*)"/>
+	<str id="customer.fax" txt="Fax(*)"/>
+	
+	<str id="customer.bank.account" txt="Bank Account(*)"/>
+	<str id="customer.website" txt="Website"/>
+	<str id="customer.YM" txt="YM"/>
+	<str id="customer.skype" txt="Skype"/>
+	<str id="customer.gtalk" txt="Gtalk"/>
+	<str id="customer.tax.code" txt="Tax Code(*)"/>
+	<!-- Kho vận -->
+	
+	<str id="warehouse.information.title" txt="Warehouse Information"/>
+	<str id="warehouse.list.title" txt="Warehouse List"/>
+	
+	<str id="warehouse.name" txt="Warehouse Name (*)"/>
+	<str id="warehouse.company.name" txt="Company Name (*)"/>
+	<str id="warehouse.warehouser1" txt="Warehouser 1"/>
+	<str id="warehouse.warehouser2" txt="Warehouser 2"/>
+	<str id="warehouse.address" txt="Address"/>
+	
+	<str id="country.page.title" txt="Country Information Maitainance"/>	
+	<str id="country.label.country.code" txt="Country Code"/>	
+	<str id="country.label.country.name" txt="Country Name"/>	
+	<!-- company.information.title-->
+	<str id="company.information.title" txt="Company information details"/>
+	<str id="company.name" txt="Company Name"/>
+	<str id="company.address" txt="Company Address"/>
+	<str id="company.telephone" txt="Telephone"/>
+	<str id="company.fax" txt="Fax"/>
+	<str id="company.contact.person" txt="Contact Person"/>
+	<str id="company.list.title" txt="Company Sumary List"/>	
+	<str id="company.established.date" txt="Established Date"/>	
+	
+	<!-- Lot  -->
+	<str id="lot.information.title" txt="Lot Information"/>	
+	<str id="lot.name" txt="Lot name"/>	
+	<str id="lot.warehouse" txt="Warehouse"/>	
+	<str id="lot.list.title" txt="Lot list"/>	
+	
+	<!-- report.condition.container.title  -->	
+	<str id="report.condition.container.title" txt="Report Conditions"/>
+	<str id="report.from.date" txt="From date"/>
+	<str id="report.to.date" txt="To Date"/>
+	<str id="report.bill.number" txt="Invoice/Bill"/>
+	<str id="report.customer" txt="Customer"/>
+	<str id="report.warehouse" txt="Kho"/>	
+	<str id="report.category" txt="Category"/>
+	<str id="report.product" txt="Sản phẩm"/>
+	<str id="report.report.type" txt="Report type"/>
+	<str id="report.list.title" txt="Report List"/>
+	<str id="report.tabbed.title" txt="Report"/>	
+	<str id="statistics.tabbed.title" txt="Analysis and Stats"/>
+	
+		<str id="report.list.item.1" txt="1. Daily Sale Report"/>
+	<str id="report.list.item.2" txt="2. Item Stock Report (by Item ID)"/>
+	<str id="report.list.item.3" txt="3. List of item (available in system)"/>
+	<str id="report.list.item.4" txt="4. Item purchase report"/>
+	<str id="report.list.item.5" txt="5. Item Internal Transfer Report"/>
+	<str id="report.list.item.6" txt="6. Generic Sale Report"/>
+	<str id="report.list.item.7" txt="7. Item Stock Report (Acrued)"/>
+	<str id="report.list.item.8" txt="8. Item in/out Generic Report - Summary by period"/>
+	<str id="report.list.item.9" txt="9. Item in/out Generic Report - Detail by period"/>
+	<str id="report.list.item.10" txt="10. Goods Return Report"/>
+	
+	<!-- SALE -->
+	<str id="bill.header.container.title" txt="Bill Header Information"/>
+	<str id="online.stock.container.title" txt="Online Stock Checking"/>
+	<str id="bill.detail.container.title" txt="Bill Details"/>
+	<str id="bill.payment.container.title" txt="Payment Details"/>	
+	<str id="bill.header.so.phieu" txt="Bill Number"/>	
+	<str id="bill.header.loai.phieu" txt="Bill Type"/>	
+	<str id="bill.header.tu.kho" txt="From warehouse"/>	
+	<str id="bill.header.den.kho" txt="To Warehouse"/>	
+	<str id="bill.header.ngay.nhap" txt="Input Date"/>	
+	<str id="bill.header.khach.hang" txt="Customer"/>	
+	<str id="bill.header.ma.so.thue" txt="Tax code"/>	
+	<str id="bill.header.dien.thoai" txt="Tel."/>	
+	<str id="bill.header.dia.chi" txt="Address"/>	
+	<str id="bill.header.so.hop.dong" txt="Contract No."/>	
+	<str id="bill.header.so.tai.khoan" txt="Bank Account"/>	
+	<str id="bill.header.nguoi.lien.he" txt="Contact Person"/>	
+	<str id="bill.header.mo.ta" txt="Description"/>	
+	<str id="bill.header.khach.vang.lai" txt="Normal cust."/>
+	<str id="bill.detail.ma.hang" txt="Item type"/>	
+	<str id="bill.detail.loai.tien" txt="Money kind"/>	
+	<str id="bill.detail.gia.ban" txt="Selling Price"/>	
+	<str id="bill.detail.ten.hang" txt="Item Name"/>	
+	<str id="bill.detail.so.luong" txt="Qty."/>	
+	<str id="bill.detail.don.vi.tinh" txt="UP"/>	
+	<str id="bill.detail.ton.kho" txt="Stock"/>
+	
+	<str id="bill.detail.no.cu.vnd" txt="BF Debt(VND)"/>
+	<str id="bill.detail.no.cu.usd" txt="BF Debt(USD)"/>
+	<str id="bill.detail.thanh.tien.vnd" txt="Amount(VND)"/>
+	<str id="bill.detail.thanh.tien.usd" txt="Amount(USD)"/>
+	<str id="bill.detail.thanh.toan.vnd" txt="Payment(VND)"/>
+	<str id="bill.detail.thanh.toan.usd" txt="Payment(USD)"/>
+	<str id="bill.detail.no.vnd" txt="Debt(VND)"/>
+	<str id="bill.detail.no.usd" txt="Debt(USD)"/>	
+	
+	<str id="button.goods.return" txt="Return"/>	
+	<str id="buttonList" txt="List"/>
+	<str id="online.stock.warehouse" txt="Warehouse"/>
+	<str id="online.stock.item" txt="Item"/>
+	<str id="sale.tab.title1" txt="Sale Desk"/>	
+	<str id="sale.tab.title2" txt="Sale Stats"/>	
+	
+	<str id="button.create" txt="Create"/>	
+	
+	<str id="mainToolbarButtonQuanTri" txt="Admin"/>
+	<str id="mainToolbarButtonMuaHang" txt="Purchase"/>
+	<str id="mainToolbarButtonXuatHang" txt="Sale/Inventory"/>
+	<str id="mainToolbarButtonBaoCao" txt="Report"/>
+	<str id="mainToolbarButtonHome" txt="Start page"/>
+	<str id="mainToolbarButtonCongNoKhachHang" txt="Phải thu"/>
+	<str id="mainToolbarButtonCongNoNhaCungCap" txt="Phải trả"/>
+	
+	<str id="pricing" txt="Định giá"/>
+	<str id="priceTableDef" txt="Tạo/sửa bảng giá"/>
+	<str id="customerPriceAssociated" txt="Gán kết bảng giá"/>
+	<str id="openWorkingDay" txt="Mở ngày"/>
+	<str id="closeWorkingDay" txt="Đóng ngày"/>
+	<str id="exchangeRate" txt="Thiết lập tỷ giá"/>
+	<str id="moKhoaNgay" txt="Mở/Đóng ngày"/>
+	<!-- default language error -->
+	<str id="default.language.error" txt="Lỗi thiết lập ngôn ngữ mặc định"/>	
+	<!-- Login -->
+	<str id="login.title" txt="Đăng nhập hệ thống iShop"/>	
+	<str id="login.id" txt="Tên đăng nhập"/>	
+	<str id="login.password" txt="Mật khẩu"/>		
+	<str id="login.button" txt="Đăng nhập"/>	
+	<str id="cancel.button" txt="Hủy"/>	
+	<str id="login.invalid.password" txt="Mật khẩu không đúng"/>
+	<str id="login.invalid" txt="Tên đăng nhập không hợp lệ"/>
+	<str id="connect.to.server.error" txt="Không thể kết nối tới máy chủ"/>
+	<str id="connect.over.three.times" txt="Bạn đã đăng nhập quá 03 lần"/>
+	<str id="loging.process" txt="Bắt đầu kiểm tra người dùng..."/>
+	<str id="function.denied" txt="CHỨC NĂNG BỊ KHÓA"/>
+	<str id="appToolsMenu" txt="Công cụ"/>
+	<str id="appToolsPrefMenuItem" txt="Cấu hình"/>
+<!-- Preference -->
+<str id="pref.general" txt="Tổng quan"/>
+<str id="pref.system" txt="Hệ thống"/>
+<str id="pref.connection" txt="Máy chủ"/>
+<str id="pref.print" txt="In ấn"/>
+<str id="pref.import.export" txt="Vào/ra"/>
+<str id="pref.view" txt="Khung nhìn"/>	
+<str id="pref.header1" txt="Cấu hình iShop"/>
+<str id="pref.header2" txt="Tùy chỉnh cấu hình iShop"/>
+<!-- 10.3.2012 -->
+<str id="login.infor.header" txt="Xác thực người dùng"/>
+<str id="login.infor.need.login" txt="Cần xác thực người dùng"/>
+
+<str id="login.infor.default.language" txt="Ngôn ngữ mặc định"/>
+<str id="login.infor.language.prefix" txt="Tiền tố tệp ngôn ngữ"/>
+
+<str id="log.infor.header" txt="Thông tin nhật ký"/>
+<str id="log.infor.log.file.path" txt="Đường dẫn tệp tin tin nhật ký ứng dụng"/>
+
+<str id="license.infor.header" txt="Thông tin bản quyền"/>
+<str id="license.infor.file.path" txt="Đường dẫn tệp tin bản quyền"/>
+
+<str id="backup.infor.header" txt="Thông tin sao lưu dự phòng"/>
+<str id="backup.infor.file.path" txt="Đường dẫn tệp tin sao lưu"/>
+
+<str id="cache.option" txt="Tùy chỉnh cache"/>
+<str id="always.cache" txt="Luôn luôn cache"/>
+<str id="cache.folder" txt="Thư mục cache"/>
+<str id="pref.system.audit.option" txt="Lựa chọn lưu vết hệ thống"/>
+<str id="pref.system.audit.db.action" txt="Các hành động liên quan DB"/>
+<str id="pref.system.audit.backend.action" txt="Các hành động backend"/>
+<str id="pref.system.audit.frontend.action" txt="Các hành động frontend"/>
+<str id="pref.system.audit.all.action" txt="Luôn luôn lưu vết"/>
+<str id="pref.system.auto.backup" txt="Các lựa chọn tự động sao lưu"/>
+<str id="pref.system.autobackup.shutdown.system" txt="Khi tắt hệ thống"/>
+<str id="pref.system.autobackup.manual" txt="Sao lưu thủ công"/>
+<str id="pref.system.autobackup.never" txt="Không sao lưu"/>
+<str id="pref.server.infor" txt="Thông tin máy chủ"/>
+<str id="pref.server.address" txt="Địa chỉ máy chủ"/>
+<str id="pref.server.port" txt="Cổng"/>
+<str id="pref.server.protocol" txt="Giao thức"/>
+<str id="pref.server.context" txt="Ngữ cảnh"/>
+<str id="pref.server.sub.context" txt="Ngữ cảnh phụ"/>
+
+<str id="waiting.to.complete" txt="Giao diện đang chờ hoàn thiện"/>
+<str id="save.success" txt="Lưu thành công!"/>
+<str id="date.time.option" txt="Định dạng thời gian"/>
+<str id="date.pattern" txt="Định dạng ngày"/>
+<str id="dialog.close" txt="Đóng"/>
+</langpack>

@@ -1,0 +1,9 @@
+<genericdialog id="DlgGRNHis" layout="BorderLayout" Title="$langPack.getString('grn.history.dialog.title')"
+	MinimumSize="800,300">		
+	<cwhitepanel  background="254,255,255" id="pnlMain" layout="BorderLayout" 
+			constraints="BorderLayout.CENTER" Border="EmptyBorder(0,0,0,0)" >			
+		<cwhitepanel  background="254,255,255" id="pnlSub" constraints="BorderLayout.CENTER" layout="BorderLayout">			
+			<cpaging id="pageGRNHis" constraints="BorderLayout.CENTER"/>
+		</cwhitepanel>	
+	</cwhitepanel>	
+</genericdialog>

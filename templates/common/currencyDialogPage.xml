@@ -1,0 +1,99 @@
+<genericdialog id="currencyDialog" layout="BorderLayout" Title="$langPack.getString('dialog.currency.title')"
+	MinimumSize="800,200">		
+	<ctabbedpane  id="currencyMasterTabbedPane">			
+		<!-- CURRENCY -->
+		<splitpane DividerSize="5" ContinuousLayout="true" OneTouchExpandable="true"
+					id="creencySplit" Orientation="0">
+			<cwhitepanel id="currencyMasterPanel" Layout="GridBagLayout">	
+				<clabel id="lblCurrencyId" text="$langPack.getString('currency.id')">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="currency_global_gbc" ipadx="0" ipady="0"
+									 gridx="0" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+				</clabel>
+				<ctextfield id="txtCurrencyId" text=" " PreferredSize="150,20"  Background="251,229,229">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="currency_global_gbc" ipadx="0" ipady="0"
+									 gridx="1" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+				</ctextfield>
+
+				<clabel id="lblCurrencyDesc" text="$langPack.getString('currency.description')">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="currency_global_gbc" ipadx="0" ipady="0"
+									 gridx="2" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+				</clabel>
+				<ctextfield id="txtCurrencyDesc" text="  " PreferredSize="150,20">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="currency_global_gbc" ipadx="0" ipady="0"
+									 gridx="3" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+									
+				</ctextfield>
+				
+				<cwhitepanel id="currencyActionPanel" Layout="FlowLayout(FlowLayout.LEFT,5,5)" >
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="currency_global_gbc" ipadx="0" ipady="0"
+									 gridx="0" gridy="1"  insets="5,5,5,5"  gridwidth="4" gridheight="1"
+									Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="1.0f" />
+									
+					<cdlgbutton id="saveButton" text="$langPack.getString('buttonSave')"  
+								PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22" Action="ACT_SAVE_CURRENCY"/>
+					<cdlgbutton id="newButton" text="$langPack.getString('buttonNew')"   
+							PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22" Action="ACT_NEW_CURRENCY"/>
+				</cwhitepanel>
+			</cwhitepanel>
+            <cwhitepanel id="pnlCurList" layout="BorderLayout" border="EmptyBorder(1,1,1,1)">
+                <cpaging id="currencyListPage" constraints="BorderLayout.CENTER"/>
+            </cwhitepanel>
+		</splitpane>
+		<!-- BANK -->
+		<splitpane DividerSize="5" ContinuousLayout="true" OneTouchExpandable="true"
+					id="bankSplit" Orientation="0">				
+			<cwhitepanel id="bankMasterPanel" Layout="GridBagLayout">	
+				<clabel id="lblBankId" text="$langPack.getString('bank.id')">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="bank_global_gbc" ipadx="0" ipady="0"
+									 gridx="0" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+				</clabel>
+				<ctextfield id="txtBankId" text=" " PreferredSize="150,20"  Background="251,229,229">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="bank_global_gbc" ipadx="0" ipady="0"
+									 gridx="1" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+				</ctextfield>
+
+				<clabel id="lblBankDesc" text="$langPack.getString('currency.description')">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="bank_global_gbc" ipadx="0" ipady="0"
+									 gridx="2" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+				</clabel>
+				<ctextfield id="txtBankDesc" text="  " PreferredSize="150,20">
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="bank_global_gbc" ipadx="0" ipady="0"
+									 gridx="3" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+									Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+									
+				</ctextfield>
+				
+				<cwhitepanel id="bankActionPanel" Layout="FlowLayout(FlowLayout.LEFT,5,5)" >
+					<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+									refid="bank_global_gbc" ipadx="0" ipady="0"
+									 gridx="0" gridy="1"  insets="5,5,5,5"  gridwidth="4" gridheight="1"
+									Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="1.0f" />
+									
+					<cdlgbutton id="saveBankButton" text="$langPack.getString('buttonSave')"  
+								PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22" Action="ACT_SAVE_BANK"/>
+					<cdlgbutton id="newBankButton" text="$langPack.getString('buttonNew')"   
+							PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22" Action="ACT_NEW_BANK"/>
+				</cwhitepanel>
+			</cwhitepanel>
+            <cwhitepanel layout="BorderLayout" id="pnlBankList" border="EmptyBorder(1,1,1,1)">
+                <cpaging id="bankListPage" constraints="BorderLayout.CENTER"/>				
+            </cwhitepanel>
+		</splitpane>	
+	</ctabbedpane>
+</genericdialog>

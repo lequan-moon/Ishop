@@ -1,0 +1,81 @@
+<genericdialog id="currencyDialog" layout="BorderLayout" Title="$langPack.getString('dialog.exrate.title')"
+	MinimumSize="800,200">		
+		<ctabbedpane  id="currencyMasterTabbedPane" constraints="BorderLayout.CENTER">
+			<!-- EX_RATE -->			
+			<splitpane DividerSize="5" ContinuousLayout="true" OneTouchExpandable="true" id="exRateSplit" Orientation="0">
+				<cwhitepanel id="exRateMasterPanel" Layout="GridBagLayout">									
+					<!-- Exchange Date-->	
+					<clabel id="lblExRateDate" text="$langPack.getString('date')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+										refid="exrate_global_gbc" ipadx="0" ipady="0"
+										 gridx="0" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+										Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+					</clabel>
+					<datechooser id="dateExRate" font="Arial Unicode MS-PLAIN-11" MinimumSize="110,20"  Background="251,229,229" >
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+										refid="exrate_global_gbc" ipadx="0" ipady="0"
+										 gridx="1" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+										Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+					</datechooser>
+					<!-- Exchange Currency-->	
+					<clabel id="lblExRateCurrency" text="$langPack.getString('currency.type')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+										refid="exrate_global_gbc" ipadx="0" ipady="0"
+										 gridx="2" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+										Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+					</clabel>
+					<ccombobox id="comboExRateCurency" text=" " font="Arial Unicode MS-PLAIN-11" 
+						MinimumSize="110,20"  Background="251,229,229">							
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+										refid="exrate_global_gbc" ipadx="0" ipady="0"
+										 gridx="3" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+										Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+										
+					</ccombobox>
+					<!-- Exchange Bank-->	
+					<clabel id="lblExRateBank" text="$langPack.getString('bankTitle')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+										refid="exrate_global_gbc" ipadx="0" ipady="0"
+										 gridx="0" gridy="1"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+										Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+					</clabel>
+					<ccombobox id="comboExRateBank" text=" " font="Arial Unicode MS-PLAIN-11" 
+						MinimumSize="110,20"  Background="251,229,229">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+										refid="exrate_global_gbc" ipadx="0" ipady="0"
+										 gridx="1" gridy="1"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+										Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+										
+					</ccombobox>
+					<!-- Exchange Value-->	
+					<clabel id="lblExRateValue" text="$langPack.getString('exRateTitle')">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+										refid="exrate_global_gbc" ipadx="0" ipady="0"
+										 gridx="2" gridy="1"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+										Fill="GridBagConstraints.NONE" weightx="0.0f" weighty="0.0f" />
+					</clabel>
+					<ctextfield id="txtExRateValue" text="  " PreferredSize="200,20"  Background="251,229,229">
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+										refid="exrate_global_gbc" ipadx="0" ipady="0"
+										 gridx="3" gridy="1"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+										Fill="GridBagConstraints.NONE" weightx="1.0f" weighty="0.0f" />
+										
+					</ctextfield>
+					<cwhitepanel id="exRateActionPanel" Layout="FlowLayout(FlowLayout.LEFT,5,5)" >
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+										refid="exrate_global_gbc" ipadx="0" ipady="0"
+										 gridx="0" gridy="2"  insets="5,5,5,5"  gridwidth="4" gridheight="1"
+										Fill="GridBagConstraints.HORIZONTAL" weightx="1.0f" weighty="1.0f" />
+										
+						<cdlgbutton id="saveExRateButton" text="$langPack.getString('buttonSave')"  
+									PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22" Action="ACT_SAVE_EXRATE"/>
+						<cdlgbutton id="newExRateButton" text="$langPack.getString('buttonNew')"   
+								PreferredSize="73,22" MaximumSize="73,22" MinimumSize="73,22" Action="ACT_NEW_EXRATE"/>
+					</cwhitepanel>
+				</cwhitepanel>
+                <cwhitepanel Border="EmptyBorder(1,1,1,1)" layout="BorderLayout">
+                    <cpaging id="exRateListPage" Constraints="BorderLayout.CENTER"/>
+                </cwhitepanel>
+			</splitpane>					
+		</ctabbedpane>				
+</genericdialog>

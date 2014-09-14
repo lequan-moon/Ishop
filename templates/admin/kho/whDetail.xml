@@ -1,0 +1,102 @@
+<cwhitepanel id="whInforContainerPnl" layout="BorderLayout" 
+		constraints="BorderLayout.CENTER">	
+	
+		<!-- Information Panel -->
+			<scrollpane id="whInfoScrollPane"  
+				HorizontalScrollBarPolicy="ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED"
+				VerticalScrollBarPolicy="ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED">	
+				<cwhitepanel Layout="GridBagLayout" id="warehouseInformationPanel" 
+					constraints="BorderLayout.NORTH">				<!-- Border="EmptyBorder(2,2,2,2)"  -->
+					<!-- Line 1-->
+					<clabel id="lblWarehouseName" text="$langPack.getString('warehouse.name')" >
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" 
+							refid="warehouse_infor_gbc" ipadx="0" ipady="0"
+							 gridx="0" gridy="0"  insets="5,5,5,5"  gridwidth="1" gridheight="1"
+							Fill="GridBagConstraints.BOTH" weightx="0.0f" weighty="0.0f" />
+					</clabel><!--  MaximumSize="130,20" -->
+					<ctextfield id="txtWarehouseName" text="" PreferredSize="130,22" MinimumSize="130,22" 
+						Background="251,229,229"
+						Enabled="$loginUser.canPerformFunction('WAHS_EDITWH_CMDFunc')">
+						<gridbagconstraints 
+						Fill="GridBagConstraints.HORIZONTAL"
+						Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="warehouse_infor_gbc" insets="5,5,5,5" gridx="1" gridy="0" 
+						/>
+					</ctextfield>
+					<clabel id="lblCompanyName" text="$langPack.getString('warehouse.company.name')" >
+						<gridbagconstraints refid="warehouse_infor_gbc" 
+						Anchor="GridBagConstraints.FIRST_LINE_START"
+						insets="5,5,5,5" gridx="2" gridy="0"  />							
+					</clabel>
+					<ctextfield id="txtCompanyName" text="" PreferredSize="130,22"  MinimumSize="130,22" 
+						Background="251,229,229"
+						Enabled="$loginUser.canPerformFunction('WAHS_EDITWH_CMDFunc')">
+						<gridbagconstraints refid="warehouse_infor_gbc" 
+						Fill="GridBagConstraints.HORIZONTAL"
+						Anchor="GridBagConstraints.FIRST_LINE_START"
+						insets="5,5,5,5" gridx="3" gridy="0" weightx="1.0f" 
+						/>			
+					</ctextfield>
+					<cbutton2 
+						Icon="com/nn/ishop/client/img/button/treeicon.png"
+						SelectedIcon="com/nn/ishop/client/img/button/treeicon.png"
+						RolloverIcon="com/nn/ishop/client/img/button/treeicon.png"
+						RolloverSelectedIcon="com/nn/ishop/client/img/button/treeicon.png" 
+						preferredSize="22,22" 
+						id="btnChooseProduct" text="" action="ACT_OPEN_COMPANY_DIALOG"
+						Enabled="$loginUser.canPerformFunction('WAHS_EDITWH_CMDFunc')">
+						<gridbagconstraints 
+						Anchor="GridBagConstraints.FIRST_LINE_START"
+						refid="warehouse_infor_gbc" insets="5,5,5,5" gridx="4" gridy="0" weightx="1.0f"  
+						/>	
+					</cbutton2>
+					<clabel id="lblCountry" text="$langPack.getString('country')" >
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="warehouse_infor_gbc" insets="5,5,5,5" gridx="5" gridy="0"  />							
+					</clabel>
+					<ccombobox id="comboCountry" text="" PreferredSize="130,25" MinimumSize="130,25"   Enabled="$loginUser.canPerformFunction('WAHS_EDITWH_CMDFunc')">
+						<gridbagconstraints 
+						Anchor="GridBagConstraints.FIRST_LINE_START"
+						Fill="GridBagConstraints.HORIZONTAL"
+						refid="warehouse_infor_gbc" insets="5,5,5,5" gridx="6" gridy="0" weightx="1.0f"  
+						/>			
+					</ccombobox>
+					<clabel id="lblProvince" text="$langPack.getString('province')" >
+						<gridbagconstraints
+						    Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="warehouse_infor_gbc" insets="5,5,5,5" gridx="0" gridy="1"  />							
+					</clabel>					
+					<ccombobox id="comboProvince" text="" PreferredSize="130,25" MinimumSize="130,25"  Enabled="$loginUser.canPerformFunction('WAHS_EDITWH_CMDFunc')">
+						<gridbagconstraints 
+						Fill="GridBagConstraints.HORIZONTAL"
+						Anchor="GridBagConstraints.FIRST_LINE_START" 
+						refid="warehouse_infor_gbc" insets="5,5,5,5" gridx="1" gridy="1" weightx="1.0f"  
+						/>			
+					</ccombobox>
+					<!-- Line 2-->
+					<clabel id="lblDistrict" text="$langPack.getString('district')" >
+						<gridbagconstraints refid="warehouse_infor_gbc" 
+						Anchor="GridBagConstraints.FIRST_LINE_START"
+						insets="5,5,5,5" gridx="2" gridy="1"  />							
+					</clabel>
+					<ccombobox id="comboDistrict" text="" PreferredSize="130,25" MinimumSize="130,25"  Enabled="$loginUser.canPerformFunction('WAHS_EDITWH_CMDFunc')">
+						<gridbagconstraints refid="warehouse_infor_gbc"
+						Fill="GridBagConstraints.HORIZONTAL"
+						Anchor="GridBagConstraints.FIRST_LINE_START"
+						insets="5,5,5,5" gridx="3" gridy="1" weightx="1.0f"  
+						/>			
+					</ccombobox>
+					<!-- địa điểm -->
+					<clabel id="lblWarehouseAddress" text="$langPack.getString('warehouse.address')" >
+						<gridbagconstraints Anchor="GridBagConstraints.FIRST_LINE_START" refid="warehouse_infor_gbc" insets="5,5,5,5" gridx="0" gridy="2" weightx="0.0f"/>				
+					</clabel>
+					<ctextfield id="txtWarehouseAddress" MinimumSize="130,22"  text="" Background="251,229,229" Enabled="$loginUser.canPerformFunction('WAHS_EDITWH_CMDFunc')">
+						<gridbagconstraints refid="warehouse_infor_gbc" 
+						Fill="GridBagConstraints.HORIZONTAL"
+						Anchor="GridBagConstraints.FIRST_LINE_START"
+						insets="5,5,5,5" gridwidth="7" gridx="1" gridy="2" weightx="1.0f"
+						/>
+					</ctextfield>
+					
+				</cwhitepanel>				
+			</scrollpane>
+	</cwhitepanel>

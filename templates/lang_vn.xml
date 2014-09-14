@@ -1,0 +1,1020 @@
+﻿<langpack>
+<!-- About dialog -->
+	<str id="about.infor.about.header.title" txt="Thông tin sản phẩm"/>	
+	<str id="button.new" txt="Tạo mới"/>
+
+	<!-- Điều kiện tìm kiếm -->
+	<str id="item.search.conditions" txt=" Điều kiện tìm kiếm"/>	
+	<str id="search.item.by.name" txt="Tên hoặc Mã hàng"/>
+	<str id="search.item.by.id" txt="Tìm theo ID"/>
+	<str id="submit.search.button" txt="Tìm"/>
+	<!-- BP Group -->
+	<str id="item.section.id" txt="Mã lĩnh vực"/>
+	<str id="item.section.name" txt="Tên lĩnh vực"/>
+	<!-- Packing Style -->
+	<str id="item.packing.style.name" txt="Tên cách đóng gói"/>
+	<str id="item.packing.style.id" txt="Mã đóng gói"/>
+	
+	
+	<!-- BP Group -->
+	<str id="BPG.id" txt="Mã nhóm BP"/>
+	<str id="BPG.name" txt="Tên nhóm BP"/>
+	
+	<!-- UOM -->
+	<str id="UOM.title" txt="Đơn vị tính"/>
+	<str id="UOM.id" txt="Mã đvt"/>
+	<str id="UOM.name" txt="Tên đvt"/>
+	
+	<!-- Packing style -->
+	<str id="packing.style.title" txt="Kiểu đóng gói"/>
+	<str id="packing.style.id" txt="Mã"/>
+	<str id="packing.style.name" txt="Tên"/>
+	<str id="packing.style.desc" txt="Chú thích"/>
+	
+	<!--  product category  -->
+	<str id="category.id" txt="Mã mục"/>
+	<str id="category.name" txt="Tên mục"/>
+	<str id="category.desc" txt="Mô tả"/>
+	
+	<!--  product group  -->
+	<str id="group.id" txt="Mã nhóm"/>
+	<str id="group.name" txt="Tên nhóm"/>
+	<str id="group.desc" txt="Mô tả"/>
+	
+	<!-- Item information -->
+	
+	<str id="item.bom" txt="BOM"/>
+	<str id="item.id" txt="Định danh"/>
+	<str id="item.org" txt="Thuộc công ty"/>
+	<str id="item.vendor.code" txt="Người bán"/>
+	<str id="item.supplier_code" txt="Nhà cung cấp"/>
+	<str id="item.uom" txt="Đơn vị tính"/>
+	<str id="item.packing.style" txt="Quy cách đóng gói"/>
+	<str id="item.country.of.original" txt="Nước sản xuất"/>
+	<str id="item.commission.payable" txt="Phần trăm hoa hồng"/>
+	<str id="item.category" txt="Thuộc mục hàng"/>
+	<str id="item.produced.date" txt="Ngày sản xuất"/>
+	<str id="item.expired.date" txt="Ngày hết hạn"/>
+	<str id="item.type" txt="Loại hàng"/>
+	<str id="item.status" txt="Trạng thái"/>
+	<str id="item.stockable" txt="Khả năng lưu kho"/>
+	<str id="item.transactable" txt="Khả năng chuyển lô"/>
+	<str id="item.reserveable" txt="Khả năng đặt trước"/>
+	<str id="item.desc" txt="Mô tả thêm"/>
+	
+	<!--  Product definition sheet -->
+	<str id="admin.product.category" txt="Mục hàng"/>
+	<str id="admin.product.group" txt="Nhóm hàng"/>
+	<str id="admin.product.bp.group" txt="Nhóm BP"/>
+	<str id="admin.product.section" txt="Lĩnh vực"/>
+	<str id="admin.product.infor" txt="Thông tin hàng hóa"/>
+
+	
+	<!--Administration Perspective-->
+
+	<str id="adminTabCountry" txt="Quốc gia  "/>
+	<str id="adminTabCompany" txt="Công ty "/>
+	<str id="adminTabWarehouse" txt="Kho vận "/>
+	<str id="adminTabLot" txt="Danh sách lô"/>
+	<str id="adminTabUser" txt="Người dùng "/>
+	<str id="adminTabCustomer" txt="Khách hàng "/>
+	<str id="adminTabProduct" txt="Hàng hóa "/>		
+	
+	<str id="appTitle" txt="SIC Phiên bản 1.1 - dùng thử 30 ngày"/>
+	<str id="progressStatus" txt="&#272;ang ch&#7841;y"/>
+	<str id="userName" txt="T&#234;n ng&#432;&#7901;i d&#249;ng"/>
+	<str id="appExitMenuItem" txt="Tho&#225;t"/>
+	<str id="appLanguagesMenuItem" txt="Ng&#244;n ng&#7919;"/>
+	<str id="appHelpMenuItem" txt="Tr&#7907; gi&#250;p"/>
+	<str id="appAboutMenuItem" txt="Th&#244;ng tin s&#7843;n ph&#7849;m"/>
+	<str id="appFileMenu" txt="Danh mục"/>
+	
+	<str id="appToolsMenu" txt="Công cụ"/>
+	<str id="appToolsPrefMenuItem" txt="Cấu hình"/>
+	<!-- button -->
+	<str id="pagingLabelShowEntries" txt="Hiển thị tất cả"/>
+	<str id="buttonSave" txt="Ghi"/>	
+	<str id="buttonCancel" txt="Hủy"/>
+	<str id="buttonOK" txt="Đồng ý"/>
+	<str id="buttonAdd" txt="Thêm"/>
+	<str id="selectAll" txt="Chọn tất cả"/>
+	<str id="addPerson" txt="Th&#234;m m&#7899;i c&#225; nh&#226;n"/>	
+	<str id="defaultSearchText" txt="Tìm kiếm"/>
+	<str id="buttonPrint" txt="In ấn"/>
+	<str id="buttonDelete" txt="Xóa"/>
+	<str id="buttonPrice" txt="Nhập giá"/>
+	<str id="buttonEditPrice" txt="Sửa giá"/>	
+	<!-- Buttons -->
+	<str id="button.save" txt="Ghi"/>
+	<str id="checkbox.check.all" txt="Chọn tất cả"/>
+	<str id="paging.panel.show.entries" txt="Số dòng trên trang"/>
+	<!-- About dialog -->
+	<str id="application.name" txt="2N iShop"/>
+	<str id="about.infor.version" txt="Phiên bản: 1.1"/>
+	<str id="about.infor.copyright" txt="Copyright(c) 2007-2011 2N Technologies Jsc. "/>
+	<str id="about.infor.contact.email" txt="Email: contact@2n.com.vn"/>
+	<str id="about.infor.contact.tel" txt="ĐT: pending "/>
+	<str id="about.infor.contact.mobile" txt="Mobile: 0904961275"/>
+	
+	<!-- Bổ sung thông tin hàng hóa -->
+	
+	<str id="loc.theo.ten.hoac.id" txt="Lọc theo Tên hoặc Mã"/>
+	<str id="button.loc.hang.hoa" txt="Lọc"/>
+	<!-- Chi tiet hang hoa -->
+	<str id="ma.mat.hang" txt="Mã vạch"/>
+	<str id="ten.mat.hang" txt="Tên hàng"/>
+	<str id="quy.cach.san.pham" txt="Quy cách"/>
+	<str id="nuoc.san.xuat" txt="Quốc gia"/>
+	<str id="cong.ty.san.xuat" txt="Công ty"/>
+	<str id="ngay.san.xuat" txt="Ngày SX"/>
+	<str id="ngay.het.han" txt="Ngày hết hạn"/>
+	<str id="don.vi.tinh" txt="ĐVT"/>
+	<str id="danh.muc.hang" txt="Mục hàng"/>
+	<str id="item.ghi.chu" txt="Ghi chú"/>	
+	<str id="danh.sach.hang.hoa" txt="Danh sách hàng hóa"/>	
+
+
+	<!-- Nguoi dung -->
+	
+	<str id="user.full.name" txt="Tên đầy đủ"/>	
+	<str id="user.company.name" txt="Tên công ty"/>
+	<str id="login.id" txt="Tên đăng ký"/>
+	<str id="password" txt="Mật khẩu"/>
+	<str id="user.address" txt="Địa chỉ"/>
+	<str id="user.telephone" txt="Điện thoại "/>
+	<str id="user.mobile" txt="Di động"/>
+	<str id="user.position1" txt="Vị trí 1"/>
+	<str id="user.position2" txt="Vị trí 2"/>
+	<str id="user.start.date" txt="Ngày bắt đầu"/>
+	<str id="user.end.date" txt="Ngày kết thúc"/>
+	<str id="user.diplomas" txt="Bằng cấp"/>
+	<str id="user.occupation" txt="Nghề nghiệp"/>
+	<str id="user.mail" txt="Email"/>
+
+	<str id="user.danh.sach.nguoi.dung" txt="Danh sách người dùng"/>
+	<str id="user.role.asignment" txt="Gán quyền"/>
+	
+	<str id="user.available.role.list" txt="Vai trò định nghĩa trước"/>
+	<str id="user.assigned.role.list" txt="Vai trò đã gán"/>
+	<str id="buttonRemove" txt="Gỡ"/>
+	<str id="buttonEdit" txt="Sửa"/>
+	<str id="buttonNew" txt="Tạo mới"/>
+	
+	<!-- Customer information -->
+	<str id="customer.information.title" txt="Thông tin khách hàng"/>
+	<str id="customer.list.title" txt="Danh sách khách hàng"/>
+	
+	<str id="customer.name" txt="Tên khách hàng(*)"/>
+	<str id="customer.established.date" txt="Ngày thiết lập(*)"/>
+	<str id="customer.contact.person" txt="Người liên hệ(*)"/>
+	<str id="customer.email" txt="Email(*)"/>
+	<str id="customer.main.address" txt="Địa chỉ 1(*)"/>
+	<str id="customer.sub.address" txt="Địa chỉ 2"/>
+	<str id="customer.telephone" txt="Điện thoại(*)"/>
+	<str id="customer.fax" txt="Fax(*)"/>
+	
+	<str id="customer.bank.account" txt="Tài khoản NH(*)"/>
+	<str id="customer.website" txt="Website"/>
+	<str id="customer.YM" txt="YM"/>
+	<str id="customer.skype" txt="Skype"/>
+	<str id="customer.gtalk" txt="Gtalk"/>
+	<str id="customer.tax.code" txt="Mã số thuế(*)"/>
+	
+	<!-- Kho vận -->
+	
+	<str id="warehouse.information.title" txt="Thông tin kho"/>
+	<str id="warehouse.list.title" txt="Danh sách kho"/>
+	
+	<str id="warehouse.name" txt="Tên kho (*)"/>
+	<str id="warehouse.company.name" txt="Công ty (*)"/>
+	<str id="warehouse.warehouser1" txt="Thủ kho 1"/>
+	<str id="warehouse.warehouser2" txt="Thủ kho 2"/>
+	<str id="warehouse.address" txt="Địa chỉ kho"/>
+
+	<str id="country.page.title" txt="Thông tin quốc gia"/>	
+	<str id="country.label.country.code" txt="Mã quốc gia"/>	
+	<str id="country.label.country.name" txt="Tên quốc gia"/>	
+	
+	<!-- company.information.title-->
+	<str id="company.information.title" txt="Thông tin công ty"/>
+	<str id="company.name" txt="Tên công ty:"/>
+	<str id="company.address" txt="Địa chỉ công ty:"/>
+	<str id="company.telephone" txt="Điện thoại:"/>
+	<str id="company.fax" txt="Fax:"/>
+	<str id="company.contact.person" txt="Người liên hệ:"/>
+	<str id="company.list.title" txt="Tóm lược thông tin công ty:"/>	
+	<str id="company.established.date" txt="Ngày thành lập:"/>	
+	<str id="company.business.field.name" txt="Ngành nghề kinh doanh:"/>	
+	<str id="nganh.nghe.kinh.doanh" txt="Ngành nghề kinh doanh:"/>
+	<!-- Lot  -->
+	<str id="lot.information.title" txt="Thông tin lô"/>	
+	<str id="lot.name" txt="Tên lô"/>	
+	<str id="lot.warehouse" txt="Thuộc kho"/>	
+	<str id="lot.list.title" txt="Danh sách lô"/>	
+	
+	<!-- report.condition.container.title  -->	
+	<str id="report.condition.container.title" txt="Danh mục điều kiện"/>
+	<str id="report.from.date" txt="Từ ngày"/>
+	<str id="report.to.date" txt="Đến ngày"/>
+	<str id="report.bill.number" txt="Số hóa đơn/phiếu"/>
+	<str id="report.customer" txt="Khách hàng"/>
+	<str id="report.warehouse" txt="Kho"/>	
+	<str id="report.category" txt="Mục hàng"/>
+	<str id="report.product" txt="Sản phẩm"/>
+	<str id="report.report.type" txt="Loại báo cáo"/>
+	<str id="report.list.title" txt="Danh sách báo cáo"/>
+	<str id="report.warehouse.company" txt="Công ty"/>
+	<str id="report.warehouse" txt="Kho"/>
+	<str id="report.warehouse.location" txt="Vị trí"/>
+	<str id="report.category" txt="Category"/>
+	<str id="report.product" txt="Tên sản phẩm"/>
+	<str id="report.product.pl.type" txt="Phân loại giá"/>
+	<str id="report.product.currency" txt="Đơn vị tiền tệ"/>
+	<str id="report.employee.name" txt="Tên nhân viên"/>
+	<str id="report.employee.address" txt="Địa chỉ"/>
+	<str id="report.employee.email" txt="Email"/>
+	<str id="report.employee.loginId" txt="Tên đăng nhập"/>
+	<str id="report.employee.position" txt="Vị trí"/>
+	<str id="report.grn.itemId" txt="Mã hàng"/>
+	<str id="report.grn.itemName" txt="Tên mặt hàng"/>
+	<str id="report.itemDetail.sectionName" txt="Phân vùng"/>
+	<str id="report.itemDetail.categoryGroup" txt="Nhóm"/>
+	<str id="report.itemDetail.category" txt="Category"/>
+	<str id="report.itemDetail.listItemDetailItemId" txt="Mã sản phẩm"/>
+	<str id="report.itemDetail.listItemDetailItemName" txt="Tên sản phẩm"/>
+	<str id="report.itemDetail.madeIn" txt="Nơi sản xuất"/>
+	<str id="report.itemDetail.packingStyle" txt="Cách đóng gói"/>
+	<str id="report.listCustomer.name" txt="Tên khách hàng"/>
+	<str id="report.tranxList.ins.time" txt="Thời gian lập"/>
+	<str id="report.tranxList.status" txt="Trạng thái"/>
+	<str id="report.tranxList.current.step" txt="Tiến trình"/>
+	<str id="report.tranxList.employee.name" txt="Người lập"/>
+	<str id="report.ProviderList.name" txt="Tên nhà cung cấp"/>
+	<str id="report.ContractDetail.id" txt="Mã hợp đồng"/>
+	<str id="report.ContractListReport.id" txt="Mã hợp đồng"/>
+	<str id="report.ContractListReport.customer_name" txt="Tên đối tác"/>
+	<str id="report.ContractListReport.current_step" txt="Tình trạng"/>
+	<str id="report.PurchasingDetailReport.item_name" txt="Tên sản phẩm"/>
+	<str id="report.PurchasingDetailReport.item_id" txt="Mã sản phẩm"/>
+	<str id="report.PurchasingDetailReport.provider_name" txt="Tên nhà cung cấp"/>
+	<str id="report.PurchasingDetailReport.ppID" txt="Mã hợp đồng"/>
+	<str id="report.PurchasingDetailReport.currency" txt="Đơn vị tiền tệ"/>
+	<str id="report.TransactionValueReport.purchase_note" txt="Ghi chú"/>
+	<str id="report.TransactionValueReport.provider_name" txt="Tên nhà cung cấp"/>
+	<str id="report.TransactionValueReport.tranx_id" txt="Mã giao dịch"/>
+	<str id="report.TransactionValueReport.pp_id" txt="Mã hợp đồng/kế hoạch"/>
+	<str id="report.TransactionValueReport.employee_name" txt="Tên người lập giao dịch"/>
+	<str id="report.TransactionValueReport.current_step" txt="Tiến trình"/>
+	<str id="report.TransactionValueReport.status" txt="Trạng thái"/>
+	<str id="report.WHSCReport.item_id" txt="Mã sản phẩm"/>
+	<str id="report.WHSCReport.item_name" txt="Tên sản phẩm"/>
+	<str id="report.WHSCReport.wh_name" txt="Tên kho"/>
+	<str id="report.tranxList.sale.orderid" txt="Mã giao dịch"/>
+	<str id="report.tranxList.sale.itemid" txt="Mã mặt hàng"/>
+	<str id="report.tranxList.sale.itemname" txt="Tên mặt hàng"/>
+	
+	<str id="report.tabbed.title" txt="Báo cáo"/>	
+	<str id="statistics.tabbed.title" txt="Số liệu phân tích/thống kê"/>
+	
+	<str id="report.list.item.0" txt="0. Thống kê danh sách công ty"/>
+	<str id="report.list.CompanyListReport" txt="CompanyListReport"/>
+	<str id="report.list.item.1" txt="1. Báo cáo bán hàng hàng ngày"/>
+	<str id="report.list.DailySaleReport" txt="DailySaleReport"/>
+	<str id="report.list.item.2" txt="2. Báo cáo tồn kho theo mặt hàng"/>
+	<str id="report.list.DailyStockRemainReport" txt="DailyStockRemainReport"/>
+	<str id="report.list.item.3" txt="3. Thống kê danh mục hàng hóa tồn tại trong hệ thống"/>
+	<str id="report.list.ItemListReport" txt="ItemListReport"/>
+	<str id="report.list.item.4" txt="4. Thống kê nhập hàng hóa"/>
+	<str id="report.list.PurchaseReport" txt="PurchaseReport"/>
+	<str id="report.list.item.5" txt="5. Thống kê xuất nội bộ hàng hóa"/>
+	<str id="report.list.InternalSaleReport" txt="InternalSaleReport"/>
+	<str id="report.list.item.6" txt="6. Thống kê xuất bán hàng hóa"/>
+	<str id="report.list.SaleReport" txt="SaleReport"/>
+	<str id="report.list.item.7" txt="7. Báo cáo tồn kho lũy kế theo mặt hàng"/>
+	<str id="report.list.WhatTheFuckReport" txt="WhatTheFuckReport"/>
+	<str id="report.list.item.8" txt="8. Báo cáo tổng hợp nhập-xuất-tồn định kỳ - tóm tắt"/>
+	<str id="report.list.MixedBriefReport" txt="MixedBriefReport"/>
+	<str id="report.list.item.9" txt="9. Báo cáo tổng hợp nhập-xuất-tồn định kỳ - chi tiết theo kho"/>
+	<str id="report.list.MixedDetailReport" txt="MixedDetailReport"/>
+	<str id="report.list.item.10" txt="10. Thống kê nhập hàng trả lại"/>
+	<str id="report.list.ReturningItemReport" txt="ReturningItemReport"/>
+	<str id="report.list.item.11" txt="11. Danh sách nhân viên"/>
+	<str id="report.list.EmployeeListReport" txt="EmployeeListReport"/>
+	<str id="report.list.item.12" txt="12. Danh sách hàng hóa"/>
+	<str id="report.list.ItemReport" txt="ItemReport"/>
+	<str id="report.list.item.13" txt="13. Danh sách kho"/>
+	<str id="report.list.WarehouseLotReport" txt="WarehouseLotReport"/>
+	<str id="report.list.item.14" txt="14. Danh sách hàng nhập"/>
+	<str id="report.list.GoodsReceiveReport" txt="GoodsReceiveReport"/>
+	<str id="report.list.item.15" txt="15. Danh sách chi tiết các mặt hàng"/>
+	<str id="report.list.ListItemDetail" txt="ListItemDetail"/>
+	<str id="report.list.item.16" txt="16. Danh sách khách hàng"/>
+	<str id="report.list.ListCustomerReport" txt="ListCustomerReport"/>
+	<str id="report.list.item.17" txt="17. Danh sách giao dịch mua hàng"/>
+	<str id="report.list.PurchasingTransactionList" txt="PurchasingTransactionList"/>
+	<str id="report.list.item.18" txt="18. Danh sách nhà cung cấp"/>
+	<str id="report.list.ProviderListReport" txt="ProviderListReport"/>
+	<str id="report.list.item.19" txt="19. Chi tiết hợp đồng mua hàng"/>
+	<str id="report.list.ContractDetailReport" txt="ContractDetailReport"/>
+	<str id="report.list.item.20" txt="20. Danh sách hợp đồng mua hàng"/>
+	<str id="report.list.ContractListReport" txt="ContractListReport"/>
+	<str id="report.list.item.21" txt="21. Chi tiết mua hàng "/>
+	<str id="report.list.PurchasingDetailReport" txt="PurchasingDetailReport"/>
+	<str id="report.list.item.22" txt="22. Lịch sử giao dịch mua hàng "/>
+	<str id="report.list.TransactionValueReport" txt="TransactionValueReport"/>
+	<str id="report.list.item.23" txt="23. Bảng kê nhập kho "/>
+	<str id="report.list.WarehouseStockCardReport" txt="WarehouseStockCardReport"/>
+	<str id="report.list.item.24" txt="24. Danh sách giao dịch bán hàng"/>
+	<str id="report.list.OutSaleTransactionList" txt="OutSaleTransactionList"/>
+	<str id="report.list.item.25" txt="25. Chi tiết giao dịch bán hàng"/>
+	<str id="report.list.SaleDetailReport" txt="SaleDetailReport"/>
+	<str id="report.list.item.26" txt="26. SaleTransactionValueReport"/>
+	<str id="report.list.SaleTransactionValueReport" txt="SaleTransactionValueReport"/>
+	
+	<!-- SALE -->
+	<str id="bill.header.container.title" txt="Thông tin phiếu"/>
+	<str id="online.stock.container.title" txt="Kiểm tra tồn kho"/>
+	<str id="bill.detail.container.title" txt="Chi tiết phiếu xuất"/>
+	<str id="bill.payment.container.title" txt="Chi tiết thanh toán"/>	
+	<str id="bill.header.so.phieu" txt="Số phiếu"/>	
+	<str id="bill.header.loai.phieu" txt="Loại phiếu"/>	
+	<str id="bill.header.tu.kho" txt="Từ kho"/>	
+	<str id="bill.header.den.kho" txt="Đến kho"/>	
+	<str id="bill.header.ngay.nhap" txt="Ngày nhập"/>	
+	<str id="bill.header.khach.hang" txt="Khách hàng"/>	
+	<str id="bill.header.ma.so.thue" txt="MS Thuế KH"/>	
+	<str id="bill.header.dien.thoai" txt="Điện thoại"/>	
+	<str id="bill.header.dia.chi" txt="Địa chỉ"/>	
+	<str id="bill.header.so.hop.dong" txt="Số HĐ"/>	
+	<str id="bill.header.so.tai.khoan" txt="Số TKNH"/>	
+	<str id="bill.header.nguoi.lien.he" txt="Người liên hệ"/>	
+	<str id="bill.header.mo.ta" txt="Mô tả"/>	
+	<str id="bill.header.khach.vang.lai" txt="Là khách vãng lai"/>
+	
+	<str id="bill.detail.ma.hang" txt="Mã hàng"/>	
+	<str id="bill.detail.loai.tien" txt="Loại tiền"/>	
+	<str id="bill.detail.gia.ban" txt="Giá bán"/>	
+	<str id="bill.detail.ten.hang" txt="Tên hàng"/>	
+	<str id="bill.detail.so.luong" txt="Số lượng"/>	
+	<str id="bill.detail.don.vi.tinh" txt="ĐVT"/>	
+	<str id="bill.detail.ton.kho" txt="Tồn kho"/>
+
+	<str id="bill.detail.no.cu.vnd" txt="Nợ cũ(VND)"/>
+	<str id="bill.detail.no.cu.usd" txt="Nợ cũ (USD)"/>
+	<str id="bill.detail.thanh.tien.vnd" txt="Thành tiền(VND)"/>
+	<str id="bill.detail.thanh.tien.usd" txt="Thành tiền (USD)"/>
+	<str id="bill.detail.thanh.toan.vnd" txt="Thanh toán(VND)"/>
+	<str id="bill.detail.thanh.toan.usd" txt="Thanh toán (USD)"/>
+	<str id="bill.detail.no.vnd" txt="Nợ (VND)"/>
+	<str id="bill.detail.no.usd" txt="Nợ (USD)"/>
+	
+	<str id="online.stock.warehouse" txt="Kho"/>
+	<str id="online.stock.item" txt="Hàng hóa"/>	
+	
+	
+	<str id="sale.tab.title1" txt="Bán hàng"/>	
+	<str id="sale.tab.title2" txt="Thống kê bán hàng"/>	
+	<str id="button.goods.return" txt="Trả lại"/>	
+	<str id="buttonList" txt="Liệt kê"/>
+	
+	<!-- Tim kiem ban hang -->
+	<str id="bill.information.title" txt="Thông tin phiếu"/>
+	<str id="sale.stats.customer.title" txt="Khách hàng"/>	
+	<str id="sale.stats.date.infor.title" txt="Ngày tháng"/>	
+	<str id="sale.stats.warehouse.infor.title" txt="Kho"/>	
+	<str id="sale.stats.category.infor.title" txt="Mục hàng"/>
+	<str id="sale.stats.result.page.title" txt="Kết quả tìm kiếm"/>
+	
+	<str id="sale.search.bill.number" txt="Số phiếu"/>
+	<str id="sale.search.customer.number" txt="Khách hàng"/>
+	<str id="sale.search.by.warehouse" txt="Kho"/>
+	<str id="sale.search.by.item.category" txt="Tìm theo mục hàng"/>
+	
+	<!--  PO -->
+	<str id="po.header.container.title" txt="Thông tin chính"/>
+	<str id="po.detail.container.title" txt="Thông tin hàng hóa"/>
+	<str id="po.list.container.title" txt="Danh sách hàng mua trong kế hoạch"/>	
+	<str id="grn.list.container.title" txt="Danh sách hàng nhận từ nhà cung cấp"/>	
+	<str id="whsc.list.container.title" txt="Danh sách hàng nhập kho"/>	
+	
+	<str id="purchase.tab.title0" txt="Transaction  "/>
+	<str id="purchase.tab.title1" txt="Kế hoạch/Hợp đồng  "/>
+	<str id="purchase.tab.title2" txt="Phiếu nhập hàng  "/>
+	<str id="purchase.tab.title3" txt="Nhập kho hàng hóa  "/>
+	<str id="purchase.tab.title4" txt="Thống kê  "/>
+	<str id="po.information.title" txt="Thông tin PO"/>
+	<str id="create.purchasing.plan" txt="Lập kế hoạch/Hợp đồng"/>
+	<str id="create.grn" txt="Lập phiếu nhập hàng"/>
+	<str id="create.stockcard" txt="Lập phiếu nhập kho"/>
+	
+	
+	<str id="purchase.stats.customer.title" txt="Khách hàng"/>
+	<str id="purchase.stats.date.infor.title" txt="Ngày nhập"/>
+	<str id="purchase.stats.warehouse.infor.title" txt="Kho/lô"/>
+	<str id="purchase.stats.category.infor.title" txt="Mục hàng"/>
+	<str id="purchase.stats.result.page.title" txt="Kết quả"/>
+	
+	<str id="po.search.by.warehouse" txt="Kho"/>
+	<str id="purchase.search.po.number" txt="Số phiếu"/>
+	<str id="po.header.loai.phieu" txt="Loại phiếu"/>
+	
+	<str id="po.header.tu.kho" txt="Từ kho"/>	
+	<str id="po.header.den.kho" txt="Đến kho"/>
+	
+	<str id="po.header.ngay.nhap" txt="Ngày nhập"/>	
+	<str id="po.header.khach.hang" txt="Khách hàng"/>
+	<str id="po.header.ma.so.thue" txt="Mã số thuế"/>	
+	<str id="po.header.dien.thoai" txt="Điện thoại"/>
+	<str id="po.header.dia.chi" txt="Địa chỉ"/>	
+	<str id="po.header.so.hop.dong" txt="Số HĐ"/>
+	<str id="po.header.so.tai.khoan" txt="Số tài khoản"/>	
+	<str id="po.header.nguoi.lien.he" txt="Người liên hệ"/>
+	<str id="po.header.mo.ta" txt="Mô tả"/>
+	
+	<!-- PO Detail -->
+	<str id="po.detail.ma.hang" txt="Mã hàng"/>
+	<str id="po.detail.loai.tien" txt="Loại tiền"/>
+	<str id="po.detail.gia.ban" txt="Giá bán"/>
+	<str id="po.detail.ten.hang" txt="Tên hàng"/>
+	<str id="po.detail.so.luong" txt="Số lượng"/>
+	<str id="po.detail.don.vi.tinh" txt="ĐVT"/>
+
+<str id="mainToolbarButtonQuanTri" txt="Quản trị"/>
+<str id="mainToolbarButtonMuaHang" txt="Mua hàng"/>
+<str id="mainToolbarButtonXuatHang" txt="Xuất hàng"/>
+<str id="mainToolbarButtonBaoCao" txt="Báo cáo"/>
+<str id="mainToolbarButtonHome" txt="Khởi động"/>
+<str id="mainToolbarButtonCongNoKhachHang" txt="Phải thu"/>
+<str id="mainToolbarButtonCongNoNhaCungCap" txt="Công nợ"/>
+<str id="mainToolbarButtonProfile" txt="Cá nhân"/>
+
+<str id="appLicenseMenuItem" txt="Giấy phép sử dụng"/>
+<str id="appLicenseRegisterMenuItem" txt="Đăng ký trực tuyến"/>
+<str id="appShortKeyMenuItem" txt="Danh mục phím tắt"/>
+
+<str id="pricing" txt="Định giá"/>
+<str id="priceTableDef" txt="Tạo/sửa bảng giá"/>
+<str id="customerPriceAssociated" txt="Gán kết bảng giá"/>
+<str id="openWorkingDay" txt="Mở ngày"/>
+<str id="closeWorkingDay" txt="Đóng ngày"/>
+<str id="exchangeRate" txt="Thiết lập tỷ giá"/>
+<str id="moKhoaNgay" txt="Mở/Đóng ngày"/>	
+	
+<str id="button.create" txt="Thực hiện"/>	
+<str id="button.loading" txt="Đang thực hiện..."/>
+<str id="report.fail" txt="Không thể xuất báo cáo!"/>
+<!-- default language error -->
+<str id="default.language.error" txt="Lỗi thiết lập ngôn ngữ mặc định"/>	
+<!-- Login -->
+<str id="login.title" txt="Đăng nhập hệ thống iShop"/>	
+<str id="login.id" txt="Tên đăng nhập"/>	
+<str id="login.password" txt="Mật khẩu"/>	
+<str id="login.button" txt="Đăng nhập"/>	
+<str id="cancel.button" txt="Hủy"/>	
+<str id="user.password.confirm" txt="Xác nhận mật khẩu:"/>
+<str id="user.password.new" txt="Mật khẩu mới:"/>
+<str id="user.password.old" txt="Mật khẩu cũ:"/>
+
+<str id="change.password.success" txt="Thay đổi mật khẩu thành công"/>
+<str id="old.password.invalid" txt="Mật khẩu không đúng"/>
+<str id="password.invalid.six.character" txt="Mật khẩu phải lớn hơn 6 kí tự"/>
+<str id="new.confirm.password.invalid" txt="Xác nhận mật khẩu không trùng khớp"/>
+<str id="password.tab" txt="Thay đổi mật khẩu"/>
+<str id="alert.confirm.reset.password" txt="Xác nhận thay đổi mật khẩu?"/>
+<str id="change.password.email.subject" txt="[Ishop]Thay đổi mật khẩu"/>
+<str id="change.password.email.message" txt="Mật khẩu mới của bạn tại Ishop là:"/>
+<str id="alert.new.password" txt="Mật khẩu mới là:"/>
+<str id="alert.change.ok.send.mail.fail" txt="Thay đổi mật khẩu thành công. Email đến người dùng thất bại.\nMật khẩu mới là:"/>
+<str id="alert.change.ok.no.email.to.send" txt="Thay đổi mật khẩu thành công. Người dùng không có email để gửi thông báo.\nMật khẩu mới là:"/>
+
+<str id="login.invalid.password" txt="Mật khẩu không đúng"/>
+<str id="login.invalid" txt="Tên đăng nhập không hợp lệ hoặc không đúng"/>
+<str id="connect.to.server.error" txt="Không thể kết nối tới máy chủ"/>
+<str id="connect.over.three.times" txt="Bạn đã đăng nhập quá 03 lần"/>
+<str id="loging.process" txt="Bắt đầu kiểm tra người dùng..."/>
+<str id="function.denied" txt="CHỨC NĂNG BỊ KHÓA"/>
+<!-- Preference -->
+<str id="pref.general" txt="Tổng quan"/>
+<str id="pref.system" txt="Hệ thống"/>
+<str id="pref.connection" txt="Máy chủ"/>
+<str id="pref.print" txt="In ấn"/>
+<str id="pref.import.export" txt="Vào/ra"/>
+<str id="pref.view" txt="Khung nhìn"/>
+
+<str id="pref.header1" txt="Cấu hình iShop"/>
+<str id="pref.header2" txt="Tùy chỉnh cấu hình iShop"/>
+
+
+<!-- 10.3.2012 -->
+<str id="login.infor.header" txt="Xác thực người dùng"/>
+<str id="login.infor.need.login" txt="Cần xác thực người dùng"/>
+
+<str id="login.infor.default.language" txt="Ngôn ngữ mặc định"/>
+<str id="login.infor.language.prefix" txt="Tiền tố tệp ngôn ngữ"/>
+
+<str id="log.infor.header" txt="Thông tin nhật ký"/>
+<str id="log.infor.log.file.path" txt="Đường dẫn tệp tin tin nhật ký ứng dụng"/>
+
+<str id="license.infor.header" txt="Thông tin bản quyền"/>
+<str id="license.infor.file.path" txt="Đường dẫn tệp tin bản quyền"/>
+
+<str id="backup.infor.header" txt="Thông tin sao lưu dự phòng"/>
+<str id="backup.infor.file.path" txt="Đường dẫn tệp tin sao lưu"/>
+
+<str id="cache.option" txt="Tùy chỉnh cache"/>
+<str id="always.cache" txt="Luôn luôn cache"/>
+<str id="cache.folder" txt="Thư mục cache"/>
+<str id="pref.system.audit.option" txt="Lựa chọn lưu vết hệ thống"/>
+<str id="pref.system.audit.db.action" txt="Các hành động liên quan DB"/>
+<str id="pref.system.audit.backend.action" txt="Các hành động backend"/>
+<str id="pref.system.audit.frontend.action" txt="Các hành động frontend"/>
+<str id="pref.system.audit.all.action" txt="Luôn luôn lưu vết"/>
+<str id="pref.system.auto.backup" txt="Các lựa chọn tự động sao lưu"/>
+<str id="pref.system.autobackup.shutdown.system" txt="Khi tắt hệ thống"/>
+<str id="pref.system.autobackup.manual" txt="Sao lưu thủ công"/>
+<str id="pref.system.autobackup.never" txt="Không sao lưu"/>
+<str id="pref.server.infor" txt="Thông tin máy chủ"/>
+<str id="pref.server.address" txt="Địa chỉ máy chủ"/>
+<str id="pref.server.port" txt="Cổng"/>
+<str id="pref.server.protocol" txt="Giao thức"/>
+<str id="pref.server.context" txt="Ngữ cảnh"/>
+<str id="pref.server.sub.context" txt="Ngữ cảnh phụ"/>
+
+<str id="waiting.to.complete" txt="Giao diện đang chờ hoàn thiện"/>
+<str id="save.success" txt="Lưu thành công!"/>
+<str id="date.time.option" txt="Định dạng thời gian"/>
+<str id="date.pattern" txt="Định dạng ngày"/>
+<str id="dialog.close" txt="Đóng"/>
+
+<!-- 16.03.2012-->
+<str id="danh.sach.muc.hang" txt="Danh sách mục hàng"/>
+<str id="danh.sach.nhom.hang" txt="Danh sách nhóm hàng"/>
+<str id="danh.sach.nhom.BP" txt="Danh sách nhóm BP"/>
+
+<str id="danh.sach.linh.vuc" txt="Danh sách lĩnh vực"/>
+<str id="danh.sach.kieu.dong.goi" txt="Danh sách kiểu đóng gói"/>
+<str id="danh.sach.don.vi.tinh" txt="Danh sách đơn vị tính"/>
+
+<str id="parent.category" txt="Danh mục cha"/>
+<str id="category.group" txt="Thuộc nhóm hàng"/>
+<str id="belong.to.section" txt="Thuộc lĩnh vực"/>
+<str id="space" txt=""/>
+
+<!-- 2013.03.11 popup command on CList -->
+<str id="category.tree.add.command" txt="Thêm mới mục con"/>
+<str id="category.tree.modify.command" txt="Chỉnh sửa"/>
+<str id="category.tree.delete.command" txt="Xóa mục hàng"/>
+<str id="category.tree.list.item.command" txt="Liệt kê hàng hóa"/>
+
+<str id="category.tree.list.section.maintain" txt="Hàng hóa - Lĩnh vực hàng hóa "/>
+
+<str id="category.tree.label" txt="Danh mục hàng hóa "/>
+<str id="confirm.delete.multi.node" txt="Có danh mục cấp dưới. Bạn có đồng ý xóa danh mục cấp dưới và danh mục này không? (OK=đồng ý, Cancel= hủy)"/>
+<str id="confirm.delete.node" txt="Bạn có đồng ý xóa hạng này không?(OK=đồng ý, Cancel= hủy)"/>
+<str id="node.not.found" txt="Không tìm thấy hạng mục cần tìm"/>
+
+<str id="quan.ly.linh.vuc" txt="Quản lý lĩnh vực"/>
+<str id="quan.ly.nhom.hang.muc" txt="Quản lý nhóm hạng mục"/>
+<str id="quan.ly.hang.muc" txt="Quản lý hạng mục"/>
+<!-- 2013.03.24 -->
+<str id="avata.label" txt="(Ảnh minh họa)"/>
+<str id="table.refresh" txt="Làm mới danh sách"/>
+
+<str id="form.dirty" txt="Đã có sự thay đổi dữ liệu, hãy lưu thay đổi hoặc hủy thay đổi trước. Đồng ý hủy thay đổi?"/>
+
+<!-- 2013.03.25 -->
+	<str id="action.event.update" txt="Thực hiện cập nhật "/>
+	<str id="action.event.remove"  txt="Thực hiện xóa "/>
+	<str id="action.event.list.select.item" txt="Chọn hạng mục từ danh sách"/>
+	<str id="action.event.add" txt="Thực hiện thêm "/>
+	<str id="action.event.save" txt="Thực hiện lưu "/>
+	<str id="action.event.switch.language" txt="Thay đổi ngôn ngữ hiển thị"/>
+	<str id="action.event.update.control.data" txt="Cập nhật thông tin điều khiển"/>
+	<str id="action.event.init.control.data" txt="Khởi tạo thông tin điều khiển"/>
+	<str id="action.event.load.product.list.by.cat" txt="Nạp thông tin sản phẩm theo danh mục"/>
+	<str id="action.event.notify.product.change" txt="Thông báo sản phẩm/hàng hóa đã thay đổi"/>
+	<str id="action.event.init.add.product" txt="Thêm mới sản phẩm"/>
+	<str id="action.event.init.update.product" txt="Cập nhật sản phẩm"/>
+	<str id="action.event.none" txt="None"/>
+	<!-- 2013.03.27 -->		
+	<str id="require.field.is.null" txt="Không được để trống hạng mục dữ liệu bắt buộc nhập!"/>
+	<str id="buttonSelect" txt="Chọn"/>
+	<str id="require.choose.category" txt="Cần chọn một danh mục hàng mức cuối cùng chứa sản phẩm!"/>
+	<str id="search.in.list" txt="Tìm cục bộ  "/>
+	
+	<str id="buttonImport" txt="Import"/>
+	<str id="buttonExport" txt="Export"/>
+	<str id="tree.root.node" txt="Tất cả"/>	
+	
+	<str id="search.product" txt="Thực hiện tìm kiếm sản phẩm"/>
+	<str id="incomplete.action" txt="Hành động đang chưa được thực hiện trong phiên bản này"/>
+	<str id="user.role.creating.tabbed.title" txt="Thiết lập role"/>
+	<str id="notify.action" txt="Thông báo: "/>
+	
+	<str id="data.already.active" txt="đã chọn chế độ chỉnh sửa"/>
+	<str id="finish.current.process.first" txt=" đang ở chế độ chỉnh sửa, hãy hoàn tất trước"/>
+	
+	<str id="notify.complete.loading.selected.item" txt=" hoàn tất nạp thông tin người dùng từ danh sách chọn"/>
+	<str id="notify.complete.enabling.edit.mode" txt="kích hoạt chế độ chỉnh sửa"/>
+	<str id="notify.complete.initialize.new.user" txt="sẵn sàng để nhập người dùng mới"/>
+	<str id="notify.complete.store.data" txt="hoàn tất ghi dữ liệu người dùng"/>
+	<str id="role.already.assigned" txt="role đã được gán trước!"/>	
+	<str id="user.other.infor.tabbed" txt="Thông tin khác"/>
+	
+	<str id="user.system.functions" txt="Tính năng trong hệ thống"/>
+	<str id="user.assigned.funtions" txt="Tính năng đã gán"/>
+	
+	<str id="roleNameText" txt="Tên vai trò"/>
+	<str id="roleDescText" txt="Mô tả vai trò"/>
+	<str id="role.system.check" txt="Hệ thống"/>
+	<!-- 2013.04.05  -->
+	<str id="customer.infor.tab0.title" txt="Hồ sơ khách hàng  "/>
+	<str id="customer.infor.tab1.title" txt="Network"/>
+	<!-- 2013.04.07-->
+	<str id="contact.id.card" txt="Số CMTND"/>
+	<str id="user.confirm.delete" txt="Xác nhận xóa người dùng này?"/>	
+	<str id="customer.type" txt="Phân loại"/>
+	<str id="customer.rank" txt="Phân hạng"/>
+	
+	<str id="province" txt="Tỉnh/thành"/>
+	<str id="due_date" txt="Hạn thanh toán(ngày)"/>
+	<str id="debt_limit" txt="Hạn mức nợ"/>
+	<str id="bank_code" txt="Mã ngân hàng"/>
+	<str id="district" txt="Quận/huyện"/>
+	
+	<str id="Contract_address" txt="Địa chỉ"/>
+	<str id="Contract_sign_person" txt="Người ký"/>
+	<str id="Contract_sign_person_mobile" txt="Di động"/>
+	<str id="Contract_province" txt="Tỉnh thành"/>
+	<str id="Contract_sign_person_position" txt="Chức vụ"/>
+	<str id="Contract_sign_person_email" txt="Email"/>	
+	<str id="Contract_district" txt="Quận huyện"/>
+	<str id="Contract_sign_person_phone" txt="Điện thoại"/>
+	<str id="Contract_full_name" txt="Tên đầy đủ trên HĐ"/>
+	
+	<str id="shipto_address" txt="Địa chỉ giao hàng"/>
+	<str id="shipto_person_phone" txt="Điện thoại"/>
+	<str id="shipto_person" txt="Người nhận"/>
+	<str id="shipto_person_mobile" txt="Di động"/>
+	<str id="shipto_person_position" txt="Vị trí"/>
+	<str id="shipto_person_email" txt="Email"/>
+	
+	<str id="billto_address" txt="Địa chỉ gửi hóa đơn"/>
+	<str id="billto_person" txt="Người nhận"/>
+	<str id="billto_person_phone" txt="Điện thoại"/>
+	<str id="billto_person_mobile" txt="Mobile"/>
+	<str id="billto_note" txt="Ghi chú"/>
+	<str id="billto_person_position" txt="Chức vụ"/>
+	<str id="billto_person_email" txt="Email"/>
+	
+	<str id="customer.contract.infor" txt="Hợp đồng"/>
+	<str id="customer.shipto.infor" txt="Giao hàng(Ship-to) "/>
+	<str id="customer.billto.infor" txt="Hóa đơn(Bill-to) "/>
+	<!-- 2013.04.13 -->
+	<str id="search.last.result" txt="Đã tìm tới cuối danh sách hoặc kết quả tìm kiếm rỗng, hãy thay đổi điều kiện tìm kiếm để tiếp tục!"/>
+	
+	<str id="menuCurrency" txt="Tiền tệ/Ngân hàng"/>
+	<str id="bankTitle" txt="Ngân hàng"/>
+	<str id="exRateTitle" txt="Tỷ giá hối đoái"/>
+	<str id="dialog.currency.title" txt="Danh mục tiền tệ"/>
+	
+	<str id="item.isnot.abstractishop.entity" txt="Đối tượng liệt kê không hợp lệ"/>
+	<str id="error" txt="Lỗi: "/>
+	
+	<str id="currency.id" txt="Mã tiền tệ"/>
+	<str id="currency.description" txt="Mô tả "/>
+	<!-- 2013.04.19 -->
+	<str id="description" txt="Mô tả "/>
+	<str id="bank.id" txt="Mã ngân hàng"/>
+	<str id="currency.type" txt="Loại tiền"/>
+	<str id="dialog.exrate.title" txt="Thông tin tỷ giá hối đoái (Exchange Rate)"/>
+	
+	<str id="date" txt="Ngày"/>
+	<str id="exchange.rate" txt="Tỷ giá"/>
+	<str id="currency" txt="Tiền tệ"/>
+	<str id="country" txt="Quốc Gia"/>
+	
+	<str id="company.tree.add.command" txt="Thêm mới mục con" />
+	<str id="company.tree.modify.command" txt="Chỉnh sửa" />
+	<str id="company.tree.delete.command" txt="Xóa công ty" />
+	<str id="dto.company.country" txt="Quốc gia" />
+	<str id="dto.company.name" txt="Tên" />
+	<str id="dto.company.address" txt="Địa chỉ" />
+	<str id="dto.company.telephone" txt="Số điện thoại" />
+	<str id="dto.company.establishedDate" txt="Ngày thành lập" />
+	<str id="dto.company.contactPerson" txt="Người liên lạc" />
+	<str id="dto.company.type" txt="Loại" />
+	<str id="quanly.congty" txt="Quản lý công ty" />
+	
+	<str id="all.company" txt="Tất cả công ty" />
+	
+	
+	<!-- 2013.04.21 -->
+	<str id="pl.dialog.title" txt="Thông tin bảng giá" />
+	<str id="pl.product" txt="Sản phẩm" />
+	<str id="pl.type" txt="Loại bảng giá" />
+	
+	<str id="pl.selling.price" txt="Giá bán" />
+	<str id="pl.purchasing.price" txt="Giá mua" />
+	<str id="pl.discount" txt="Chiết khấu (% so với giá gốc)" />
+	
+	<str id="pl.maintenance" txt="Chỉnh sửa bảng giá" />
+	<str id="null.value.for.major.field" txt="Thiếu thông tin cho các trường cơ bản" />	
+	
+	<str id="currency_id" txt="Loại tiền" />
+	<str id="purchase.price" txt="Giá mua" />
+	<str id="selling.price" txt="Giá bán" />
+	<str id="discount" txt="Chiết khấu" />
+	
+	<str id="lot.id" txt="Mã lô" />
+	
+	<!-- Validation error -->
+	<str id="error.validateMaxSize" txt=" Giá trị vượt quá giới hạn: " />
+	<str id="error.validateMinSize" txt=" Giá trị nhỏ hơn giới hạn : " />
+	<str id="error.validateNumber" txt=" Hãy nhập giá trị số " />
+	<str id="error.validateEmpty" txt=" Không được để trống giá trị " />
+	<str id="error.validateEmailFormat" txt=" Sai format email: xxx@yyy.zzz " />
+	<str id="error.validateRange" txt=" Giá trị phải nằm trong khoảng : " />
+	<str id="error.validateRegularExpression" txt=" Giá trị phải có format dạng : " />
+	<str id="error.list.item.empty" txt=" Hãy thêm hàng vào danh sách hàng hóa "/>
+	<str id="error.validateSelectedComboBox" txt=" Hãy chọn 1 đối tượng trong danh sách " />
+	<str id="error.inputDate" txt=" Chưa nhập ngày " />
+	<str id="error.tableIsNull" txt=" Chưa nhập dữ liệu trong bảng " />
+	<str id="error.notChooseAProduct" txt=" Hãy chọn một sản phẩm " />
+	<str id="error.object.is.null" txt=" Đối tượng xử lý rỗng (chưa được chọn?) " />
+	
+	<str id="sale.transactions.list" txt="Danh sách giao dịch" />
+	<str id="khach.hang" txt="Khách hàng" />
+	<str id="tong.tien.don.hang" txt="Tổng tiền đơn hàng" />
+	<str id="so.number" txt="Số đơn hàng" />
+	<str id="vat.tax" txt="Thuế GTGT" />
+	
+	<str id="so.type" txt="Loại đơn hàng" />
+	<str id="other.expense" txt="Chi phí khác" />
+	<str id="from.warehouse" txt="Từ kho" />
+	<str id="gross.amount" txt="Tiền thanh toán" />
+	
+	<str id="creator" txt="Người lập" />
+	<str id="create.date" txt="Ngày lập" />
+	<str id="modify.user" txt="Người cập nhật" />
+	<str id="modify.date" txt="Ngày cập nhật" />
+	<str id="phase" txt="Giai đoạn" />
+	<str id="current.voucher.number" txt="Số chứng từ hiện hành" />	
+	<str id="next.step" txt="Đi tiếp" />
+	
+	<str id="sale.tabbedpane.txlist" txt="Danh sách Giao dịch" />
+	<str id="sale.tabbedpane.saleorder" txt="Lập đơn hàng" />
+	<str id="sale.tabbedpane.issue.slip" txt="Lập phiếu xuất kho" />
+	<str id="sale.tabbedpane.sale.stats" txt="Thống kê" />
+	
+	
+	<str id="sale.tabbedpane.detail.txinfor" txt="Chi tiết Giao dịch" />
+	<str id="sale.order.detail.infor" txt="Thông tin chi tiết đơn hàng" />
+	
+	<str id="is.issue.slip" txt="Kiêm phiếu xuất kho" />
+	<str id="customer.debt.balance" txt="Công nợ khách hàng" />
+	<str id="customerDebtRefreshButton" txt="Làm mới" />
+	
+	<str id="so.tabbed.item.detail" txt="Chi tiết hàng hóa" />
+	<str id="so.tabbed.item.discount" txt="Chiết khấu, khuyến mại, giảm giá" />
+	<str id="so.tabbed.item.accounting" txt="Hạch toán" />	
+	<str id="distribute" txt="Phân bổ" />
+	
+	<str id="invoice.number" txt="Số hóa đơn" />
+	<str id="customer" txt="Khách hàng" />
+	<str id="pp.number" txt="Số PP" />
+	<str id="contract.number" txt="Số hợp đồng" />
+	<str id="order.status" txt="Trạng thái đơn hàng" />
+	<str id="to.warehouse" txt="Đến kho" />
+	<str id="order.date" txt="Ngày mua hàng" />
+	<str id="order.note" txt="Ghi chú" />
+	<str id="add.item" txt="Thêm" />
+	
+	<str id="discount.policy" txt="Chính sách chiết khấu" />
+	<str id="discount.amount" txt="Tiền chiết khấu" />
+	
+	<str id="radio.distribute.discount.by.quantity" txt="Phân bổ theo số lượng" />
+	<str id="radio.distribute.discount.by.amount" txt="Phân bổ theo tiền" />
+	<str id="item.name" txt="Tên hàng hóa" />
+	<str id="item.quantity" txt="Số lượng hàng" />
+	<str id="buttonStock" txt="Tồn kho?" />
+	<str id="button.print.invoice" txt="In hóa đơn" />
+	<str id="finish" txt="Kết thúc" />
+	
+	<str id="print.note" txt="In phiếu" />
+	
+	<str id="sale.stats.condition" txt="Điều kiện tìm kiếm" />
+	<str id="sale.stats.result" txt="Kết quả tìm kiếm" />
+	<str id="sale.stats.detail" txt="Chi tiết" />
+	<str id="payment.due" txt="Hạn thanh toán (ngày)" />
+	
+	<str id="new.transaction" txt="1.Tạo giao dịch" />
+	<str id="qouting" txt="2.Tạo báo giá" />
+	<str id="reserved.item" txt="3.Đặt hàng" />
+	<str id="create.so" txt="4.Lập đơn hàng" />
+	<str id="debt.control" txt="5.Quản lý công nợ" />
+	<str id="issue.slip" txt="6.Xuất hàng" />
+
+	<!-- Tiêu đề chi tiết giao dịch hàng ngày -->
+	<str id="tx.id" txt="Số giao dịch" />
+	<str id="tx.type" txt="Loại giao dịch" />
+	<str id="tx.steps" txt="Các giai đoạn" />
+	<str id="tx.current_step"  txt="Tiến trình" />
+	<str id="tx.status"  txt="Trạng thái" />
+	<str id="tx.voucher_id"  txt="Số chứng từ  đã xử lý" />
+	<str id="tx.ins_user_id" txt="Người tạo" />
+	<str id="tx.ins_time"  txt="Giờ tạo" />
+	<str id="tx.upd_user_id"  txt="Người cập nhật" />
+	<str id="tx.upd_time"	 txt="Giờ cập nhật" />
+	
+	<str id="ItemId" txt="Mã hàng" />
+	<str id="Item name" txt="Tên mặt hàng" />
+	<str id="Receive Quantity" txt="Lượng hàng nhận" />
+	<str id="Corrupted Quantity" txt="Lượng hàng lỗi" />
+	<str id="TotalQuantity" txt="Tổng lượng hàng" />
+	<str id="Purchasing Price" txt="Giá mua" />
+	<str id="PurchasingDiscount" txt="Giảm giá" />
+	<str id="OtherDiscount" txt="Giảm giá khác" />
+	<str id="VAT" txt="VAT" />
+	<str id="TotalPrice" txt="Tổng tiền" />
+	<str id="GRNId" txt="Số phiếu" />
+	<str id="Purchasing plan id" txt="Mã đơn hàng" />
+	<str id="purchase.note" txt="Ghi chú đơn hàng" />
+	<str id="ReceiveDate" txt="Ngày nhập hàng" />
+	<str id="Note" txt="Ghi chú" />
+	<str id="Quantity" txt="Số lượng" />
+	<str id="TransactionId" txt="Mã giao dịch" />
+	<str id="PPId" txt="Mã PP" />
+	<str id="ContractId" txt="Mã hợp đồng" />
+	<str id="PPType" txt="Loại" />
+	<str id="SignedDate" txt="Ngày kí" />
+	<str id="Provider" txt="Nhà cung cấp" />
+	<str id="Deadline" txt="Deadline" />
+	<str id="ERROR.NO.ITEM.FOUND" txt="Không tìm thấy sản phẩm tương ứng với mã sản phẩm đã nhập." />
+	
+	<str id="choose.product.dialog.title" txt="Chọn sản phẩm" />
+	<str id="price.not.available" txt="Giá không tồn tại cho sản phẩm" />
+	<str id="choose.customer.dialog.title" txt="Chọn khách hàng" />
+	
+	<str id="so.gross.amount" txt="Tổng tiền hàng" />
+	<str id="so.discount.amount" txt="Tổng tiền chiết khấu"/>
+	<str id="so.net.amount" txt="Tổng tiền thanh toán" />
+	<str id="please.save.before.create.new.order" txt="Cần lưu đơn hàng cũ trước khi tạo mới!<br> Tạo mới đơn hàng?" />
+	<str id="select.distribute.method" txt="Hãy chọn phương thức phân bổ" />
+	<str id="confirm.distribute.method" txt="Các thiết lập chiết khấu cũ sẽ bị hủy khi chọn phương thức phân bổ chung, đồng ý?" />
+	<str id="so.vat.amount" txt="Thuế GTGT" />
+	
+	<str id="id" txt="Định danh" />
+	<str id="item_id" txt="Mã hàng" />
+	<str id="item_name" txt="Tên hàng" />
+	<str id="quantity" txt="Số lượng" />
+	<str id="unit_price" txt="Đơn giá" />
+	<str id="gross_amount" txt="Thành tiền" />
+	<str id="unit_of_measurement" txt="ĐVT" />
+	<str id="discount_rate" txt="Tỷ lệ CK" />
+	<str id="discount_amount" txt="Tiền CK" />
+	<str id="vat_rate" txt="% VAT" />
+	<str id="vat_amount" txt="Thuế VAT" />
+	<str id="net_amount" txt="Tổng tiền" />
+	<str id="debit_account" txt="Tài khoản nợ" />
+	<str id="credit_account" txt="Tài khoản có" />
+	<str id="discount_account" txt="Tài khoản CK" />	
+	<str id="issue.date" txt="Ngày xuất" />
+	<str id="isl.number" txt="Số phiếu xuất" />
+	<str id="issue.date" txt="Ngày xuất" />
+	<str id="debt.limit" txt="Hạn mức nợ" />
+	<str id="view.issue.history" txt="Nhật ký" />
+	
+	<str id="store_qty" txt="Nhập" />
+	<str id="reserved_qty" txt="Đặt trước" />
+	<str id="issued_qty" txt="Xuất" />
+	<str id="stock" txt="Tồn kho" />
+	<str id="show.item.stock.dialog.title" txt="Danh mục hàng tồn kho"/>
+	<str id="error.sale.not.found.for.transaction" txt="Không tìm thấy đơn hàng tương ứng với giao dịch"/>	
+	<str id="issuing.diary" txt="Nhật ký xuất hàng" />
+	<str id="tranx_id" txt="Mã GD" />
+	<str id="order_id" txt="Số đơn hàng" />
+	<str id="warehouse_id" txt="Mã kho" />
+	<str id="lot_id" txt="Mã lô" />
+	<str id="isssue_quantity" txt="Số lượng xuất" />
+	<str id="issue_date" txt="Ngày xuất" />
+	<str id="warehouser" txt="Thủ kho" />	
+	<str id="issue_quantity" txt="Số lượng xuất" />	
+	<str id="order_quantity" txt="Số lượng Đk" />
+	<str id="save.success" txt="Ghi thành công" />
+	<str id="save.failure" txt="Lỗi ghi dữ liệu" />
+	<str id="issue.quantity.greater.than.order" txt="Xuất hàng vượt số lượng đăng ký trên đơn hàng" />
+	
+	<str id="rc.tab.title" txt="Công nợ khách hàng" />
+    <str id="radio.receipt.receivable.type" txt="Phải thu" />
+    <str id="radio.receipt.payable.type" txt="Phải trả" />
+    <str id="from.date" txt="Từ ngày" />
+    <str id="to.date" txt="Đến ngày" />
+    <str id="tranx.type" txt="Loại giao dịch" />
+    <str id="buttonSearch" txt="Tìm kiếm" />
+    <str id="customer.address" txt="Địa chỉ" />
+    <str id="rc.type" txt="Loại phiếu" />
+    <str id="rc.info" txt="Thông tin phiếu" />
+    <str id="rc.detail" txt="Chi tiết thanh toán" />
+    <str id="balance.forward" txt="Số dư đầu kỳ" />
+    <str id="bank.account" txt="Tài khoản ngân hàng" />
+    <str id="due.amount" txt="Số phải trả còn lại" />
+    <str id="pay.all" txt="Tất toán" />
+    <str id="receipt.amount" txt="Trả lần này" />
+    <str id="payment.method" txt="Phương thức thanh toán" />
+    <str id="payer.name" txt="Người trả" />
+    <str id="voucher.number" txt="Số chứng từ" />
+    <str id="customer.cf" txt="Số dư cuối kỳ" />
+    <str id="receipt.notice.to.receiver" txt="Chú ý: nhân viên thu ngân in phiếu thu để giao cho khách hàng."/>
+    <str id="receipt.number" txt="Số phiếu" />
+    <str id="receipt.date" txt="Ngày lập" />
+    <str id="so.tranx.type" txt="Bán hàng" />
+    <str id="po.tranx.type" txt="Mua hàng" />
+	<str id="ar.tranx.type" txt="Thu tiền" />
+    <str id="ap.tranx.type" txt="Thanh toán" />
+    <str id="fa.tranx.type" txt="Giao dịch TSCĐ" />
+    <str id="internal.transfer.tranx.type" txt="Điều chuyển nội bộ" />
+    <str id="payroll.tranx.type" txt="Tiền lương" />
+    <str id="acc.tranx.type" txt="Kế toán" />	
+    <str id="retail.so" txt="Bán lẻ" />
+    <str id="whole.sale.so" txt="Bán buôn" />
+    <str id="internal.transfer" txt="Điều chuyển nội bộ" />
+    <str id="sample.so" txt="Xuất mẫu" />
+    <str id="service.so" txt="Dịch vụ" />
+    <str id="export.so" txt="Xuất khẩu" />
+    <str id="ACTIVE" txt="Hiệu lực" />
+    <str id="CLOSED" txt="Kết thúc" />
+    <str id="CANCEL" txt="Hủy" />
+    <str id="by.cash" txt="Tiền mặt" />
+    <str id="by.bank.transfer" txt="Chuyển khoản" />
+    <str id="order_type" txt="Loại đơn hàng" />
+    <str id="order_date" txt="Ngày đặt hàng" />
+    <str id="order_status" txt="Trạng thái đơn hàng" />
+    <str id="customer_id" txt="Mã khách hàng" />
+    <str id="pp_number" txt="Mã KH mua" />
+    <str id="contract_number" txt="Số hợp đồng" />
+    <str id="delivery_date" txt="Ngày giao" />
+	<str id="from_warehouse" txt="Từ kho" />
+	<str id="to_warehouse" txt="Đến kho" />
+	<str id="amount" txt="Tổng tiền" />
+	
+	<str id="receipt.for" txt="Thu cho chứng từ" />
+	<str id="voucher.type" txt="Loại chứng từ" />
+	<str id="tabbed.payable.stats" txt="Thống kê phải trả" />
+	<str id="tabbed.receivable.stats" txt="Thống kê phải thu" />	
+	<str id="paid.in.period.amount" txt="Đã trả trong kỳ" />
+
+	<str id="no.voucher.for.receipt" txt="" />
+	<str id="receivable.amount.changed.use.new.one" txt="" />
+	<str id="please.wait.while.loading" txt="Đang tải dữ liệu, xin chờ" />
+	<str id="home.title.0" txt="Thông tin chung" />
+	<str id="editRole" txt="Tạo role" />
+	<str id="role.maintenance.dialog" txt="Chỉnh sửa vai trò người dùng" />
+	<str id="create.purchasing.plan" txt="2. Lập kế hoạch mua hàng" />
+	<str id="create.grn" txt="3. Lập phiếu nhập hàng" />
+	<str id="create.stockcard" txt="4. Lập thẻ kho" />
+	<str id="search.company.not.found" txt="Không tìm thấy công ty phù hợp: " />
+	<str id="search.company.reach.end" txt="Đã tìm tới cuối danh sách, kết quả tìm thấy: " />
+	<str id="confirm.save.changed" txt="Dữ liệu đã thay đổi, bạn muốn lưu thay đổi không?" />
+	<str id="double.click.to.edit" txt="Kích đúp chuột để hiển thị chi tiết và chỉnh sửa" />
+	<str id="warning.cannot.add.lot.without.warehouse" txt="Hãy chọn mở chi tiết một kho hoặc tạo mới kho để có thể thêm lô" />
+	<str id="confirm.delete" txt=" Bạn có chắc chắn muốn xóa " />
+	<str id="appToolsChangePasswdMenuItem" txt="Profile" />
+	<str id="working.date" txt="Ngày làm việc" />
+	<str id="cannot.delete.root.company" txt="Không thể xóa công ty gốc, mỗi hệ thống có một công ty gốc duy nhất!" />
+	<str id="validate.input.password" txt="Mật khẩu không được để trống" />
+	<str id="dialog.profile.title" txt="Hồ sơ của bạn trong hệ thống" />
+	<str id="validate.general.notification" txt="Lỗi kiểm tra tính hợp lệcủa dữ liệu, hãy sửa các lỗi theo thông báo rồi thao tác lại" />
+	<str id="transaction.list" txt="Danh sách giao dịch" />
+	<str id="reload.transaction.list" txt="Tải lại danh sách giao dịch" />
+	<str id="selected.tranx.null" txt="Chưa chọn giao dịch" />
+	<str id="select.provider" txt="Chọn nhà cung cấp" />
+	<str id="action.event.update.pp" txt="Cập nhật kế hoạch mua hàng" />
+	<str id="purchase.plan" txt="Kế hoạch mua hàng" />
+	<str id="purchase.contract" txt="Hợp đồng mua hàng" />
+	<str id="ma.hang" txt="Mã hàng" />
+	<str id="confirm.auto.select.tranx" txt="Chưa có giao dịch nào được chọn, hệ thống sẽ tự động chọn 1 giao dịch trong danh sách, đồng ý?" />
+	<str id="not.select" txt="------ Chưa chọn ------" />
+	<str id="danh.sach" txt="Danh sách" />
+	<str id="thuc.nhap" txt="Thực nhập" />
+	<str id="quantity.over.limit" txt="Số lượng vượt hạn mức" />
+	<str id="no.price.list.attach.to.customer.type" txt="Chưa thiết lập giá mua cho" />
+	<str id="PlanQty" txt="Số kế hoạch" />
+	<str id="Received" txt="Thực nhập" />
+	<str id="Corrupted" txt="Số hỏng" />
+	<str id="totalQuantity" txt="Tổng SL" />
+	<str id="UnitPrice" txt="Đơn giá" />
+	<str id="Currency" txt="Loại tiền" />
+	<str id="Discount" txt="Chiết khấu" />
+	<str id="purchase.tranx.4.grn" txt="Danh sách giao dịch chờ nhận hàng" />
+	<str id="detail" txt="Chi tiết" />
+	<str id="buttonDiary" txt="Nhật ký" />
+	<str id="grn.history.dialog.title" txt="Nhật ký  nhập hàng" />
+	
+	<str id="" txt="" />
+	<str id="" txt="" />
+	<str id="" txt="" />
+	<str id="" txt="" />
+	<str id="" txt="" />
+	<str id="" txt="" />
+	</langpack>
